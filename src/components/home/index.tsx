@@ -1,8 +1,8 @@
 import './home.css';
 
 import Social from '../social';
-import Informations from '../informations';
 import ScrollDown from '../scrolldown';
+import DescriptionWithMe from '../description-with-me';
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
         <div className="home__content grid">
           <Social />
           <div className="home__img"></div>
-          <Informations />
+          <DescriptionWithMe />
         </div>
         <ScrollDown />
       </div>

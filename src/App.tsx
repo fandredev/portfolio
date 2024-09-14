@@ -1,3 +1,4 @@
+import About from './components/about';
 import Header from './components/header';
 import Home from './components/home';
 
@@ -7,6 +8,7 @@ export default function Portfolio() {
       <Header />
       <main className="main">
         <Home />
+        <About />
       </main>
     </>
   );

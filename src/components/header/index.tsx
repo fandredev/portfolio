@@ -22,12 +22,12 @@ export default function Header() {
           <ul className="nav__list grid">
             <li className="nav__item">
               <a href="#home" className="nav__link active-link">
-                <i className="uil uil-estate nav__icon"></i>Home
+                <i className="uil uil-estate nav__icon"></i>Inicio
               </a>
             </li>
             <li className="nav__item">
               <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> About
+                <i className="uil uil-user nav__icon"></i> Sobre
               </a>
             </li>
             <li className="nav__item">
@@ -37,7 +37,7 @@ export default function Header() {
             </li>
             <li className="nav__item">
               <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase-alt nav__icon"></i> Services
+                <i className="uil uil-briefcase-alt nav__icon"></i> Serviços
               </a>
             </li>
             <li className="nav__item">
@@ -47,7 +47,7 @@ export default function Header() {
             </li>
             <li className="nav__item">
               <a href="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon"></i>Contact
+                <i className="uil uil-message nav__icon"></i>Contate-me
               </a>
             </li>
           </ul>
