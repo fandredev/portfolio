@@ -16,11 +16,11 @@ export default function About() {
           <Informations />
 
           <p className="about__description">
-            Sou um desenvolvedor front-end apaixonado por tecnologia e inovação.
-            Estou sempre aprendendo e me desafiando para me tornar um
-            profissional melhor. Atualmente, estou estudando Desenvolvimento Web
-            na Trybe, onde estou aprendendo as tecnologias mais atuais do
-            mercado.
+            Sou um desenvolvedor full-stack apaixonado por tecnologia e
+            inovação. Estou sempre aprendendo e me desafiando para me tornar um
+            profissional melhor. Atualmente, trabalho na NaN Systems como
+            desenvolvedor full-stack usando tecnologias como Python, Django e
+            todo ecossistema Pythonico.
           </p>
 
           <a download href={CV} className="button button--flex">
