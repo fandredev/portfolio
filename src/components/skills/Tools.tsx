@@ -2,10 +2,13 @@ type ToolsSkillsName =
   | 'npm & yarn'
   | 'postman'
   | 'pgAdmin4'
-  | 'Docker'
+  | 'docker'
   | 'vscode'
   | 'pipx'
-  | 'git';
+  | 'git'
+  | 'eslint'
+  | 'black'
+  | 'vite';
 
 interface ToolsSkills {
   name: ToolsSkillsName;
@@ -22,7 +25,7 @@ const tools: ToolsSkills[] = [
     name: 'pgAdmin4',
   },
   {
-    name: 'Docker',
+    name: 'docker',
   },
   {
     name: 'vscode',
@@ -31,7 +34,16 @@ const tools: ToolsSkills[] = [
     name: 'pipx',
   },
   {
+    name: 'vite',
+  },
+  {
     name: 'git',
+  },
+  {
+    name: 'eslint',
+  },
+  {
+    name: 'black',
   },
 ];
 

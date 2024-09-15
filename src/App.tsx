@@ -1,7 +1,9 @@
 import About from './components/about';
+import Footer from './components/footer';
 import Header from './components/header';
 import Home from './components/home';
 import Qualification from './components/qualification';
+import ScrollUp from './components/scroll-up';
 import Skills from './components/skills';
 
 export default function Portfolio() {
@@ -14,6 +16,8 @@ export default function Portfolio() {
         <Skills />
         <Qualification />
       </main>
+      <Footer />
+      <ScrollUp />
     </>
   );
 }
