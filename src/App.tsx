@@ -1,6 +1,7 @@
 import About from './components/about';
 import Header from './components/header';
 import Home from './components/home';
+import Skills from './components/skills';
 
 export default function Portfolio() {
   return (
@@ -9,6 +10,7 @@ export default function Portfolio() {
       <main className="main">
         <Home />
         <About />
+        <Skills />
       </main>
     </>
   );
