@@ -1,6 +1,45 @@
 import { useState } from 'react';
 import './header.css';
 
+interface HeaderItemProps {
+  href: string;
+  icon: string;
+  text: string;
+}
+
+const headerItems: HeaderItemProps[] = [
+  {
+    href: '#home',
+    icon: 'uil uil-estate',
+    text: 'Inicio',
+  },
+  {
+    href: '#about',
+    icon: 'uil uil-user',
+    text: 'Sobre',
+  },
+  {
+    href: '#skills',
+    icon: 'uil uil-file-alt',
+    text: 'Skills',
+  },
+  {
+    href: '#services',
+    icon: 'uil uil-briefcase-alt',
+    text: 'Serviços',
+  },
+  {
+    href: 'portfolio',
+    icon: 'uil uil-scenery',
+    text: 'Portfolio',
+  },
+  {
+    href: '#contact',
+    icon: 'uil uil-message',
+    text: 'Contate-me',
+  },
+];
+
 export default function Header() {
   const [toggleMenu, showToggleMenu] = useState(false);
 
@@ -15,41 +54,14 @@ export default function Header() {
   return (
     <header className="header">
       <nav className="nav container">
-        <a href="index.html" className="nav__logo">
+        <a href="#" className="nav__logo">
           Felipe André
         </a>
         <div className={toggleMenu ? 'nav__menu show-menu' : 'nav__menu'}>
           <ul className="nav__list grid">
-            <li className="nav__item">
-              <a href="#home" className="nav__link active-link">
-                <i className="uil uil-estate nav__icon"></i>Inicio
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#about" className="nav__link">
-                <i className="uil uil-user nav__icon"></i> Sobre
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#skills" className="nav__link">
-                <i className="uil uil-file-alt nav__icon"></i>Skills
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase-alt nav__icon"></i> Serviços
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="portfolio" className="nav__link">
-                <i className="uil uil-scenery nav__icon"></i>Portfolio
-              </a>
-            </li>
-            <li className="nav__item">
-              <a href="#contact" className="nav__link">
-                <i className="uil uil-message nav__icon"></i>Contate-me
-              </a>
-            </li>
+            {headerItems.map((item, index) => (
+              <HeaderItem key={index} {...item} />
+            ))}
           </ul>
 
           <i className="uil uil-times nav__close" onClick={closeMenu}></i>
@@ -59,5 +71,20 @@ export default function Header() {
         </div>
       </nav>
     </header>
+  );
+}
+
+function HeaderItem({ href, icon, text }: HeaderItemProps) {
+  return (
+    <li className="nav__item">
+      <a href={href} className="nav__link">
+        <i
+          className={`
+          ${icon} nav__icon
+          `}
+        ></i>
+        {text}
+      </a>
+    </li>
   );
 }
