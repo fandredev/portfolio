@@ -13,7 +13,6 @@ export const useScrollVisibility = () => {
 
     window.addEventListener('scroll', handleScroll);
 
-    // Cleanup on unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
