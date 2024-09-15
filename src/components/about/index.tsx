@@ -17,7 +17,7 @@ export default function About() {
           <Informations />
 
           <p className="about__description">
-            Meu nome é Felipe André e tenho 23 anos e moro na região oeste de
+            Meu nome é Felipe André e tenho 21 anos e moro na região oeste de
             São Paulo. Sou estudante de tecnologia desde os 17 anos e sou grato
             pelo progresso que venho aprendendo com a web e com esse mundo vasto
             de ser uma pessoa programadora. Atualmente estou trabalhando como
