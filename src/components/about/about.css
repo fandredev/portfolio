@@ -2,6 +2,7 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   column-gap: 4rem;
+  margin-bottom: 4rem;
 }
 
 .about__img {
@@ -21,11 +22,13 @@
   border: 1px solid rgba(0,0,0,0.1);
   border-radius: 0.75rem;
   text-align: center;
-  padding: 1 1.25rem;
+  padding: 1rem 1.25rem;
   display: flex;
   align-items: center;
   flex-flow: column;
   justify-content: center;
+  line-height: 13px;
+  row-gap: 10px;
 }
 .about__icon {
   font-size: 1.3rem;
@@ -42,6 +45,10 @@
 .about__description {
   padding: 0 4rem 0 0;
   margin-bottom: var(--mb-2-5)
+}
+
+.curriculum {
+  gap: 1rem;
 }
 
 @media screen and (max-width: 992px) {

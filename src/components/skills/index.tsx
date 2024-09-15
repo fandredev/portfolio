@@ -1,6 +1,13 @@
 import Backend from './Backend';
 import Frontend from './Frontend';
 import './skills.css';
+import Tests from './Tests';
+import Tools from './Tools';
+
+export interface SkillsProps<T> {
+  name: T;
+  level: string;
+}
 
 export default function Skills() {
   return (
@@ -10,6 +17,8 @@ export default function Skills() {
       <div className="skills__container container grid">
         <Frontend />
         <Backend />
+        <Tests />
+        <Tools />
       </div>
     </section>
   );

@@ -1,3 +1,5 @@
+import { CalendarDays } from 'lucide-react';
+
 interface QualificationEducationProps {
   course: string;
   locality: string;
@@ -38,7 +40,10 @@ function QualificationEducation({
         <h3 className="qualification__title">{course}</h3>
         <span className="qualification__subtitle">{locality}</span>
         <div className="qualification__calender">
-          <i className="uil uil-calendar-alt">{time}</i>
+          <div className="qualification__calender">
+            <CalendarDays size={14} />
+            {time}
+          </div>
         </div>
       </div>
     </div>

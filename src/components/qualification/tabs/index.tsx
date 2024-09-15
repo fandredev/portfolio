@@ -1,43 +1,44 @@
+import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
+import { ReactNode } from 'react';
+
+export type TabsVariants = 'education' | 'experience';
+
 interface TabsProps {
-  id: string;
-  icon: string;
+  id: TabsVariants;
+  icon: ReactNode;
   title: string;
 }
 
 export const tabs: TabsProps[] = [
   {
-    id: 'education',
-    icon: 'uil uil-graduation-cap',
-    title: 'Educação',
+    id: 'experience',
+    icon: <BriefcaseBusiness />,
+    title: 'Experiência',
   },
   {
-    id: 'experience',
-    icon: 'uil uil-briefcase-alt',
-    title: 'Experiência',
+    id: 'education',
+    icon: <GraduationCap />,
+    title: 'Educação',
   },
 ];
 
 export default function Tab({
   icon,
   title,
-  tabEducation,
+  isActiveTab,
   handleToggleTab,
 }: Pick<TabsProps, 'icon' | 'title'> & {
-  tabEducation: boolean;
+  isActiveTab: boolean;
   handleToggleTab: () => void;
 }) {
   return (
     <div
       className={`qualification__button button--flex ${
-        tabEducation ? 'qualification__active' : ''
+        isActiveTab ? 'qualification__active' : ''
       }`}
-      onClick={() => handleToggleTab()}
+      onClick={handleToggleTab}
     >
-      <i
-        className={`
-        "${icon} qualification__icon"
-        `}
-      ></i>
+      <span className="qualification__icon">{icon}</span>
       {title}
     </div>
   );

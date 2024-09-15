@@ -1,20 +1,23 @@
+import { Award, BriefcaseBusiness, Headset } from 'lucide-react';
+import { ReactNode } from 'react';
+
 interface InformationBoxProps {
-  icon: string;
+  icon: ReactNode;
   title: string;
 }
 
 const informations: InformationBoxProps[] = [
   {
-    icon: 'bx bx-award',
+    icon: <Award size={18} color="#000" />,
     title: '4 anos como desenvolvedor',
   },
   {
-    icon: 'bx bx-briefcase-alt',
+    icon: <BriefcaseBusiness size={18} color="#000" />,
     title: '+16 projetos concluídos',
   },
   {
-    icon: 'bx bx-support',
-    title: 'Online e presencial',
+    icon: <Headset size={18} color="#000" />,
+    title: 'Remoto e presencial',
   },
 ];
 
@@ -31,11 +34,7 @@ export default function Informations() {
 function InformationBox({ icon, title }: InformationBoxProps) {
   return (
     <div className="about__box">
-      <i
-        className={`
-        ${icon} about__icon
-        `}
-      ></i>
+      {icon}
       <h3 className="about__title">
         <span className="about__subtitle">{title}</span>
       </h3>

@@ -1,23 +1,31 @@
+import { BadgeCheck } from 'lucide-react';
+import { SkillsProps } from '.';
+
 type FrontendNameSkills =
   | 'HTML'
   | 'CSS'
+  | 'Sass'
   | 'Typescript'
+  | 'Angular 9'
   | 'Bootstrap'
   | 'Git'
-  | 'React';
+  | 'React'
+  | 'Redux';
 
-interface FrontendSkills {
+interface FrontendSkills extends SkillsProps<FrontendNameSkills> {
   name: FrontendNameSkills;
   level: string;
 }
 
-const languagesAndTools: FrontendSkills[] = [
-  { name: 'HTML', level: 'Avançado' },
-  { name: 'CSS', level: 'Intermediário' },
-  { name: 'Typescript', level: 'Intermediário' },
-  { name: 'Bootstrap', level: 'Intermediário' },
-  { name: 'Git', level: 'Intermediário' },
-  { name: 'React', level: 'Intermediário' },
+const tools: FrontendSkills[] = [
+  { name: 'HTML', level: '4 anos de uso' },
+  { name: 'CSS', level: '4 anos de uso' },
+  { name: 'Sass', level: '3 anos de uso' },
+  { name: 'Bootstrap', level: '3 anos de uso' },
+  { name: 'Typescript', level: '2 anos de uso' },
+  { name: 'Angular 9', level: '3 anos de uso' },
+  { name: 'React', level: '3 anos de uso' },
+  { name: 'Redux', level: '1 ano de uso' },
 ];
 
 export default function Frontend() {
@@ -26,13 +34,13 @@ export default function Frontend() {
       <h3 className="skills__title">Front-end developer</h3>
       <div className="skills__box">
         <div className="skills__group">
-          {languagesAndTools.map((skill) => (
-            <div className="skills__data" key={skill.name}>
-              <i className="bx bx-badge-check"></i>
+          {tools.map(({ name, level }) => (
+            <div className="skills__data" key={name}>
+              <BadgeCheck size={18} color="#000" />
 
               <div>
-                <h3 className="skills__name">{skill.name}</h3>
-                <span className="skills__level">{skill.level}</span>
+                <h3 className="skills__name">{name}</h3>
+                <span className="skills__level">{level}</span>
               </div>
             </div>
           ))}

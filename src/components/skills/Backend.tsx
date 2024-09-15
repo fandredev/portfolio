@@ -1,15 +1,18 @@
-type BackendNameSkills = 'Python' | 'Django' | 'Postgresql' | 'Vercel';
+import { BadgeCheck } from 'lucide-react';
+import { SkillsProps } from '.';
 
-interface BackendSkills {
+type BackendNameSkills = 'Python' | 'Django' | 'Postgres' | 'Vercel';
+
+interface BackendSkills extends SkillsProps<BackendNameSkills> {
   name: BackendNameSkills;
   level: string;
 }
 
-const languagesAndTools: BackendSkills[] = [
-  { name: 'Python', level: 'Avançado' },
-  { name: 'Django', level: 'Intermediário' },
-  { name: 'Postgresql', level: 'Intermediário' },
-  { name: 'Vercel', level: 'Intermediário' },
+const tools: BackendSkills[] = [
+  { name: 'Python', level: '3 anos' },
+  { name: 'Django', level: '3 anos' },
+  { name: 'Postgres', level: '2 anos' },
+  { name: 'Vercel', level: '7 meses' },
 ];
 
 export default function Backend() {
@@ -18,13 +21,13 @@ export default function Backend() {
       <h3 className="skills__title">Back-end developer</h3>
       <div className="skills__box">
         <div className="skills__group">
-          {languagesAndTools.map((skill) => (
-            <div className="skills__data" key={skill.name}>
-              <i className="bx bx-badge-check"></i>
+          {tools.map(({ name, level }) => (
+            <div className="skills__data" key={name}>
+              <BadgeCheck size={18} color="#000" />
 
               <div>
-                <h3 className="skills__name">{skill.name}</h3>
-                <span className="skills__level">{skill.level}</span>
+                <h3 className="skills__name">{name}</h3>
+                <span className="skills__level">{level}</span>
               </div>
             </div>
           ))}

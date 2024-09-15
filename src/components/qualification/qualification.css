@@ -4,7 +4,8 @@
 .qualification__tabs {
   display: flex;
   justify-content: center;
-  margin-bottom: var(--mb-2)
+  margin-bottom: var(--mb-2);
+  gap: 15px;
 }
 .qualification__button {
   font-size: var(--h3-font-size);
@@ -17,15 +18,14 @@
   color: var(--title-color-dark);
 }
 .qualification__icon {
-  font-size: 1.8rem;
-  margin-right: var(--mb-0-25);
+  font-size: 1rem;
+  margin-right: var(--mb-0-5);
 }
 .qualification__active {
-  color: var(--title-color-dark)
+  color: #4169E1
 }
 .qualification__sections {
-  display: grid;
-  grid-template-columns: 0.5fr;
+  display: flex;
   justify-content: center;
 }
 
@@ -36,10 +36,7 @@
   display: block;
 }
 .qualification__data {
-  display: grid;
-  grid-template-columns: 1fr max-content 1fr;
-  column-gap: 1.5rem;
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
 .qualification__title {
   font-size: var(--normal-font-size);
@@ -51,4 +48,7 @@
 }
 .qualification__calender {
   font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  gap: 4px;
 }

@@ -1,3 +1,5 @@
+import { ArrowDown } from 'lucide-react';
+
 export default function ScrollDown() {
   return (
     <div className="home__scroll">
@@ -38,7 +40,7 @@ export default function ScrollDown() {
           ></path>
         </svg>
         <span className="home__scroll-name">Role para baixo</span>
-        <i className="uil uil-arrow-down home__scroll-arrow"></i>
+        <ArrowDown color="#000" />
       </a>
     </div>
   );

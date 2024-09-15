@@ -1,18 +1,18 @@
 import { useState } from 'react';
-import './qualification.css';
-import QualificationExperience from './experiences';
-import Tab, { tabs } from './tabs';
+import Tab, { tabs, TabsVariants } from './tabs';
 import Education from './education';
+import QualificationExperience from './experiences';
+import './qualification.css';
 
-export default function Qualification() {
-  const [tabEducation, setTabEducation] = useState(true);
+function Qualification() {
+  const [activeTab, setActiveTab] = useState<TabsVariants>('experience');
 
-  function toggleTab() {
-    setTabEducation(!tabEducation);
+  function toggleTab(tab: TabsVariants) {
+    setActiveTab(tab);
   }
 
   return (
-    <section className="qualification section">
+    <section className="qualification section" id="qualification">
       <h2 className="section__title">Qualificação</h2>
       <span className="section__subtitle">Minha jornada profissional</span>
 
@@ -21,16 +21,24 @@ export default function Qualification() {
           {tabs.map((tab) => (
             <Tab
               key={tab.id}
-              {...tab}
-              tabEducation={tabEducation}
-              handleToggleTab={toggleTab}
+              icon={tab.icon}
+              title={tab.title}
+              isActiveTab={activeTab === tab.id}
+              handleToggleTab={() => toggleTab(tab.id)}
             />
           ))}
         </div>
+
         <div className="qualification__sections">
-          {tabEducation ? <Education /> : <QualificationExperience />}
+          {activeTab === 'education' ? (
+            <Education />
+          ) : (
+            <QualificationExperience />
+          )}
         </div>
       </div>
     </section>
   );
 }
+
+export default Qualification;

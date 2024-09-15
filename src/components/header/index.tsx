@@ -1,41 +1,51 @@
-import { useState } from 'react';
+import { ReactNode, useState } from 'react';
 import './header.css';
+import {
+  BookOpenText,
+  Briefcase,
+  BriefcaseBusiness,
+  CircleChevronUp,
+  CircleX,
+  Contact,
+  House,
+  User,
+} from 'lucide-react';
 
 interface HeaderItemProps {
   href: string;
-  icon: string;
+  icon: ReactNode;
   text: string;
 }
 
 const headerItems: HeaderItemProps[] = [
   {
     href: '#home',
-    icon: 'uil uil-estate',
+    icon: <House size={16} color={'#000'} />,
     text: 'Inicio',
   },
   {
     href: '#about',
-    icon: 'uil uil-user',
+    icon: <User size={16} color={'#000'} />,
     text: 'Sobre',
   },
   {
     href: '#skills',
-    icon: 'uil uil-file-alt',
+    icon: <BookOpenText size={16} color={'#000'} />,
     text: 'Skills',
   },
   {
     href: '#services',
-    icon: 'uil uil-briefcase-alt',
+    icon: <BriefcaseBusiness size={16} color={'#000'} />,
     text: 'Serviços',
   },
   {
-    href: 'portfolio',
-    icon: 'uil uil-scenery',
-    text: 'Portfolio',
+    href: '#qualification',
+    icon: <Briefcase size={16} color={'#000'} />,
+    text: 'Qualificações',
   },
   {
     href: '#contact',
-    icon: 'uil uil-message',
+    icon: <Contact size={16} color={'#000'} />,
     text: 'Contate-me',
   },
 ];
@@ -64,10 +74,10 @@ export default function Header() {
             ))}
           </ul>
 
-          <i className="uil uil-times nav__close" onClick={closeMenu}></i>
+          <CircleX size={18} onClick={closeMenu} className="nav__close" />
         </div>
         <div className="nav__toggle" onClick={showMenu}>
-          <i className="uil uil-apps"></i>
+          <CircleChevronUp size={18} />
         </div>
       </nav>
     </header>
@@ -78,11 +88,7 @@ function HeaderItem({ href, icon, text }: HeaderItemProps) {
   return (
     <li className="nav__item">
       <a href={href} className="nav__link">
-        <i
-          className={`
-          ${icon} nav__icon
-          `}
-        ></i>
+        <div className="nav__icon">{icon}</div>
         {text}
       </a>
     </li>

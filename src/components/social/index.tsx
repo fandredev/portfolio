@@ -1,3 +1,5 @@
+import { Github, Linkedin } from 'lucide-react';
+
 export default function Social() {
   return (
     <div className="home__social">
@@ -6,14 +8,14 @@ export default function Social() {
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-github-alt"></i>
+        <Github size={20} />
       </a>
       <a
         href="https://www.linkedin.com/in/devfandre/"
         className="home__social-icon"
         target="_blank"
       >
-        <i className="uil uil-linkedin"></i>
+        <Linkedin size={20} strokeWidth={1.5} />
       </a>
     </div>
   );

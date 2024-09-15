@@ -1,3 +1,5 @@
+import { CalendarDays } from 'lucide-react';
+
 type QualificationExperienceCompanyName =
   | 'Luby'
   | '4you2 idiomas'
@@ -33,12 +35,13 @@ const qualificationExperiences: QualificationExperiencesProps[] = [
   },
 ];
 
+const qualificationExperiencesReverse = [...qualificationExperiences].reverse();
+
 export default function QualificationExperience() {
-  const qualificationExperiencesReverse = qualificationExperiences.reverse();
   return (
     <div className="qualification__content">
-      {qualificationExperiencesReverse.map((expierence, index) => (
-        <QualificationExperiencesItem key={index} {...expierence} />
+      {qualificationExperiencesReverse.map((experience, index) => (
+        <QualificationExperiencesItem key={index} {...experience} />
       ))}
     </div>
   );
@@ -55,7 +58,8 @@ function QualificationExperiencesItem({
         <h3 className="qualification__title">{charger}</h3>
         <span className="qualification__subtitle">{company}</span>
         <div className="qualification__calender">
-          <i className="uil uil-calendar-alt">{time}</i>
+          <CalendarDays size={14} />
+          {time}
         </div>
       </div>
     </div>
