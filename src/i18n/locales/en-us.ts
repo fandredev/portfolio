@@ -19,6 +19,7 @@ export default {
       quantity_projects_completed: '+16 projects completed',
       how_i_work: 'Remote and in person',
       skills_subtitle: 'My technical level in programming',
+      loading: 'Loading...',
     },
     tests: {
       title: 'Tests',
@@ -61,6 +62,15 @@ export default {
       form: {
         fill_name: 'Please enter your name',
         fill_email: 'Please enter your best email',
+        fill_message: 'Please enter your message',
+
+        messages: {
+          error_send_email:
+            'Error sending email, please try again later or contact me by my social networks.',
+
+          success_send_email:
+            'Email sent successfully! Thank you for contacting me.',
+        },
       },
     },
     // Accesibility
