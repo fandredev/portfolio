@@ -13,7 +13,7 @@ export default function DescriptionWithMe() {
       </p>
 
       <a
-        href="https://api.whatsapp.com/send?phone=551397813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
+        href="https://api.whatsapp.com/send?phone=11973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
         target="_blank"
         className="button button--flex say-hello"
       >
