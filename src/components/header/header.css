@@ -18,10 +18,15 @@
   color: var(--title-color);
   font-weight: var(--font-medium);
 }
+.nav__menu {
+  display: flex;
+  align-items: center;
+}
 
 .nav__list {
   display: flex;
   column-gap: 2rem;
+  margin-right: 10px;
 }
 .nav__link {
   display: flex;
@@ -61,6 +66,7 @@
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
     border-radius: 1.5 1.5rem 0 0;
     transition: .3s;
+
   }
   /* Show menu */
   .show-menu {

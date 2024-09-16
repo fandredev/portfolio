@@ -1,0 +1,31 @@
+.flag-container {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.flag-image {
+  border: 2px solid transparent;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+  width: 32px;
+  height: auto;
+}
+
+.flag-container.selected .flag-image {
+  border-color: blue;
+}
+
+.flag-image:hover {
+  border-color: gray;
+}
+
+@media (min-width: 768px) {
+  .flag-image {
+    width: 40px;
+  }
+}

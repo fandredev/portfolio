@@ -10,43 +10,45 @@ import {
   House,
   User,
 } from 'lucide-react';
+import Translator from '../../hooks/use-translator';
+import I18n from '../change-language';
 
 interface HeaderItemProps {
   href: string;
   icon: ReactNode;
-  text: string;
+  text: ReactNode;
 }
 
 const headerItems: HeaderItemProps[] = [
   {
     href: '#home',
     icon: <House size={16} color={'#000'} />,
-    text: 'Inicio',
+    text: <Translator path="home.beginning" />,
   },
   {
     href: '#about',
     icon: <User size={16} color={'#000'} />,
-    text: 'Sobre',
+    text: <Translator path="home.about" />,
   },
   {
     href: '#skills',
     icon: <BookOpenText size={16} color={'#000'} />,
-    text: 'Skills',
+    text: <Translator path="home.skills" />,
   },
   {
     href: '#services',
     icon: <BriefcaseBusiness size={16} color={'#000'} />,
-    text: 'Serviços',
+    text: <Translator path="home.services" />,
   },
   {
     href: '#qualification',
     icon: <Briefcase size={16} color={'#000'} />,
-    text: 'Qualificações',
+    text: <Translator path="home.qualifications" />,
   },
   {
     href: '#contact',
     icon: <Contact size={16} color={'#000'} />,
-    text: 'Contate-me',
+    text: <Translator path="home.contacts" />,
   },
 ];
 
@@ -73,6 +75,7 @@ export default function Header() {
               <HeaderItem key={index} {...item} />
             ))}
           </ul>
+          <I18n />
 
           <CircleX size={18} onClick={closeMenu} className="nav__close" />
         </div>
