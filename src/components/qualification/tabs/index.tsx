@@ -1,24 +1,25 @@
 import { BriefcaseBusiness, GraduationCap } from 'lucide-react';
 import { ReactNode } from 'react';
+import Translator from '../../../hooks/use-translator';
 
 export type TabsVariants = 'education' | 'experience';
 
 interface TabsProps {
   id: TabsVariants;
   icon: ReactNode;
-  title: string;
+  title: ReactNode;
 }
 
 export const tabs: TabsProps[] = [
   {
     id: 'experience',
     icon: <BriefcaseBusiness />,
-    title: 'Experiência',
+    title: <Translator path="tabs.experience" />,
   },
   {
     id: 'education',
     icon: <GraduationCap />,
-    title: 'Educação',
+    title: <Translator path="tabs.education" />,
   },
 ];
 

@@ -8,7 +8,7 @@ import './image-language.css';
 export type Languages = 'pt-BR' | 'en-US';
 
 export default function I18n() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation();
 
   function handleChangeLanguage(language: Languages) {
     i18n.changeLanguage(language);
@@ -22,13 +22,13 @@ export default function I18n() {
         image={FlagBrazil}
         isSelected={selectedLanguage === 'pt-BR'}
         onChangeLanguage={() => handleChangeLanguage('pt-BR')}
-        altText="Brazil Flag"
+        altText={t('alt_image.flag_brazil')}
       />
       <ImageLanguage
         image={FlagEUA}
         isSelected={selectedLanguage === 'en-US'}
         onChangeLanguage={() => handleChangeLanguage('en-US')}
-        altText="USA Flag"
+        altText={t('alt_image.flag_united_states')}
       />
     </>
   );

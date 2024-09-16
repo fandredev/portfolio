@@ -1,4 +1,6 @@
 import { CalendarDays } from 'lucide-react';
+import Translator from '../../../hooks/use-translator';
+import { ReactNode } from 'react';
 
 type QualificationExperienceCompanyName =
   | 'Luby'
@@ -8,30 +10,30 @@ type QualificationExperienceCompanyName =
 
 interface QualificationExperiencesProps {
   company: QualificationExperienceCompanyName;
-  charger: string;
+  charger: ReactNode;
   time: string;
 }
 
 const qualificationExperiences: QualificationExperiencesProps[] = [
   {
     company: 'Luby',
-    charger: 'Programador Júnior',
+    charger: <Translator path="experiences.junior_developer" />,
     time: 'Ago 2019 - Jul 2020',
   },
   {
     company: '4you2 idiomas',
-    charger: 'Programador Júnior',
+    charger: <Translator path="experiences.junior_developer" />,
     time: 'Set 2020 - Jan 2021',
   },
   {
     company: 'Zapsign',
-    charger: 'Desenvolvedor Full-Stack Pleno',
+    charger: <Translator path="experiences.pleno_full_stack_developer" />,
     time: 'Dez 2020 - Jan 2024',
   },
   {
     company: 'Nan Systems',
-    charger: 'Desenvolvedor Full-Stack Pleno',
-    time: 'Fev 2024 - atual',
+    charger: <Translator path="experiences.pleno_full_stack_developer" />,
+    time: `Fev 2024 - atual`,
   },
 ];
 
