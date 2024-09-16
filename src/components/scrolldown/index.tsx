@@ -1,4 +1,5 @@
 import { ArrowDown } from 'lucide-react';
+import Translator from '../../hooks/use-translator';
 
 export default function ScrollDown() {
   return (
@@ -39,7 +40,9 @@ export default function ScrollDown() {
             }}
           ></path>
         </svg>
-        <span className="home__scroll-name">Role para baixo</span>
+        <span className="home__scroll-name">
+          <Translator path="home.scroll_down" />
+        </span>
         <ArrowDown color="#000" />
       </a>
     </div>

@@ -1,42 +1,43 @@
 import { Award, BriefcaseBusiness, Headset } from 'lucide-react';
 import { ReactNode } from 'react';
+import Translator from '../../hooks/use-translator';
 
 interface InformationBoxProps {
   icon: ReactNode;
-  title: string;
+  text: ReactNode;
 }
 
 const informations: InformationBoxProps[] = [
   {
     icon: <Award size={18} color="#000" />,
-    title: '4 anos como desenvolvedor',
+    text: <Translator path="home.years_as_developer" />,
   },
   {
     icon: <BriefcaseBusiness size={18} color="#000" />,
-    title: '+16 projetos concluídos',
+    text: <Translator path="home.quantity_projects_completed" />,
   },
   {
     icon: <Headset size={18} color="#000" />,
-    title: 'Remoto e presencial',
+    text: <Translator path="home.how_i_work" />,
   },
 ];
 
 export default function Informations() {
   return (
     <div className="about__info grid">
-      {informations.map((info) => (
-        <InformationBox key={info.title} {...info} />
+      {informations.map((info, index) => (
+        <InformationBox key={index} {...info} />
       ))}
     </div>
   );
 }
 
-function InformationBox({ icon, title }: InformationBoxProps) {
+function InformationBox({ icon, text }: InformationBoxProps) {
   return (
     <div className="about__box">
       {icon}
       <h3 className="about__title">
-        <span className="about__subtitle">{title}</span>
+        <span className="about__subtitle">{text}</span>
       </h3>
     </div>
   );
