@@ -1,19 +1,25 @@
 import { CalendarDays } from 'lucide-react';
+import Translator from '../../../hooks/use-translator';
+import { ReactNode } from 'react';
 
 interface QualificationEducationProps {
-  course: string;
+  course: ReactNode;
   locality: string;
   time: string;
 }
 
 const qualificationEducations: QualificationEducationProps[] = [
   {
-    course: 'Assistente de desenvolvimento de aplicativos computacionais',
+    course: (
+      <Translator path="education.assistente_de_desenvolvimento_de_aplicativos_computacionais" />
+    ),
     locality: 'Senac Lapa Tito - SP',
     time: '2019 - 2020',
   },
   {
-    course: 'Assistente de operação de redes de computadores',
+    course: (
+      <Translator path="education.assistente_de_operacao_de_redes_de_computadores" />
+    ),
     locality: 'Senac Lapa Tito - SP',
     time: '2018 - 2019',
   },

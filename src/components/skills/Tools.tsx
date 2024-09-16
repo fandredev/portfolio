@@ -1,3 +1,5 @@
+import Translator from '../../hooks/use-translator';
+
 type ToolsSkillsName =
   | 'npm & yarn'
   | 'postman'
@@ -50,7 +52,9 @@ const tools: ToolsSkills[] = [
 export default function Tools() {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Ferramentas do dia a dia</h3>
+      <h3 className="skills__title">
+        <Translator path="tools.tools_day_by_day" />
+      </h3>
       <div className="skills__box">
         <div className="skills__group">
           {tools.map(({ name }) => (

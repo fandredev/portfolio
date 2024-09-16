@@ -19,6 +19,44 @@ export default {
       years_as_developer: '4 anos como desenvolvedor',
       quantity_projects_completed: '+16 projetos concluídos',
       how_i_work: 'Remoto e presencial',
+      skills_subtitle: 'Meu nível técnico em programação',
+    },
+    tests: {
+      title: 'Testes',
+    },
+    tools: {
+      tools_day_by_day: 'Ferramentas do dia a dia',
+      four_years_of_use: '4 anos de uso',
+      three_years_of_use: '3 anos de uso',
+      two_years_of_use: '2 anos de uso',
+      one_year_of_use: '1 ano de uso',
+      seven_months_of_use: '7 meses',
+    },
+    education: {
+      assistente_de_desenvolvimento_de_aplicativos_computacionais:
+        'Assistente de desenvolvimento de aplicativos computacionais',
+      assistente_de_operacao_de_redes_de_computadores:
+        'Assistente de operação de redes de computadores',
+    },
+    experiences: {
+      junior_developer: 'Programador Júnior',
+      pleno_full_stack_developer: 'Desenvolvedor Full-Stack Pleno',
+      actual: 'Atual',
+    },
+    qualification: {
+      title: 'Qualificação',
+      subtitle: 'Minha jornada profissional',
+    },
+    tabs: {
+      experience: 'Experiência',
+      education: 'Educação',
+    },
+
+    // Accesibility
+
+    alt_image: {
+      flag_brazil: 'Bandeira do Brasil',
+      flag_united_states: 'Bandeira dos Estados Unidos',
     },
   },
 };

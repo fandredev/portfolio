@@ -3,6 +3,7 @@ import Tab, { tabs, TabsVariants } from './tabs';
 import Education from './education';
 import QualificationExperience from './experiences';
 import './qualification.css';
+import Translator from '../../hooks/use-translator';
 
 function Qualification() {
   const [activeTab, setActiveTab] = useState<TabsVariants>('experience');
@@ -13,8 +14,12 @@ function Qualification() {
 
   return (
     <section className="qualification section" id="qualification">
-      <h2 className="section__title">Qualificação</h2>
-      <span className="section__subtitle">Minha jornada profissional</span>
+      <h2 className="section__title">
+        <Translator path="qualification.title" />
+      </h2>
+      <span className="section__subtitle">
+        <Translator path="qualification.subtitle" />
+      </span>
 
       <div className="qualification__container container">
         <div className="qualification__tabs">

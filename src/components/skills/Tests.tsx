@@ -1,25 +1,29 @@
 import { BookOpenText } from 'lucide-react';
 import { SkillsProps } from '.';
+import Translator from '../../hooks/use-translator';
+import { ReactNode } from 'react';
 
 type ToolsSkills = 'pytest' | 'unittest' | 'cypress' | 'jest' | 'vitest';
 
 interface Tools extends SkillsProps<ToolsSkills> {
   name: ToolsSkills;
-  level: string;
+  level: ReactNode;
 }
 
 const tools: Tools[] = [
-  { name: 'pytest', level: '2 anos de uso' },
-  { name: 'unittest', level: '2 anos de uso' },
-  { name: 'cypress', level: '1 ano de uso' },
-  { name: 'jest', level: '2 anos de uso' },
-  { name: 'vitest', level: '1 ano de uso' },
+  { name: 'pytest', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'unittest', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'cypress', level: <Translator path="tools.one_year_of_use" /> },
+  { name: 'jest', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'vitest', level: <Translator path="tools.one_year_of_use" /> },
 ];
 
 export default function Tests() {
   return (
     <div className="skills__content">
-      <h3 className="skills__title">Testes</h3>
+      <h3 className="skills__title">
+        <Translator path="tests.title" />
+      </h3>
       <div className="skills__box">
         <div className="skills__group">
           {tools.map(({ name, level }) => (

@@ -1,5 +1,7 @@
 import { BadgeCheck } from 'lucide-react';
 import { SkillsProps } from '.';
+import Translator from '../../hooks/use-translator';
+import { ReactNode } from 'react';
 
 type FrontendNameSkills =
   | 'HTML'
@@ -14,18 +16,18 @@ type FrontendNameSkills =
 
 interface FrontendSkills extends SkillsProps<FrontendNameSkills> {
   name: FrontendNameSkills;
-  level: string;
+  level: ReactNode;
 }
 
 const tools: FrontendSkills[] = [
-  { name: 'HTML', level: '4 anos de uso' },
-  { name: 'CSS', level: '4 anos de uso' },
-  { name: 'Sass', level: '3 anos de uso' },
-  { name: 'Bootstrap', level: '3 anos de uso' },
-  { name: 'Typescript', level: '2 anos de uso' },
-  { name: 'Angular 9', level: '3 anos de uso' },
-  { name: 'React', level: '3 anos de uso' },
-  { name: 'Redux', level: '1 ano de uso' },
+  { name: 'HTML', level: <Translator path="tools.four_years_of_use" /> },
+  { name: 'CSS', level: <Translator path="tools.four_years_of_use" /> },
+  { name: 'Sass', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'Bootstrap', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'Typescript', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'Angular 9', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'React', level: <Translator path="tools.two_years_of_use" /> },
+  { name: 'Redux', level: <Translator path="tools.one_year_of_use" /> },
 ];
 
 export default function Frontend() {
