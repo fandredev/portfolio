@@ -20,6 +20,7 @@ export default {
       quantity_projects_completed: '+16 projetos concluídos',
       how_i_work: 'Remoto e presencial',
       skills_subtitle: 'Meu nível técnico em programação',
+      loading: 'Carregando...',
     },
     tests: {
       title: 'Testes',
@@ -62,6 +63,14 @@ export default {
       form: {
         fill_name: 'Por favor, insira seu nome',
         fill_email: 'Por favor, insira seu melhor email',
+        fill_message: 'Por favor, insira sua mensagem',
+
+        messages: {
+          error_send_email:
+            'Erro ao enviar email, por favor tente novamente mais tarde ou entre em contato comigo pelas minhas redes sociais.',
+          success_send_email:
+            'Email enviado com sucesso! Obrigado por entrar em contato.',
+        },
       },
     },
 

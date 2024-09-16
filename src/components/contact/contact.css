@@ -41,7 +41,8 @@
 }
 .contact__card-data {
   display: block;
-  margin-bottom: var(--mb-0-75)
+  margin-bottom: var(--mb-0-75);
+  font-size: var(--smaller-font-size);
 }
 .contact__button {
   color: var(--text-color);
@@ -79,6 +80,9 @@
   border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 1
+}
+.contact__form textarea {
+  resize: none
 }
 .contact__form-tag {
   top: -0.75rem;

@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify';
 import About from './components/about';
 import Contact from './components/contact';
 import Footer from './components/footer';
@@ -11,6 +12,13 @@ export default function Portfolio() {
   return (
     <>
       <Header />
+      <ToastContainer
+        position="top-right"
+        autoClose={4000}
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
       <main className="main">
         <Home />
         <About />
