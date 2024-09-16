@@ -11,6 +11,8 @@
 - [Lucide](https://lucide.dev/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Hook Form](https://react-hook-form.com/)
+- [zod](https://zod.dev/)
+- [EmailJS](https://www.emailjs.com/)
 - [asdf](https://asdf-vm.com/)
 
 ## Clone this repo
