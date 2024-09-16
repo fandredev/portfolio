@@ -1,8 +1,8 @@
 import './home.css';
 
-import Social from '../social';
-import ScrollDown from '../scrolldown';
 import DescriptionWithMe from '../description-with-me';
+import ScrollDown from '../scrolldown';
+import Social from '../social';
 
 export default function Home() {
   return (

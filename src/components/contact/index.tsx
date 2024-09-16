@@ -3,8 +3,8 @@ import { FaWhatsapp } from 'react-icons/fa';
 
 import './contact.css';
 import CardContact from './card-contact';
-import Translator from '../../hooks/use-translator';
 import FormContact from './form-contact';
+import Translator from '../../hooks/use-translator';
 
 export default function Contact() {
   return (

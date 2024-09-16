@@ -1,7 +1,7 @@
+import { ReactNode } from 'react';
 import { BookOpenText } from 'lucide-react';
 import { SkillsProps } from '.';
 import Translator from '../../hooks/use-translator';
-import { ReactNode } from 'react';
 
 type ToolsSkills = 'pytest' | 'unittest' | 'cypress' | 'jest' | 'vitest';
 

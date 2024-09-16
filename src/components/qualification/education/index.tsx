@@ -1,6 +1,6 @@
+import { ReactNode } from 'react';
 import { CalendarDays } from 'lucide-react';
 import Translator from '../../../hooks/use-translator';
-import { ReactNode } from 'react';
 
 interface QualificationEducationProps {
   course: ReactNode;

@@ -1,5 +1,5 @@
-import { Award, BriefcaseBusiness, Headset } from 'lucide-react';
 import { ReactNode } from 'react';
+import { Award, BriefcaseBusiness, Headset } from 'lucide-react';
 import Translator from '../../hooks/use-translator';
 
 interface InformationBoxProps {

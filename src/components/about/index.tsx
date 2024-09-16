@@ -1,10 +1,10 @@
 import { ScrollText } from 'lucide-react';
-import Me from '../../assets/me.jpeg';
 import CV from '../../assets/curriculum-vitae.pdf';
+import Me from '../../assets/me.jpeg';
+import Translator from '../../hooks/use-translator';
 import Informations from '../informations';
 
 import './about.css';
-import Translator from '../../hooks/use-translator';
 
 export default function About() {
   return (
