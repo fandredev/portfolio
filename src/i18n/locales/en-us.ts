@@ -51,6 +51,19 @@ export default {
       education: 'Education',
     },
 
+    contact: {
+      send_email: 'Send email',
+      send_message: 'Send message',
+      title: 'Get in touch',
+      subtitle: 'Contact me',
+      send: 'Send',
+
+      form: {
+        fill_name: 'Please enter your name',
+        fill_email: 'Please enter your best email',
+      },
+    },
+    // Accesibility
     alt_image: {
       flag_brazil: 'Brazil flag',
       flag_united_states: 'United States flag',

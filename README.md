@@ -1,6 +1,7 @@
 ![image](https://github.com/user-attachments/assets/7f7b882d-bb64-4431-baf8-26f42b49c5f9)
 
 # Stack used
+
 <img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions" />
 
 ### Other tools:
@@ -8,6 +9,7 @@
 - [Prettier](https://eslint.org/)
 - [Eslint](https://prettier.io/)
 - [Lucide](https://lucide.dev/)
+- [React Icons](https://react-icons.github.io/react-icons/)
 - [asdf](https://asdf-vm.com/)
 
 ## Clone this repo

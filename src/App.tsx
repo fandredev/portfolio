@@ -1,4 +1,5 @@
 import About from './components/about';
+import Contact from './components/contact/contact';
 import Footer from './components/footer';
 import Header from './components/header';
 import Home from './components/home';
@@ -15,6 +16,7 @@ export default function Portfolio() {
         <About />
         <Skills />
         <Qualification />
+        <Contact />
       </main>
       <Footer />
       <ScrollUp />

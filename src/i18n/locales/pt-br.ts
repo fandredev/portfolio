@@ -52,6 +52,19 @@ export default {
       education: 'Educação',
     },
 
+    contact: {
+      send_email: 'Enviar email',
+      send_message: 'Enviar mensagem',
+      title: 'Entre em contato',
+      subtitle: 'Contate-me',
+      send: 'Enviar',
+
+      form: {
+        fill_name: 'Por favor, insira seu nome',
+        fill_email: 'Por favor, insira seu melhor email',
+      },
+    },
+
     // Accesibility
 
     alt_image: {
