@@ -1,3 +1,7 @@
+.contact__form-message-email-sended {
+  text-align: justify;
+}
+
 .contact__container {
   grid-template-columns: repeat(2, max-content);
   justify-content: center;

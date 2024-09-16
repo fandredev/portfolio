@@ -7,17 +7,21 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { ContactSchema, formContactSchema } from './schemas/contact-schema';
 
 import emailjs from '@emailjs/browser';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { toast } from 'react-toastify';
 
 const serviceId = import.meta.env.VITE_SERVICE_EMAIL_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_EMAIL_ID;
 const apiPublicKeyEmail = import.meta.env.VITE_EMAIL_API_KEY;
 
+const today = new Date().toLocaleDateString();
+
 export default function FormContact() {
   const { t } = useTranslation();
   const formRef = useRef<HTMLFormElement | null>(null);
   const [loadingForm, setLoadingForm] = useState(false);
+  const [blockUserResendEmailToday, setBlockUserResendEmailToday] =
+    useState(false);
 
   const {
     register,
@@ -44,6 +48,9 @@ export default function FormContact() {
       })
       .then(() => {
         toast.success(t('contact.form.messages.success_send_email'));
+
+        localStorage.setItem('lastSentDate', today);
+        setBlockUserResendEmailToday(true);
       })
       .catch(() => {
         toast.error(t('contact.form.messages.error_send_email'));
@@ -54,58 +61,80 @@ export default function FormContact() {
       });
   }
 
-  return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className="contact__form"
-      ref={formRef}
-    >
-      <div className="container__form-div">
-        <input
-          aria-invalid={errors.name ? 'true' : 'false'}
-          type="text"
-          className="contact__form-input"
-          placeholder={t('contact.form.fill_name')}
-          {...register('name', {
-            required: true,
-          })}
-        />
-      </div>
-      <div className="container__form-div">
-        <input
-          type="email"
-          className="contact__form-input"
-          placeholder={t('contact.form.fill_email')}
-          {...register('email', { required: true })}
-          aria-invalid={errors.email ? 'true' : 'false'}
-        />
-      </div>
-      <div className="container__form-div">
-        <textarea
-          cols={10}
-          rows={5}
-          className="contact__form-input"
-          placeholder={t('contact.form.fill_message')}
-          {...register('message', {
-            required: true,
-          })}
-          aria-invalid={errors.message ? 'true' : 'false'}
-        />
-      </div>
+  useEffect(() => {
+    const lastSentDate = localStorage.getItem('lastSentDate');
+    if (lastSentDate === today) setBlockUserResendEmailToday(true);
+  }, []);
 
-      <button
-        className="button send-message-button"
-        disabled={!isDirty || !isValid}
-      >
-        {loadingForm ? (
-          <Translator path="home.loading" />
+  return (
+    <>
+      <h3 className="contact__title">
+        {blockUserResendEmailToday ? (
+          <Translator path="contact.form.messages.thank_you_for_contacting_me" />
         ) : (
-          <>
-            <Translator path="contact.send" />
-            <ArrowRight size={24} />
-          </>
+          <Translator path="contact.send_email" />
         )}
-      </button>
-    </form>
+      </h3>
+      {blockUserResendEmailToday ? (
+        <div className="contact__form">
+          <p className="contact__form-message-email-sended">
+            <Translator path="contact.form.messages.block_resend_email" />
+          </p>
+        </div>
+      ) : (
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="contact__form"
+          ref={formRef}
+        >
+          <div className="container__form-div">
+            <input
+              aria-invalid={errors.name ? 'true' : 'false'}
+              type="text"
+              className="contact__form-input"
+              placeholder={t('contact.form.fill_name')}
+              {...register('name', {
+                required: true,
+              })}
+            />
+          </div>
+          <div className="container__form-div">
+            <input
+              type="email"
+              className="contact__form-input"
+              placeholder={t('contact.form.fill_email')}
+              {...register('email', { required: true })}
+              aria-invalid={errors.email ? 'true' : 'false'}
+            />
+          </div>
+          <div className="container__form-div">
+            <textarea
+              cols={10}
+              rows={5}
+              className="contact__form-input"
+              placeholder={t('contact.form.fill_message')}
+              {...register('message', {
+                required: true,
+              })}
+              aria-invalid={errors.message ? 'true' : 'false'}
+            />
+          </div>
+
+          <button
+            className="button send-message-button"
+            disabled={!isDirty || !isValid}
+          >
+            {loadingForm ? (
+              <Translator path="home.loading" />
+            ) : (
+              <>
+                <Translator path="contact.send" />
+                <ArrowRight size={24} />
+              </>
+            )}
+          </button>
+        </form>
+      )}
+    </>
   );
 }

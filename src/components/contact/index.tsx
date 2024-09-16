@@ -51,10 +51,6 @@ export default function Contact() {
           </div>
         </div>
         <div className="contact__content">
-          <h3 className="contact__title">
-            <Translator path="contact.send_email" />
-          </h3>
-
           <FormContact />
         </div>
       </div>

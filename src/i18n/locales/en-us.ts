@@ -70,6 +70,10 @@ export default {
 
           success_send_email:
             'Email sent successfully! Thank you for contacting me.',
+
+          block_resend_email:
+            "Thank you for getting in touch, you've already sent an email today and can't send another one. Please contact me via my social networks.",
+          thank_you_for_contacting_me: 'Thank you for contacting me',
         },
       },
     },

@@ -70,6 +70,9 @@ export default {
             'Erro ao enviar email, por favor tente novamente mais tarde ou entre em contato comigo pelas minhas redes sociais.',
           success_send_email:
             'Email enviado com sucesso! Obrigado por entrar em contato.',
+          block_resend_email:
+            'Obrigado por entrar em contato, você já enviou um email hoje e não pode enviar outro. Entre em contato comigo pelas minhas redes sociais.',
+          thank_you_for_contacting_me: 'Obrigado por entrar em contato comigo.',
         },
       },
     },
