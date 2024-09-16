@@ -99,6 +99,10 @@
   align-content: center;
   justify-content: center;
 }
+.send-message-button:disabled {
+  opacity: .3;
+  cursor: not-allowed
+}
 
 @media screen and (max-width: 992px) {
   .container {

@@ -53,7 +53,7 @@ export default {
     },
 
     contact: {
-      send_email: 'Enviar email',
+      send_email: 'Mande um email',
       send_message: 'Enviar mensagem',
       title: 'Entre em contato',
       subtitle: 'Contate-me',

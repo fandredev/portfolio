@@ -10,18 +10,19 @@
 - [Eslint](https://prettier.io/)
 - [Lucide](https://lucide.dev/)
 - [React Icons](https://react-icons.github.io/react-icons/)
+- [React Hook Form](https://react-hook-form.com/)
 - [asdf](https://asdf-vm.com/)
 
 ## Clone this repo
 
 ```
-git clone git@github.com:fandredev/portfolio-2024.git
+git clone git@github.com:fandredev/portfolio.git
 ```
 
 ## Go to directory
 
 ```
- cd portfolio-2024
+ cd portfolio
 ```
 
 ## Install dependencies
