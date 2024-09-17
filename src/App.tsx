@@ -5,8 +5,9 @@ import Footer from './components/footer';
 import Header from './components/header';
 import Home from './components/home';
 import Qualification from './components/qualification';
-import ScrollUp from './components/scroll-up';
+import ScrollUp from './components/scrollup';
 import Skills from './components/skills';
+import Work from './components/work';
 
 export default function Portfolio() {
   return (
@@ -23,6 +24,7 @@ export default function Portfolio() {
         <Home />
         <About />
         <Skills />
+        <Work />
         <Qualification />
         <Contact />
       </main>

@@ -32,6 +32,10 @@ export default {
       one_year_of_use: '1 year of use',
       seven_months_of_use: '7 months',
     },
+    portfolio: {
+      my_projects_personally:
+        'Some of my personal projects. Always check my GitHub for more projects.',
+    },
     education: {
       assistente_de_desenvolvimento_de_aplicativos_computacionais:
         'Computational application development assistant',

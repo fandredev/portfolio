@@ -13,7 +13,7 @@ export interface SkillsProps<T> {
 
 export default function Skills() {
   return (
-    <section className="skills" id="skills">
+    <section className="skills section" id="skills">
       <h2 className="section__title">Skills</h2>
       <span className="section__subtitle">
         <Translator path="home.skills_subtitle" />

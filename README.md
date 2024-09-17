@@ -51,6 +51,12 @@ git clone git@github.com:fandredev/portfolio.git
  yarn run coverage
 ```
 
+## Run linter
+
+```
+ yarn run lint
+```
+
 ## :mailbox_with_no_mail: Contatos
 
 E-mail: profissionalf.andre@gmail.com<br>
