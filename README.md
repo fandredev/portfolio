@@ -1,3 +1,5 @@
+## My Portfólio: :technologist:
+
 ![image](https://github.com/user-attachments/assets/7f7b882d-bb64-4431-baf8-26f42b49c5f9)
 
 # Stack used
@@ -9,6 +11,7 @@
 - [Prettier](https://eslint.org/)
 - [Eslint](https://prettier.io/)
 - [Lucide](https://lucide.dev/)
+- [React i18n](https://react.i18next.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Hook Form](https://react-hook-form.com/)
 - [zod](https://zod.dev/)
