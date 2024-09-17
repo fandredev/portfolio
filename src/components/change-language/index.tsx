@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import ImageLanguage from './image-language';
-import FlagBrazil from '../../assets/flag-brazil.png';
-import FlagEUA from '../../assets/flag-eua.png';
+import FlagBrazil from '../../assets/flags/flag-brazil.png';
+import FlagEUA from '../../assets/flags/flag-eua.png';
 
 import './image-language.css';
 
