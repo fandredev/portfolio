@@ -36,9 +36,9 @@ const headerItems: HeaderItemProps[] = [
     text: <Translator path="home.skills" />,
   },
   {
-    href: '#services',
+    href: '#portfolio',
     icon: <BriefcaseBusiness size={16} color={'#000'} />,
-    text: <Translator path="home.services" />,
+    text: 'Pórtfolio',
   },
   {
     href: '#qualification',

@@ -4,7 +4,6 @@ export default {
       beginning: 'Beginning',
       about: 'About',
       skills: 'Skills',
-      services: 'Services',
       qualifications: 'Qualifications',
       contacts: 'Contacts',
       introduction_text:

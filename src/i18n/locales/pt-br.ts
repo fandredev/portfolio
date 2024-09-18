@@ -4,7 +4,6 @@ export default {
       beginning: 'Ínicio',
       about: 'Sobre',
       skills: 'Skills',
-      services: 'Serviços',
       qualifications: 'Qualificações',
       contacts: 'Contatos',
       introduction_text:
