@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import Education from './education';
-import QualificationExperience from './experiences';
-import Tab, { tabs, TabsVariants } from './tabs';
-import './qualification.css';
-import Translator from '../../hooks/use-translator';
+import { useState } from "react";
+import Education from "./education";
+import QualificationExperience from "./experiences";
+import Tab, { tabs, TabsVariants } from "./tabs";
+import "./qualification.css";
+import Translator from "../../hooks/use-translator";
 
 function Qualification() {
-  const [activeTab, setActiveTab] = useState<TabsVariants>('experience');
+  const [activeTab, setActiveTab] = useState<TabsVariants>("experience");
 
   function toggleTab(tab: TabsVariants) {
     setActiveTab(tab);
@@ -35,7 +35,7 @@ function Qualification() {
         </div>
 
         <div className="qualification__sections">
-          {activeTab === 'education' ? (
+          {activeTab === "education" ? (
             <Education />
           ) : (
             <QualificationExperience />

@@ -1,11 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
-import { zodResolver } from '@hookform/resolvers/zod';
-import { useForm } from 'react-hook-form';
-import { useTranslation } from 'react-i18next';
-import { toast } from 'react-toastify';
-import { ContactSchema, formContactSchema } from './schemas/contact-schema';
-import Translator from '../../hooks/use-translator';
+import { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
+import { ContactSchema, formContactSchema } from "./schemas/contact-schema";
+import Translator from "../../hooks/use-translator";
 
 const serviceId = import.meta.env.VITE_SERVICE_EMAIL_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_EMAIL_ID;
@@ -26,11 +26,11 @@ export default function FormContact() {
     formState: { errors, isDirty, isValid },
     reset,
   } = useForm<ContactSchema>({
-    mode: 'all',
+    mode: "all",
     defaultValues: {
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     },
     resolver: zodResolver(formContactSchema),
   });
@@ -44,13 +44,13 @@ export default function FormContact() {
         publicKey: apiPublicKeyEmail,
       })
       .then(() => {
-        toast.success(t('contact.form.messages.success_send_email'));
+        toast.success(t("contact.form.messages.success_send_email"));
 
-        localStorage.setItem('lastSentDate', today);
+        localStorage.setItem("lastSentDate", today);
         setBlockUserResendEmailToday(true);
       })
       .catch(() => {
-        toast.error(t('contact.form.messages.error_send_email'));
+        toast.error(t("contact.form.messages.error_send_email"));
       })
       .finally(() => {
         reset();
@@ -59,7 +59,7 @@ export default function FormContact() {
   }
 
   useEffect(() => {
-    const lastSentDate = localStorage.getItem('lastSentDate');
+    const lastSentDate = localStorage.getItem("lastSentDate");
     if (lastSentDate === today) setBlockUserResendEmailToday(true);
   }, []);
 
@@ -86,11 +86,11 @@ export default function FormContact() {
         >
           <div className="container__form-div">
             <input
-              aria-invalid={errors.name ? 'true' : 'false'}
+              aria-invalid={errors.name ? "true" : "false"}
               type="text"
               className="contact__form-input"
-              placeholder={t('contact.form.fill_name')}
-              {...register('name', {
+              placeholder={t("contact.form.fill_name")}
+              {...register("name", {
                 required: true,
               })}
             />
@@ -99,9 +99,9 @@ export default function FormContact() {
             <input
               type="email"
               className="contact__form-input"
-              placeholder={t('contact.form.fill_email')}
-              {...register('email', { required: true })}
-              aria-invalid={errors.email ? 'true' : 'false'}
+              placeholder={t("contact.form.fill_email")}
+              {...register("email", { required: true })}
+              aria-invalid={errors.email ? "true" : "false"}
             />
           </div>
           <div className="container__form-div">
@@ -109,11 +109,11 @@ export default function FormContact() {
               cols={10}
               rows={5}
               className="contact__form-input"
-              placeholder={t('contact.form.fill_message')}
-              {...register('message', {
+              placeholder={t("contact.form.fill_message")}
+              {...register("message", {
                 required: true,
               })}
-              aria-invalid={errors.message ? 'true' : 'false'}
+              aria-invalid={errors.message ? "true" : "false"}
             />
           </div>
 

@@ -1,6 +1,6 @@
 import { ScrollText } from "lucide-react";
 import CV from "../../assets/curriculum-vitae.pdf";
-import Me from "../../assets/me.jpeg";
+import Me from "../../assets/me.webp";
 import Translator from "../../hooks/use-translator";
 import Informations from "../informations";
 

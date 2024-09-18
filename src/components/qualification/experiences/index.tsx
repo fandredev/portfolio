@@ -1,12 +1,12 @@
-import { ReactNode } from 'react';
-import { CalendarDays } from 'lucide-react';
-import Translator from '../../../hooks/use-translator';
+import { ReactNode } from "react";
+import { CalendarDays } from "lucide-react";
+import Translator from "../../../hooks/use-translator";
 
 type QualificationExperienceCompanyName =
-  | 'Luby'
-  | '4you2 idiomas'
-  | 'Zapsign'
-  | 'Nan Systems';
+  | "Luby"
+  | "4you2 idiomas"
+  | "Zapsign"
+  | "Nan Systems";
 
 interface QualificationExperiencesProps {
   company: QualificationExperienceCompanyName;
@@ -16,22 +16,22 @@ interface QualificationExperiencesProps {
 
 const qualificationExperiences: QualificationExperiencesProps[] = [
   {
-    company: 'Luby',
+    company: "Luby",
     charger: <Translator path="experiences.junior_developer" />,
-    time: 'Ago 2019 - Jul 2020',
+    time: "Ago 2019 - Jul 2020",
   },
   {
-    company: '4you2 idiomas',
+    company: "4you2 idiomas",
     charger: <Translator path="experiences.junior_developer" />,
-    time: 'Set 2020 - Jan 2021',
+    time: "Set 2020 - Jan 2021",
   },
   {
-    company: 'Zapsign',
+    company: "Zapsign",
     charger: <Translator path="experiences.pleno_full_stack_developer" />,
-    time: 'Dez 2020 - Jan 2024',
+    time: "Dez 2020 - Jan 2024",
   },
   {
-    company: 'Nan Systems',
+    company: "Nan Systems",
     charger: <Translator path="experiences.pleno_full_stack_developer" />,
     time: `Fev 2024 - atual`,
   },

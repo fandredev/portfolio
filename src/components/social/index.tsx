@@ -8,6 +8,7 @@ export default function Social() {
   return (
     <div className="home__social">
       <a
+        className="home__social-icon"
         href="https://github.com/fandredev/"
         aria-label={t("aria_labels.github_icon")}
         target="_blank"

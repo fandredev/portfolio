@@ -1,21 +1,20 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 
 export const useScrollVisibility = () => {
   useEffect(() => {
     const handleScroll = () => {
-      const element = document.querySelector('.scrollup');
+      const element = document.querySelector(".scrollup");
       if (window.scrollY >= 560) {
-        element?.classList.add('show-scroll');
+        element?.classList.add("show-scroll");
       } else {
-        element?.classList.remove('show-scroll');
+        element?.classList.remove("show-scroll");
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-    // Cleanup on unmount
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 };

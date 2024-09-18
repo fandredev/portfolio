@@ -20,6 +20,8 @@
 
 ## Clone this repo
 
+###### Notes: Please, check the .tool-versions before use this project to show versions that i used.
+
 ```
 git clone git@github.com:fandredev/portfolio.git
 ```
