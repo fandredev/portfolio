@@ -1,11 +1,11 @@
-import { useTranslation } from 'react-i18next';
-import ImageLanguage from './image-language';
-import FlagBrazil from '../../assets/flags/flag-brazil.png';
-import FlagEUA from '../../assets/flags/flag-eua.png';
+import { useTranslation } from "react-i18next";
+import ImageLanguage from "./image-language";
+import FlagBrazil from "../../assets/flags/flag-brazil.webp";
+import FlagEUA from "../../assets/flags/flag-eua.webp";
 
-import './image-language.css';
+import "./image-language.css";
 
-export type Languages = 'pt-BR' | 'en-US';
+export type Languages = "pt-BR" | "en-US";
 
 export default function I18n() {
   const { i18n, t } = useTranslation();
@@ -20,15 +20,15 @@ export default function I18n() {
     <>
       <ImageLanguage
         image={FlagBrazil}
-        isSelected={selectedLanguage === 'pt-BR'}
-        onChangeLanguage={() => handleChangeLanguage('pt-BR')}
-        altText={t('alt_image.flag_brazil')}
+        isSelected={selectedLanguage === "pt-BR"}
+        onChangeLanguage={() => handleChangeLanguage("pt-BR")}
+        altText={t("alt_image.flag_brazil")}
       />
       <ImageLanguage
         image={FlagEUA}
-        isSelected={selectedLanguage === 'en-US'}
-        onChangeLanguage={() => handleChangeLanguage('en-US')}
-        altText={t('alt_image.flag_united_states')}
+        isSelected={selectedLanguage === "en-US"}
+        onChangeLanguage={() => handleChangeLanguage("en-US")}
+        altText={t("alt_image.flag_united_states")}
       />
     </>
   );
