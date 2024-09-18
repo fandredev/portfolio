@@ -12,7 +12,7 @@ export default {
       scroll_down: 'Scroll down',
       about_me_title: 'About me',
       an_basic_introduction: 'A brief introduction',
-      description_text: `My name is Felipe André and I'm 21 years old and I live in the western region of São Paulo. I have been a technology student since I was 17 years old and I am grateful for the progress I have been learning with the web and with this vast world of being a programmer. I am currently working as a Full Stack Developer at a startup that manages contracts and processes for lawyers and today I work with Django technologies using Python and React + Typescript.`,
+      description_text: `My name is Felipe André, I love astronomy and I live in the western region of São Paulo, Brazil. I've been a technology student since I was 17 and I'm grateful for the progress I've been learning with the web and this vast world of being a programmer. I'm currently working as a Full Programmer at a startup that manages contracts and processes for lawyers, and today I'm working with Django technologies using Python and React + Typescript."`,
       download_curriculum: 'Download curriculum',
       years_as_developer: '4 years as a developer',
       quantity_projects_completed: '+16 projects completed',

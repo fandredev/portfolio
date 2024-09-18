@@ -37,3 +37,7 @@
   text-align: center;
   font-size: var(--smaller-font-size);
 }
+.home__social-icon:last-child {
+ position: relative;
+ top: -1.7px
+}

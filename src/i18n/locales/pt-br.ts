@@ -13,7 +13,11 @@ export default {
       about_me_title: 'Sobre mim',
       an_basic_introduction: 'Uma breve introdução',
       description_text:
+<<<<<<< HEAD
         'Meu nome é Felipe André e tenho 24 anos e moro na região oeste de São Paulo. Sou estudante de tecnologia desde os 17 anos e sou grato pelo progresso que venho aprendendo com a web e com esse mundo vasto de ser uma pessoa programadora. Atualmente estou trabalhando como Programador Pleno em uma startup de gestão de contratos e processos para advogados e hoje trabalho com as tecnologias de Django usando Python e React + Typescript.',
+=======
+        'Meu nome é Felipe André, adoro astronomia e moro na região oeste de São Paulo, Brasil. Sou estudante de tecnologia desde os 17 anos e sou grato pelo progresso que venho aprendendo com a web e com esse mundo vasto de ser uma pessoa programadora. Atualmente estou trabalhando como Programador Pleno em uma startup de gestão de contratos e processos para advogados e hoje trabalho com as tecnologias de Django usando Python e React + Typescript.',
+>>>>>>> c8ba28b (refactor: update .editorconfig and footer CSS)
       download_curriculum: 'Baixar currículo',
       years_as_developer: '4 anos como desenvolvedor',
       quantity_projects_completed: '+16 projetos concluídos',
