@@ -1,10 +1,10 @@
-import { ScrollText } from 'lucide-react';
-import CV from '../../assets/curriculum-vitae.pdf';
-import Me from '../../assets/me.jpeg';
-import Translator from '../../hooks/use-translator';
-import Informations from '../informations';
+import { ScrollText } from "lucide-react";
+import CV from "../../assets/curriculum-vitae.pdf";
+import Me from "../../assets/me.jpeg";
+import Translator from "../../hooks/use-translator";
+import Informations from "../informations";
 
-import './about.css';
+import "./about.css";
 
 export default function About() {
   return (
@@ -17,7 +17,13 @@ export default function About() {
       </span>
 
       <div className="about__container container grid">
-        <img src={Me} alt="Felipe André" className="about__img" />
+        <img
+          src={Me}
+          alt="Felipe André"
+          className="about__img"
+          width={800}
+          height={800}
+        />
         <div className="about__data">
           <Informations />
 

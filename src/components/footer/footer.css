@@ -14,11 +14,7 @@
 .footer__list {
   display: flex;
   justify-content: center;
-}
-.footer__social {
-  display: flex;
-  justify-content: center;
-  column-gap: 1.25rem
+  gap: 10px;
 }
 .footer__social-link {
   background-color: var(--title-color);
@@ -36,8 +32,4 @@
   color: var(--title-color);
   text-align: center;
   font-size: var(--smaller-font-size);
-}
-.home__social-icon:last-child {
- position: relative;
- top: -1.7px
 }

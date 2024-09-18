@@ -1,13 +1,17 @@
-import { FaWhatsapp } from 'react-icons/fa';
+import { useTranslation } from "react-i18next";
+import { FaWhatsapp } from "react-icons/fa";
 
-import './description-with-me.css';
-import Translator from '../../hooks/use-translator';
+import "./description-with-me.css";
+import Translator from "../../hooks/use-translator";
 
 export default function DescriptionWithMe() {
+  const { t } = useTranslation();
   return (
     <div className="home__data">
       <h1 className="home__title">Felipe André</h1>
-      <h3 className="home_subtitle">Full Stack Developer</h3>
+      <h2 aria-label={t("aria_labels.whatsapp_icon")} className="home_subtitle">
+        Full Stack Developer
+      </h2>
       <p className="home__description">
         <Translator path="home.introduction_text" />
       </p>

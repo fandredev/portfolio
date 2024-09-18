@@ -86,5 +86,12 @@ export default {
       flag_brazil: "Bandeira do Brasil",
       flag_united_states: "Bandeira dos Estados Unidos",
     },
+
+    aria_labels: {
+      github_icon: "Veja meu perfil no GitHub para ver meus projetos",
+      whatsapp_icon: "Me envie uma mensagem no WhatsApp",
+      linkedin_icon: "Veja meu perfil no LinkedIn",
+      scroll_up: "Role para cima",
+    },
   },
 };

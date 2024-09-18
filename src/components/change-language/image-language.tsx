@@ -1,4 +1,4 @@
-import { Languages } from '.';
+import { Languages } from ".";
 
 interface ImageLanguageProps {
   image: string;
@@ -16,12 +16,18 @@ export default function ImageLanguage({
 }: ImageLanguageProps) {
   return (
     <button
-      onClick={() => onChangeLanguage(isSelected ? 'pt-BR' : 'en-US')}
-      className={`flag-container ${isSelected ? 'selected' : ''}`}
+      onClick={() => onChangeLanguage(isSelected ? "pt-BR" : "en-US")}
+      className={`flag-container ${isSelected ? "selected" : ""}`}
       aria-label={altText}
       {...props}
     >
-      <img alt={altText} src={image} className="flag-image" />
+      <img
+        alt={altText}
+        src={image}
+        className="flag-image"
+        width={600}
+        height={600}
+      />
     </button>
   );
 }

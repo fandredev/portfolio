@@ -1,5 +1,5 @@
-import { ArrowRight } from 'lucide-react';
-import { Projects } from './work-data';
+import { ArrowRight } from "lucide-react";
+import { Projects } from "./work-data";
 
 interface WorkItemsProps {
   item: Projects;
@@ -8,7 +8,13 @@ interface WorkItemsProps {
 export default function WorkItems({ item }: WorkItemsProps) {
   return (
     <div className="work__card" key={item.id}>
-      <img src={item.image} alt={item.title} className="work__img" />
+      <img
+        width={640}
+        height={282}
+        src={item.image}
+        alt={item.title}
+        className="work__img"
+      />
       <h3 className="work__title">{item.title}</h3>
       <p>{item.description}</p>
       <a href={item.hrefProject} target="_blank" className="work__button">
