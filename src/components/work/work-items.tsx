@@ -14,6 +14,7 @@ export default function WorkItems({ item }: WorkItemsProps) {
         src={item.image}
         alt={item.title}
         className="work__img"
+        loading="lazy"
       />
       <h3 className="work__title">{item.title}</h3>
       <p>{item.description}</p>

@@ -35,7 +35,7 @@ git clone git@github.com:fandredev/portfolio.git
 ## Install dependencies
 
 ```
- yarn install
+ yarn
 ```
 
 ## Run server
