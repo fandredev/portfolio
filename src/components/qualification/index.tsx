@@ -2,8 +2,7 @@ import { useState } from "react";
 import Education from "./education";
 import QualificationExperience from "./experiences";
 import "./qualification.css";
-import Tab from "./tabs";
-import { tabs, TabsVariants } from "./tabs/data";
+import Tab, { tabs, TabsVariants } from "./tabs";
 
 import Translator from "../../hooks/use-translator";
 
