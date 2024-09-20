@@ -7,6 +7,11 @@ interface ImageLanguageProps {
   altText: string;
 }
 
+export enum LanguageTypes {
+  ptBR = "pt-BR",
+  enUS = "en-US",
+}
+
 export default function ImageLanguage({
   image,
   isSelected,
@@ -16,7 +21,9 @@ export default function ImageLanguage({
 }: ImageLanguageProps) {
   return (
     <button
-      onClick={() => onChangeLanguage(isSelected ? "pt-BR" : "en-US")}
+      onClick={() =>
+        onChangeLanguage(isSelected ? LanguageTypes.ptBR : LanguageTypes.enUS)
+      }
       className={`flag-container ${isSelected ? "selected" : ""}`}
       aria-label={altText}
       {...props}
