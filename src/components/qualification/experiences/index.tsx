@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { CalendarDays } from "lucide-react";
+import QualificationExperiencesItem from "./experience-item";
 import Translator from "../../../hooks/use-translator";
 
 type QualificationExperienceCompanyName =
@@ -8,7 +8,7 @@ type QualificationExperienceCompanyName =
   | "Zapsign"
   | "Nan Systems";
 
-interface QualificationExperiencesProps {
+export interface QualificationExperiencesProps {
   company: QualificationExperienceCompanyName;
   charger: ReactNode;
   time: string;
@@ -45,25 +45,6 @@ export default function QualificationExperience() {
       {qualificationExperiencesReverse.map((experience, index) => (
         <QualificationExperiencesItem key={index} {...experience} />
       ))}
-    </div>
-  );
-}
-
-function QualificationExperiencesItem({
-  charger,
-  company,
-  time,
-}: QualificationExperiencesProps) {
-  return (
-    <div className="qualification__data">
-      <div>
-        <h3 className="qualification__title">{charger}</h3>
-        <span className="qualification__subtitle">{company}</span>
-        <div className="qualification__calender">
-          <CalendarDays size={14} />
-          {time}
-        </div>
-      </div>
     </div>
   );
 }

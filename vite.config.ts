@@ -16,10 +16,10 @@ export default defineConfig({
       include: ["src/**/*"],
       reporter: ["text", "html", "json"],
       thresholds: {
-        branches: 60,
+        branches: 70,
         functions: 60,
-        lines: 60,
-        statements: 60,
+        lines: 70,
+        statements: 70,
       },
     },
   },
