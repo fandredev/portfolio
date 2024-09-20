@@ -1,3 +1,6 @@
+![CI](https://github.com/fandredev/portfolio/workflows/Run%20tests%20and%20coverage/badge.svg)
+![CI](https://github.com/fandredev/portfolio/workflows/Run%20linters/badge.svg)
+
 ## My Portfólio: :technologist:
 
 ![image](https://github.com/user-attachments/assets/7f7b882d-bb64-4431-baf8-26f42b49c5f9)
