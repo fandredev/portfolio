@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Education from "./education";
 import QualificationExperience from "./experiences";
-import Tab, { tabs, TabsVariants } from "./tabs";
 import "./qualification.css";
+import Tab from "./tabs";
+import { tabs, TabsVariants } from "./tabs/data";
+
 import Translator from "../../hooks/use-translator";
 
 function Qualification() {

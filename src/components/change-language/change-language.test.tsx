@@ -1,27 +1,53 @@
 import { render, screen } from "@testing-library/react";
-import { I18nextProvider } from "react-i18next";
-import { describe, it, expect } from "vitest";
+
+import { describe, it, expect, vi, beforeEach } from "vitest";
 import I18n from ".";
-import i18n from "../../i18n";
+
+import { LanguageTypes } from "./image-language";
+import enUs from "../../i18n/locales/en-us";
+import ptBr from "../../i18n/locales/pt-br";
+
+type Translations = typeof ptBr.translations & typeof enUs.translations;
+
+const mockTranslations: {
+  ptBr: { translations: Translations };
+  fr: { translations: Translations };
+} = {
+  ptBr: {
+    translations: {
+      ...ptBr.translations,
+    },
+  },
+  fr: {
+    translations: {
+      ...enUs.translations,
+    },
+  },
+};
+
+vi.mock("react-i18next", () => ({
+  useTranslation: () => ({
+    i18n: {
+      changeLanguage: vi.fn(),
+      language: LanguageTypes.ptBR,
+    },
+    t: (key: keyof Translations) =>
+      mockTranslations.ptBr.translations[key] || key, // mock the translation function
+  }),
+}));
 
 describe(`${I18n.name}: `, () => {
+  beforeEach(() => {
+    render(<I18n />);
+  });
+
   it("should render two buttons of languages when component loads", () => {
-    render(
-      <I18nextProvider i18n={i18n}>
-        <I18n />
-      </I18nextProvider>
-    );
     const buttonElement = screen.getAllByRole("button");
 
     expect(buttonElement).toHaveLength(2);
   });
 
   it("should select flag Brazil when components loads", () => {
-    render(
-      <I18nextProvider i18n={i18n}>
-        <I18n />
-      </I18nextProvider>
-    );
     const [buttonBrazil, buttonEnglish]: HTMLButtonElement[] =
       screen.getAllByRole("button");
 

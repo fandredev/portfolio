@@ -4,7 +4,7 @@
 
 # Stack used
 
-<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,tailwind,vercel,vitest,githubactions" />
+<img src="https://skillicons.dev/icons?i=typescript,react,yarn,git,vite,css,vercel,vitest,githubactions&theme=dark" alt="typescript,react,yarn,git,vite,css,vercel,vitest,githubactions" />
 
 ### Other tools:
 

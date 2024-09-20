@@ -1,21 +1,5 @@
-import { ReactNode } from 'react';
-import { BadgeCheck } from 'lucide-react';
-import { SkillsProps } from '.';
-import Translator from '../../hooks/use-translator';
-
-type BackendNameSkills = 'Python' | 'Django' | 'Postgres' | 'Vercel';
-
-interface BackendSkills extends SkillsProps<BackendNameSkills> {
-  name: BackendNameSkills;
-  level: ReactNode;
-}
-
-const tools: BackendSkills[] = [
-  { name: 'Python', level: <Translator path="tools.three_years_of_use" /> },
-  { name: 'Django', level: <Translator path="tools.three_years_of_use" /> },
-  { name: 'Postgres', level: <Translator path="tools.two_years_of_use" /> },
-  { name: 'Vercel', level: <Translator path="tools.seven_months_of_use" /> },
-];
+import { BadgeCheck } from "lucide-react";
+import { toolsBackend } from "./data/back-end-data";
 
 export default function Backend() {
   return (
@@ -23,8 +7,8 @@ export default function Backend() {
       <h3 className="skills__title">Back-end developer</h3>
       <div className="skills__box">
         <div className="skills__group">
-          {tools.map(({ name, level }) => (
-            <div className="skills__data" key={name}>
+          {toolsBackend.map(({ name, level }) => (
+            <div className="skills__data" key={name} role="listitem">
               <BadgeCheck size={18} color="#000" />
 
               <div>

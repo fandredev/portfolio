@@ -18,7 +18,12 @@ export default function WorkItems({ item }: WorkItemsProps) {
       />
       <h3 className="work__title">{item.title}</h3>
       <p>{item.description}</p>
-      <a href={item.hrefProject} target="_blank" className="work__button">
+      <a
+        role="button"
+        href={item.hrefProject}
+        target="_blank"
+        className="work__button"
+      >
         Demo <ArrowRight className="work__button-icon" />
       </a>
     </div>

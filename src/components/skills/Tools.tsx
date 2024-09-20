@@ -1,16 +1,16 @@
-import Translator from '../../hooks/use-translator';
+import Translator from "../../hooks/use-translator";
 
 type ToolsSkillsName =
-  | 'npm & yarn'
-  | 'postman'
-  | 'pgAdmin4'
-  | 'docker'
-  | 'vscode'
-  | 'pipx'
-  | 'git'
-  | 'eslint'
-  | 'black'
-  | 'vite';
+  | "npm & yarn"
+  | "postman"
+  | "pgAdmin4"
+  | "docker"
+  | "vscode"
+  | "pipx"
+  | "git"
+  | "eslint"
+  | "black"
+  | "vite";
 
 interface ToolsSkills {
   name: ToolsSkillsName;
@@ -18,34 +18,34 @@ interface ToolsSkills {
 
 const tools: ToolsSkills[] = [
   {
-    name: 'npm & yarn',
+    name: "npm & yarn",
   },
   {
-    name: 'postman',
+    name: "postman",
   },
   {
-    name: 'pgAdmin4',
+    name: "pgAdmin4",
   },
   {
-    name: 'docker',
+    name: "docker",
   },
   {
-    name: 'vscode',
+    name: "vscode",
   },
   {
-    name: 'pipx',
+    name: "pipx",
   },
   {
-    name: 'vite',
+    name: "vite",
   },
   {
-    name: 'git',
+    name: "git",
   },
   {
-    name: 'eslint',
+    name: "eslint",
   },
   {
-    name: 'black',
+    name: "black",
   },
 ];
 
@@ -58,7 +58,7 @@ export default function Tools() {
       <div className="skills__box">
         <div className="skills__group">
           {tools.map(({ name }) => (
-            <div className="skills__data" key={name}>
+            <div className="skills__data" key={name} role="listitem">
               <div>
                 <h3 className="skills__name">• {name}</h3>
               </div>
