@@ -43,7 +43,9 @@ export default function Footer() {
             </a>
           </li>
         </ul>
-        <span className="footer__copy">&copy; {date} - Felipe André</span>
+        <span className="footer__copy" data-testid="footer-text">
+          &copy; {date} - Felipe André
+        </span>
       </div>
     </footer>
   );
