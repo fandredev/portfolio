@@ -34,6 +34,9 @@ export default {
     portfolio: {
       my_projects_personally:
         "Some of my personal projects. Always check my GitHub for more projects.",
+
+      see_project: "See project",
+      see_repository: "See repository",
     },
     education: {
       assistente_de_desenvolvimento_de_aplicativos_computacionais:
