@@ -15,9 +15,10 @@ export interface Projects {
   image: string;
   title: string;
   category: string;
-  hrefProject: string;
+  hrefProject?: string;
+  hrefGithub: string;
   techs: string[];
-  hasDeployed?: boolean;
+  hasDeployed: boolean;
 }
 
 interface ProjectTabs {
@@ -31,7 +32,7 @@ export const projectsData: Projects[] = [
     image: WorldWise,
     title: "World Wise",
     category: "frontend",
-    hrefProject: "https://github.com/fandredev/world-wise",
+    hrefGithub: "https://github.com/fandredev/world-wise",
     techs: ["react", "typescript", "vite"],
     hasDeployed: false,
   },
@@ -40,7 +41,7 @@ export const projectsData: Projects[] = [
     image: ReactQuiz,
     title: "React Quiz",
     category: "frontend",
-    hrefProject: "https://github.com/fandredev/react-quiz",
+    hrefGithub: "https://github.com/fandredev/react-quiz",
     techs: ["react", "typescript", "vite"],
     hasDeployed: false,
   },
@@ -50,6 +51,7 @@ export const projectsData: Projects[] = [
     title: "UI Clone VSCode page",
     category: "frontend",
     hrefProject: "https://ui-clone-vscode.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/ui-clone-vscode",
     techs: ["react", "typescript", "vite pwa"],
     hasDeployed: true,
   },
@@ -59,6 +61,7 @@ export const projectsData: Projects[] = [
     title: "Basic UI login page",
     category: "frontend",
     hrefProject: "https://login-react-redux-bp.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/boiterplate-react-redux",
     techs: ["react", "typescript", "redux"],
     hasDeployed: true,
   },
@@ -68,6 +71,7 @@ export const projectsData: Projects[] = [
     title: "UI Clone Github Desktop",
     category: "frontend",
     hrefProject: "https://githubdesktop.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/ui-clone-githubdesktop",
     techs: ["react", "typescript", "sass"],
     hasDeployed: true,
   },
@@ -77,6 +81,7 @@ export const projectsData: Projects[] = [
     title: "UI Clone Bootstrap page",
     category: "frontend",
     hrefProject: "https://ui-clone-bootstrap.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/ui-clone-bootstrap",
     techs: ["react", "styled-components"],
     hasDeployed: true,
   },
@@ -86,6 +91,7 @@ export const projectsData: Projects[] = [
     title: "UI Clone npm page",
     category: "frontend",
     hrefProject: "https://ui-clone-npm.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/ui-clone-npm",
     techs: ["react", "styled-components"],
     hasDeployed: true,
   },
@@ -95,6 +101,7 @@ export const projectsData: Projects[] = [
     title: "UI Clone sass page",
     category: "frontend",
     hrefProject: "https://ui-clone-sass.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/ui-clone-sass",
     techs: ["react", "styled-components"],
     hasDeployed: true,
   },
@@ -103,7 +110,7 @@ export const projectsData: Projects[] = [
     image: DjangoImage,
     title: "Django API Recipes",
     category: "backend",
-    hrefProject: "https://github.com/fandredev/django-recipes",
+    hrefGithub: "https://github.com/fandredev/django-recipes",
     techs: ["django", "python", "pytest"],
     hasDeployed: false,
   },
@@ -113,7 +120,7 @@ export const projectsData: Projects[] = [
     image: DjangoImage,
     title: "Django API Students",
     category: "backend",
-    hrefProject: "https://github.com/fandredev/django-api-rest",
+    hrefGithub: "https://github.com/fandredev/django-api-rest",
     techs: ["django", "python", "pytest"],
     hasDeployed: false,
   },
@@ -122,7 +129,7 @@ export const projectsData: Projects[] = [
     image: GolangImage,
     title: "Go API AMA",
     category: "backend",
-    hrefProject: "https://github.com/fandredev/go-react-server",
+    hrefGithub: "https://github.com/fandredev/go-react-server",
     techs: ["go", "docker", "postgresql"],
     hasDeployed: false,
   },

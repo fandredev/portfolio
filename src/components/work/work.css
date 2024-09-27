@@ -32,6 +32,12 @@
   padding: 1.25rem;
   border-radius: 1rem;
 }
+.work__icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
 
 .work__img {
   width: 295px;
@@ -50,13 +56,14 @@
   align-items: center;
   column-gap: 0.25rem;
   margin-top: 1rem;
+
 }
 .work__button-icon {
   font-size: 1rem;
   transform: .4s;
 }
 .work__button:hover, .work__button-icon {
-  transform: translateX(0.25rem);
+  transform: translateX(0.15rem);
 }
 
 /* Work Section */

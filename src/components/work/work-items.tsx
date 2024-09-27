@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import { Projects } from "./work-data";
 import Translator from "../../hooks/use-translator";
 import Chip from "../chip";
@@ -26,19 +25,24 @@ export default function WorkItems({ item }: WorkItemsProps) {
           ))}
         </>
       )}
-      <a
-        role="button"
-        href={item.hrefProject}
-        target="_blank"
-        className="work__button"
-      >
-        {item.hasDeployed ? (
-          <Translator path="portfolio.see_project" />
-        ) : (
-          <Translator path="portfolio.see_repository" />
-        )}
-        <ArrowRight className="work__button-icon" />
-      </a>
+      <div className="work__icons">
+        <a
+          role="button"
+          href={item.hrefProject}
+          target="_blank"
+          className="work__button"
+        >
+          {item.hrefProject && <Translator path="portfolio.see_project" />}
+        </a>
+        <a
+          role="button"
+          href={item.hrefGithub}
+          target="_blank"
+          className="work__button"
+        >
+          {item.hrefGithub && <Translator path="portfolio.see_repository" />}
+        </a>
+      </div>
     </div>
   );
 }
