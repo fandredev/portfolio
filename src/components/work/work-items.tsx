@@ -31,6 +31,7 @@ export default function WorkItems({ item }: WorkItemsProps) {
           href={item.hrefProject}
           target="_blank"
           className="work__button"
+          aria-label="Project"
         >
           {item.hrefProject && <Translator path="portfolio.see_project" />}
         </a>
@@ -39,6 +40,7 @@ export default function WorkItems({ item }: WorkItemsProps) {
           href={item.hrefGithub}
           target="_blank"
           className="work__button"
+          aria-label="Github"
         >
           {item.hrefGithub && <Translator path="portfolio.see_repository" />}
         </a>

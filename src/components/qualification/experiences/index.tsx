@@ -41,7 +41,7 @@ const qualificationExperiencesReverse = [...qualificationExperiences].reverse();
 
 export default function QualificationExperience() {
   return (
-    <div className="qualification__content">
+    <div className="qualification__content" role="list">
       {qualificationExperiencesReverse.map((experience, index) => (
         <QualificationExperiencesItem key={index} {...experience} />
       ))}

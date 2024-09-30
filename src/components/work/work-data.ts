@@ -1,5 +1,6 @@
 import DjangoImage from "../../assets/backend/django.webp";
 import GolangImage from "../../assets/backend/golang.webp";
+import NodeJSImage from "../../assets/backend/nodejs.webp";
 import ReactQuiz from "../../assets/clone/react-quiz.webp";
 import UICloneBootstrapPage from "../../assets/clone/ui-clone-bootstrap-page.webp";
 import UICloneGithubDesktopPage from "../../assets/clone/ui-clone-github-desktop-page.webp";
@@ -131,6 +132,15 @@ export const projectsData: Projects[] = [
     category: "backend",
     hrefGithub: "https://github.com/fandredev/go-react-server",
     techs: ["go", "docker", "postgresql"],
+    hasDeployed: false,
+  },
+  {
+    id: 12,
+    image: NodeJSImage,
+    title: "Express API Pets",
+    category: "backend",
+    hrefGithub: "https://github.com/fandredev/adopet",
+    techs: ["nodejs", "express", "typeorm"],
     hasDeployed: false,
   },
 ];

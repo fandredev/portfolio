@@ -10,7 +10,7 @@ export default function Tests() {
         <Translator path="tests.title" />
       </h3>
       <div className="skills__box">
-        <div className="skills__group">
+        <div className="skills__group" role="list">
           {toolsTest.map(({ name, level }) => (
             <div className="skills__data" key={name} role="listitem">
               <BookOpenText strokeWidth={1} size={18} />
