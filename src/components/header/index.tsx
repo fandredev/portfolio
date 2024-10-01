@@ -23,17 +23,27 @@ export default function Header() {
         <a href="#" className="nav__logo">
           {name}
         </a>
-        <div className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          role="menu"
+          className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             {headerItems.map((item, index) => (
               <HeaderItem key={index} {...item} />
             ))}
           </ul>
+
           <I18n />
 
-          <CircleX size={18} onClick={closeMenu} className="nav__close" />
+          <CircleX
+            size={18}
+            onClick={closeMenu}
+            className="nav__close"
+            role="button"
+            data-testid="close-menu"
+          />
         </div>
-        <div className="nav__toggle" onClick={showMenu}>
+        <div className="nav__toggle" onClick={showMenu} data-testid="show-menu">
           <CircleChevronUp size={18} />
         </div>
       </nav>
