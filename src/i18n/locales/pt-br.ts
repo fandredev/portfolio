@@ -93,6 +93,7 @@ export default {
       github_icon: "Veja meu perfil no GitHub para ver meus projetos",
       whatsapp_icon: "Me envie uma mensagem no WhatsApp",
       linkedin_icon: "Veja meu perfil no LinkedIn",
+      youtube_icon: "Veja meu canal no YouTube",
       scroll_up: "Role para cima",
     },
   },

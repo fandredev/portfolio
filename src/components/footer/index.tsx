@@ -2,7 +2,7 @@ import { Github, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import "./footer.css";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa";
 import useNameContext from "../../hooks/use-name-context";
 
 const date = new Date().getFullYear();
@@ -43,6 +43,16 @@ export default function Footer() {
               aria-label={t("aria_labels.linkedin_icon")}
             >
               <Linkedin size={20} strokeWidth={1.5} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@thistate"
+              className="home__social-icon"
+              aria-label={t("aria_labels.youtube_icon")}
+              target="_blank"
+            >
+              <FaYoutube size={20} strokeWidth={1.5} />
             </a>
           </li>
         </ul>

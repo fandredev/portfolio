@@ -18,7 +18,7 @@ describe(`${Social.name} component`, () => {
 
   test("should render three items for my three social links when component rendered", () => {
     const socialLinks = screen.getAllByRole("link");
-    expect(socialLinks).toHaveLength(3);
+    expect(socialLinks).toHaveLength(4);
   });
 
   test("should render correct href for my three social links when component rendered", () => {
@@ -29,11 +29,13 @@ describe(`${Social.name} component`, () => {
     const githubLink = "https://github.com/fandredev/";
     const whatsappLink = "https://api.whatsapp.com/send?phone=11973813705";
     const linkedinLink = "https://www.linkedin.com/in/devfandre/";
+    const youtubeLink = "https://www.youtube.com/@thistate";
 
     const [github, whatsapp, linkedin] = hrefs;
 
     expect(github).toBe(githubLink);
     expect(whatsapp?.startsWith(whatsappLink)).toBeTruthy();
     expect(linkedin).toBe(linkedinLink);
+    expect(youtubeLink).toBe(youtubeLink);
   });
 });

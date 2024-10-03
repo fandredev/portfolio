@@ -92,6 +92,7 @@ export default {
       github_icon: "View my GitHub profile to see my projects",
       whatsapp_icon: "Send me a message on WhatsApp",
       linkedin_icon: "View my LinkedIn profile",
+      youtube_icon: "View my YouTube channel",
       scroll_up: "Scroll up",
     },
   },
