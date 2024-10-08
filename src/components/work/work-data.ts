@@ -1,10 +1,10 @@
 import DjangoImage from "../../assets/backend/django.webp";
 import GolangImage from "../../assets/backend/golang.webp";
 import NodeJSImage from "../../assets/backend/nodejs.webp";
+import FastPizzaPage from "../../assets/clone/fast-pizza.webp";
 import ReactQuiz from "../../assets/clone/react-quiz.webp";
 import UICloneBootstrapPage from "../../assets/clone/ui-clone-bootstrap-page.webp";
 import UICloneGithubDesktopPage from "../../assets/clone/ui-clone-github-desktop-page.webp";
-import UICloneLoginPage from "../../assets/clone/ui-clone-login-page.webp";
 import UICloneNpmPage from "../../assets/clone/ui-clone-npm-page.webp";
 import UICloneSassPage from "../../assets/clone/ui-clone-sass-page.webp";
 
@@ -30,6 +30,16 @@ interface ProjectTabs {
 export const projectsData: Projects[] = [
   {
     id: 1,
+    image: FastPizzaPage,
+    title: "Fast Pizza",
+    category: "frontend",
+    hrefProject: "https://fast-pizza-phi.vercel.app/",
+    hrefGithub: "https://github.com/fandredev/fast-pizza",
+    techs: ["react", "typescript", "redux"],
+    hasDeployed: true,
+  },
+  {
+    id: 2,
     image: WorldWise,
     title: "World Wise",
     category: "frontend",
@@ -38,7 +48,7 @@ export const projectsData: Projects[] = [
     hasDeployed: false,
   },
   {
-    id: 2,
+    id: 3,
     image: ReactQuiz,
     title: "React Quiz",
     category: "frontend",
@@ -47,7 +57,7 @@ export const projectsData: Projects[] = [
     hasDeployed: false,
   },
   {
-    id: 3,
+    id: 4,
     image: UICloneVSCode,
     title: "UI Clone VSCode page",
     category: "frontend",
@@ -56,16 +66,7 @@ export const projectsData: Projects[] = [
     techs: ["react", "typescript", "vite pwa"],
     hasDeployed: true,
   },
-  {
-    id: 4,
-    image: UICloneLoginPage,
-    title: "Basic UI login page",
-    category: "frontend",
-    hrefProject: "https://login-react-redux-bp.vercel.app/",
-    hrefGithub: "https://github.com/fandredev/boiterplate-react-redux",
-    techs: ["react", "typescript", "redux"],
-    hasDeployed: true,
-  },
+
   {
     id: 5,
     image: UICloneGithubDesktopPage,
