@@ -7,6 +7,7 @@ import Home from "./components/home";
 import Qualification from "./components/qualification";
 import ScrollUp from "./components/scrollup";
 import Skills from "./components/skills";
+import WakatimeStats from "./components/wakatime-stats";
 import Work from "./components/work";
 import { NameProvider } from "./context/NameContext";
 
@@ -21,6 +22,7 @@ export default function Portfolio() {
         theme="colored"
       />
       <NameProvider>
+        <WakatimeStats />
         <Header />
         <main className="main">
           <Home />
