@@ -56,7 +56,7 @@ export default function Tools() {
         <Translator path="tools.tools_day_by_day" />
       </h3>
       <div className="skills__box">
-        <div className="skills__group">
+        <div className="skills__group" role="list">
           {tools.map(({ name }) => (
             <div className="skills__data" key={name} role="listitem">
               <div>

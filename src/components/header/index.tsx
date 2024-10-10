@@ -3,9 +3,11 @@ import "./header.css";
 import { CircleChevronUp, CircleX } from "lucide-react";
 import I18n from "../change-language";
 import HeaderItem, { headerItems } from "./item";
+import useNameContext from "../../hooks/use-name-context";
 
 export default function Header() {
   const [toggleMenu, showToggleMenu] = useState(false);
+  const { name } = useNameContext();
 
   function showMenu() {
     showToggleMenu(!toggleMenu);
@@ -19,19 +21,29 @@ export default function Header() {
     <header className="header">
       <nav className="nav container">
         <a href="#" className="nav__logo">
-          Felipe André
+          {name}
         </a>
-        <div className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          role="menu"
+          className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             {headerItems.map((item, index) => (
               <HeaderItem key={index} {...item} />
             ))}
           </ul>
+
           <I18n />
 
-          <CircleX size={18} onClick={closeMenu} className="nav__close" />
+          <CircleX
+            size={18}
+            onClick={closeMenu}
+            className="nav__close"
+            role="button"
+            data-testid="close-menu"
+          />
         </div>
-        <div className="nav__toggle" onClick={showMenu}>
+        <div className="nav__toggle" onClick={showMenu} data-testid="show-menu">
           <CircleChevronUp size={18} />
         </div>
       </nav>

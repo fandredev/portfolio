@@ -1,36 +1,45 @@
-import { MouseEvent, useEffect, useState } from 'react';
-import { projectsData, projectsTabs } from './work-data';
-import WorkItems from './work-items';
-
-type ItemWorkName = 'all' | 'frontend' | 'backend';
-
-interface ItemWork {
-  name: ItemWorkName;
-}
+import { MouseEvent, useEffect, useReducer } from "react";
+import {
+  INITIAL_STATE,
+  ItemWorkName,
+  workReducer,
+} from "./reducer/work-reducer";
+import { projectsData, projectsTabs } from "./work-data";
+import WorkItems from "./work-items";
 
 export default function Works() {
-  const [tab, setTab] = useState<ItemWork>({ name: 'all' });
-  const [filteredProjects, setFilteredProjects] = useState(projectsData);
-  const [active, setActive] = useState(0);
+  const [{ active, filteredProjects, tab }, dispatch] = useReducer(
+    workReducer,
+    INITIAL_STATE
+  );
 
   const handleClick = (e: MouseEvent<HTMLSpanElement>, index: number) => {
     const target = e.target as HTMLSpanElement;
     const nameTab = target.innerText.toLowerCase() as ItemWorkName;
 
-    setTab({
-      name: nameTab,
+    dispatch({
+      type: "CHANGE_TAB",
+      payload: {
+        name: nameTab,
+        currentTabActive: index,
+      },
     });
-    setActive(index);
   };
 
   useEffect(() => {
-    if (tab.name === 'all') {
-      setFilteredProjects(projectsData);
+    if (tab === "all") {
+      dispatch({
+        type: "SET_FILTERED_PROJECTS",
+        payload: projectsData,
+      });
     } else {
       const filteredProjects = projectsData.filter(
-        (project) => project.category === tab.name
+        (project) => project.category === tab
       );
-      setFilteredProjects(filteredProjects);
+      dispatch({
+        type: "SET_FILTERED_PROJECTS",
+        payload: filteredProjects,
+      });
     }
   }, [tab]);
 
@@ -40,7 +49,7 @@ export default function Works() {
         {projectsTabs.map((tab, index) => (
           <span
             onClick={(e) => handleClick(e, index)}
-            className={`work__item ${active === index ? 'active' : ''}`}
+            className={`work__item ${active === index ? "active" : ""}`}
             key={tab.id}
           >
             {tab.name}

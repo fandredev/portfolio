@@ -2,12 +2,15 @@ import { Github, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 
 import "./footer.css";
-import { FaWhatsapp } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube } from "react-icons/fa";
+import useNameContext from "../../hooks/use-name-context";
 
 const date = new Date().getFullYear();
 
 export default function Footer() {
   const { t } = useTranslation();
+  const { name } = useNameContext();
+
   return (
     <footer className="footer">
       <div className="footer__container ">
@@ -42,9 +45,19 @@ export default function Footer() {
               <Linkedin size={20} strokeWidth={1.5} />
             </a>
           </li>
+          <li>
+            <a
+              href="https://www.youtube.com/@thistate"
+              className="home__social-icon"
+              aria-label={t("aria_labels.youtube_icon")}
+              target="_blank"
+            >
+              <FaYoutube size={20} strokeWidth={1.5} />
+            </a>
+          </li>
         </ul>
         <span className="footer__copy" data-testid="footer-text">
-          &copy; {date} - Felipe André
+          &copy; {date} - {name}
         </span>
       </div>
     </footer>

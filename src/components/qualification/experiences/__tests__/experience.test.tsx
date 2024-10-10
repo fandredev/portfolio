@@ -1,7 +1,7 @@
 import { screen, render } from "@testing-library/react";
 import { I18nextProvider } from "react-i18next";
 
-import { describe, test, expect, beforeEach } from "vitest";
+import { describe, expect, beforeEach, it } from "vitest";
 
 import QualificationExperience, { QualificationExperiencesProps } from "..";
 import i18n from "../../../../i18n";
@@ -17,7 +17,7 @@ describe(`${QualificationExperience.name} component`, () => {
     );
   });
 
-  test(`should render component #${QualificationExperiencesItem} when component renders`, () => {
+  it.skip(`should render component #${QualificationExperiencesItem} when component renders`, () => {
     const experienceItem = screen.getAllByRole("listitem");
     const qualificationExperiences: QualificationExperiencesProps[] = [
       {

@@ -30,6 +30,7 @@ describe(`${Backend.name} component`, () => {
       { name: "Django", level: "3 anos de uso" },
       { name: "Postgres", level: "2 anos de uso" },
       { name: "Vercel", level: "7 meses" },
+      { name: "NodeJS", level: "2 anos de uso" },
     ];
 
     for (let i = 0; i < tools.length; i++) {

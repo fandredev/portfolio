@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 
 import axios from "axios";
 
-const API_KEY = import.meta.env.VITE_WAKATIME_API_KEY;
-
-const URL = `https://wakatime.com/api/v1/users/current/stats/last_7_days?api_key=${API_KEY}`;
+const URL = `http://localhost:3000/wakatime/stats`;
 
 interface WakatimeLanguages {
   name: string;
@@ -35,7 +33,7 @@ export function useWakatimeStats(): WakatimeStatsReturn {
           "Content-Type": "application/json",
         },
       });
-      const languages: WakatimeLanguages[] = response.data.data.languages;
+      const languages: WakatimeLanguages[] = response.data.languages;
       setLanguages(languages);
     } catch (error) {
       console.error("Error fetching Wakatime data", error);

@@ -1,4 +1,4 @@
-import { Languages } from ".";
+import type { Languages } from ".";
 
 interface ImageLanguageProps {
   image: string;

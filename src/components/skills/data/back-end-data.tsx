@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 import { SkillsProps } from "..";
 import Translator from "../../../hooks/use-translator";
 
-type BackendNameSkills = "Python" | "Django" | "Postgres" | "Vercel";
+type BackendNameSkills = "Python" | "Django" | "Postgres" | "Vercel" | "NodeJS";
 
 interface BackendSkills extends SkillsProps<BackendNameSkills> {
   name: BackendNameSkills;
@@ -14,4 +14,5 @@ export const toolsBackend: BackendSkills[] = [
   { name: "Django", level: <Translator path="tools.three_years_of_use" /> },
   { name: "Postgres", level: <Translator path="tools.two_years_of_use" /> },
   { name: "Vercel", level: <Translator path="tools.seven_months_of_use" /> },
+  { name: "NodeJS", level: <Translator path="tools.two_years_of_use" /> },
 ];

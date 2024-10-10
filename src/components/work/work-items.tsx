@@ -1,5 +1,6 @@
-import { ArrowRight } from "lucide-react";
 import { Projects } from "./work-data";
+import Translator from "../../hooks/use-translator";
+import Chip from "../chip";
 
 interface WorkItemsProps {
   item: Projects;
@@ -17,15 +18,33 @@ export default function WorkItems({ item }: WorkItemsProps) {
         loading="lazy"
       />
       <h3 className="work__title">{item.title}</h3>
-      <p>{item.description}</p>
-      <a
-        role="button"
-        href={item.hrefProject}
-        target="_blank"
-        className="work__button"
-      >
-        Demo <ArrowRight className="work__button-icon" />
-      </a>
+      {item.techs && (
+        <>
+          {item.techs.map((tech) => (
+            <Chip key={tech} label={tech} />
+          ))}
+        </>
+      )}
+      <div className="work__icons">
+        <a
+          role="button"
+          href={item.hrefProject}
+          target="_blank"
+          className="work__button"
+          aria-label="Project"
+        >
+          {item.hrefProject && <Translator path="portfolio.see_project" />}
+        </a>
+        <a
+          role="button"
+          href={item.hrefGithub}
+          target="_blank"
+          className="work__button"
+          aria-label="Github"
+        >
+          {item.hrefGithub && <Translator path="portfolio.see_repository" />}
+        </a>
+      </div>
     </div>
   );
 }

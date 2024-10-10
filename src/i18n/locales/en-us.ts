@@ -34,6 +34,9 @@ export default {
     portfolio: {
       my_projects_personally:
         "Some of my personal projects. Always check my GitHub for more projects.",
+
+      see_project: "See project",
+      see_repository: "See repository",
     },
     education: {
       assistente_de_desenvolvimento_de_aplicativos_computacionais:
@@ -89,6 +92,7 @@ export default {
       github_icon: "View my GitHub profile to see my projects",
       whatsapp_icon: "Send me a message on WhatsApp",
       linkedin_icon: "View my LinkedIn profile",
+      youtube_icon: "View my YouTube channel",
       scroll_up: "Scroll up",
     },
   },
