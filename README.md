@@ -21,9 +21,13 @@
 - [EmailJS](https://www.emailjs.com/)
 - [asdf](https://asdf-vm.com/)
 
+###### Notes: Please, check the .tool-versions before use this project to show versions that i used.
+
+###### Notes 2: This project use my own back-end write using NestJS: https://github.com/fandredev/portfolio-backend
+
+
 ## Clone this repo
 
-###### Notes: Please, check the .tool-versions before use this project to show versions that i used.
 
 ```
 git clone git@github.com:fandredev/portfolio.git
@@ -65,7 +69,10 @@ git clone git@github.com:fandredev/portfolio.git
  yarn run lint
 ```
 
-## :mailbox_with_no_mail: Contatos
+## :mailbox_with_no_mail: Contacts
 
 E-mail: profissionalf.andre@gmail.com<br>
 Linkedin: https://www.linkedin.com/in/devfandre/<br>
+Pórtfolio: https://developer-felipe-andre.vercel.app/<br>
+Youtube: https://www.youtube.com/@thistate/<br>
+Blog: https://medium.com/@thistate<br>
