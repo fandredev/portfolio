@@ -18,7 +18,7 @@ describe(`${Social.name} component`, () => {
 
   test("should render three items for my three social links when component rendered", () => {
     const socialLinks = screen.getAllByRole("link");
-    expect(socialLinks).toHaveLength(4);
+    expect(socialLinks).toHaveLength(5);
   });
 
   test("should render correct href for my three social links when component rendered", () => {

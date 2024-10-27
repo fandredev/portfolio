@@ -1,0 +1,8 @@
+.container-stats {
+  padding: 0 10px;
+  margin-top: 1.3rem;
+}
+.container-back-porfolio-page {
+  display: flex;
+  gap: 10px
+}

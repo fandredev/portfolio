@@ -1,25 +1,39 @@
-// import { Chart } from "react-google-charts";
-// // import { useWakatimeStats } from "../hooks/use-wakatime-stats";
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  ResponsiveContainer,
+} from "recharts";
+import Loader from "../components/loader";
 
-// export default function Stats() {
-//   // const { languages } = useWakatimeStats();
+import { useWakatimeStats } from "../hooks/use-wakatime-stats";
 
-//   const data = [
-//     ["Task", "Hours per Day"],
-//     ["Work", 9],
-//     ["Eat", 2],
-//     ["Commute", 2],
-//     ["Watch TV", 2],
-//     ["Sleep", 7],
-//   ];
+export default function Stats() {
+  const { chartData, isLoading } = useWakatimeStats();
 
-//   return (
-//     <Chart
-//       chartType="PieChart"
-//       data={data}
-//       options={{ title: "top languages" }}
-//       width={"100%"}
-//       height={"400px"}
-//     />
-//   );
-// }
+  return (
+    <>
+      {!isLoading ? (
+        <ResponsiveContainer width="100%" height={400}>
+          <BarChart
+            data={chartData}
+            margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" />
+            <YAxis />
+            <Tooltip />
+            <Bar dataKey="percent" fill="#82ca9d" />
+          </BarChart>
+        </ResponsiveContainer>
+      ) : (
+        <Loader>
+          <p>Carregando dados...</p>
+        </Loader>
+      )}
+    </>
+  );
+}

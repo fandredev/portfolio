@@ -1,3 +1,18 @@
+.languages-last-seven-days {
+  background-color: black;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  -webkit-box-shadow: 1px 24px 36px -18px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 24px 36px -18px rgba(0,0,0,0.75);
+  box-shadow: 1px 24px 36px -18px rgba(0,0,0,0.75);
+  border: none;
+  opacity: .8;
+}
+.link-languages-last-seven-days {
+  color: #fff;
+}
 .home__container {
   row-gap: 7rem
 }

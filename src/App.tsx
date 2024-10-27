@@ -22,6 +22,7 @@ export default function Portfolio() {
       />
       <NameProvider>
         <Header />
+
         <main className="main">
           <Home />
           <About />

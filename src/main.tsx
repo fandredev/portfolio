@@ -1,12 +1,19 @@
+import "./i18n";
+import "./index.css";
+import "react-toastify/dist/ReactToastify.css";
+
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
-import Portfolio from "./App.tsx";
 
-import "./i18n";
-import "react-toastify/dist/ReactToastify.css";
+import { RouterProvider } from "react-router-dom";
+
+import QueryProvider from "./providers/QueryProvider";
+import { routes } from "./routes";
+
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Portfolio />
+    <QueryProvider>
+      <RouterProvider router={routes} />
+    </QueryProvider>
   </StrictMode>
 );

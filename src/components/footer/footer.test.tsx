@@ -19,7 +19,7 @@ describe(`${Footer.name} component`, () => {
 
   test("should render three items for my three social links when component rendered", () => {
     const socialLinks = screen.getAllByRole("link");
-    expect(socialLinks).toHaveLength(4);
+    expect(socialLinks).toHaveLength(5);
   });
 
   test("should render the date for the current year and my name when component rendered", () => {

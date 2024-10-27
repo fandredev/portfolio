@@ -1,6 +1,6 @@
 import { Github, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaWhatsapp, FaYoutube, FaMedium } from "react-icons/fa";
 
 export default function Social() {
   const { t } = useTranslation();
@@ -38,6 +38,14 @@ export default function Social() {
         target="_blank"
       >
         <FaYoutube size={20} strokeWidth={1.5} />
+      </a>
+      <a
+        href="https://medium.com/@thistate"
+        className="home__social-icon"
+        aria-label={t("aria_labels.medium_icon")}
+        target="_blank"
+      >
+        <FaMedium size={20} strokeWidth={1.5} />
       </a>
     </div>
   );

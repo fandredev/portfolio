@@ -1,55 +1,50 @@
-import { useEffect, useState } from "react";
+import { useQuery } from "@tanstack/react-query";
 
-import axios from "axios";
-
-const URL = `http://localhost:3000/wakatime/stats`;
+const URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 
 interface WakatimeLanguages {
-  name: string;
-  total_seconds: number;
-  percent: number;
-  digital: string;
-  decimal: string;
-  text: string;
-  hours: number;
-  minutes: number;
+  languages: {
+    name: string;
+    total_seconds: number;
+    percent: number;
+    digital: string;
+    decimal: string;
+    text: string;
+    hours: number;
+    minutes: number;
+  }[];
 }
 
-interface WakatimeStatsReturn {
-  languages: WakatimeLanguages[];
-  loadingWaketime: boolean;
-  errorWakatime: string;
-}
-
-export function useWakatimeStats(): WakatimeStatsReturn {
-  const [languages, setLanguages] = useState<WakatimeLanguages[]>([]);
-  const [loadingWaketime, setLoadingWaketime] = useState(true);
-  const [errorWakatime, setErrorWakatime] = useState("");
-
-  async function searchWakatimeStats() {
-    try {
-      const response = await axios.get(URL, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
-      const languages: WakatimeLanguages[] = response.data.languages;
-      setLanguages(languages);
-    } catch (error) {
-      console.error("Error fetching Wakatime data", error);
-      setErrorWakatime("Error fetching Wakatime data");
-    } finally {
-      setLoadingWaketime(false);
-    }
+const searchMyLanguages = async () => {
+  const response = await fetch(`${URL}/wakatime/languages`);
+  if (!response.ok) {
+    throw new Error("Erro ao pegar minhas linguagens mais usadas!");
   }
 
-  useEffect(() => {
-    searchWakatimeStats();
-  }, []);
+  const responseData: WakatimeLanguages = await response.json();
+
+  return responseData["languages"];
+};
+
+const useWakatimeStats = () => {
+  const { data, isLoading, isError } = useQuery({
+    queryKey: ["wakatime"],
+    queryFn: searchMyLanguages,
+  });
+
+  const chartData = data
+    ?.map((item) => ({
+      name: item.name,
+      percent: item.percent,
+    }))
+    .slice(0, 7);
 
   return {
-    languages,
-    loadingWaketime,
-    errorWakatime,
+    data,
+    chartData,
+    isLoading,
+    isError,
   };
-}
+};
+
+export { useWakatimeStats };

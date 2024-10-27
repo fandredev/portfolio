@@ -93,6 +93,7 @@ export default {
       whatsapp_icon: "Send me a message on WhatsApp",
       linkedin_icon: "View my LinkedIn profile",
       youtube_icon: "View my YouTube channel",
+      medium_icon: "View my Medium blog",
       scroll_up: "Scroll up",
     },
   },

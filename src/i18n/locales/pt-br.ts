@@ -94,6 +94,7 @@ export default {
       whatsapp_icon: "Me envie uma mensagem no WhatsApp",
       linkedin_icon: "Veja meu perfil no LinkedIn",
       youtube_icon: "Veja meu canal no YouTube",
+      medium_icon: "Veja meu blog no Medium",
       scroll_up: "Role para cima",
     },
   },

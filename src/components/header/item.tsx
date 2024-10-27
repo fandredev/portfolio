@@ -9,6 +9,7 @@ import {
   User,
 } from "lucide-react";
 import Translator from "../../hooks/use-translator";
+import { Link } from "react-router-dom";
 
 interface HeaderItemProps {
   href: string;
@@ -51,11 +52,13 @@ export const headerItems: HeaderItemProps[] = [
 
 export default function HeaderItem({ href, icon, text }: HeaderItemProps) {
   return (
-    <li className="nav__item">
-      <a href={href} className="nav__link">
-        <div className="nav__icon">{icon}</div>
-        {text}
-      </a>
-    </li>
+    <>
+      <li className="nav__item">
+        <a href={href} className="nav__link">
+          <div className="nav__icon">{icon}</div>
+          {text}
+        </a>
+      </li>
+    </>
   );
 }

@@ -32,7 +32,6 @@ export default function Header() {
               <HeaderItem key={index} {...item} />
             ))}
           </ul>
-
           <I18n />
 
           <CircleX
