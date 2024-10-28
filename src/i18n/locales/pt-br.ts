@@ -35,7 +35,7 @@ export default {
       three_years_of_use: "3 anos de uso",
       two_years_of_use: "2 anos de uso",
       one_year_of_use: "1 ano de uso",
-      seven_months_of_use: "7 meses",
+      three_months_of_use: "3 meses",
     },
     portfolio: {
       my_projects_personally:
