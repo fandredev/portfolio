@@ -7,12 +7,18 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+import ErrorAPI from "../components/error";
 import Loader from "../components/loader";
 
+import Translator from "../hooks/use-translator";
 import { useWakatimeStats } from "../hooks/use-wakatime-stats";
 
 export default function Stats() {
-  const { chartData, isLoading } = useWakatimeStats();
+  const { chartData, isLoading, isError } = useWakatimeStats();
+
+  if (isError) {
+    return <ErrorAPI />;
+  }
 
   return (
     <>
@@ -31,7 +37,9 @@ export default function Stats() {
         </ResponsiveContainer>
       ) : (
         <Loader>
-          <p>Carregando dados...</p>
+          <p>
+            <Translator path="home.loading" />
+          </p>
         </Loader>
       )}
     </>

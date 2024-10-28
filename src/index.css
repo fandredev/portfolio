@@ -113,6 +113,10 @@ img {
   height: auto;
 }
 
+abbr {
+  cursor: default;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 6rem 0 2rem;

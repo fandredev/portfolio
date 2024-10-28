@@ -2,17 +2,19 @@ import { useQuery } from "@tanstack/react-query";
 
 const URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 
+interface Languages {
+  name: string;
+  total_seconds: number;
+  percent: number;
+  digital: string;
+  decimal: string;
+  text: string;
+  hours: number;
+  minutes: number;
+}
+
 interface WakatimeLanguages {
-  languages: {
-    name: string;
-    total_seconds: number;
-    percent: number;
-    digital: string;
-    decimal: string;
-    text: string;
-    hours: number;
-    minutes: number;
-  }[];
+  languages: Languages[];
 }
 
 const searchMyLanguages = async () => {

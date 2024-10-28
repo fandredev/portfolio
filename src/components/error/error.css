@@ -1,0 +1,12 @@
+.container-error-api {
+  display: flex;
+  justify-content: center;
+}
+.error-api {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}

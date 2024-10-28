@@ -20,6 +20,11 @@ export default {
       skills_subtitle: "My technical level in programming",
       loading: "Loading...",
     },
+    banner: {
+      see_last_seven_languages:
+        "See my most used languages ​​in the last 7 days by clicking",
+      here: "here!",
+    },
     tests: {
       title: "Tests",
     },
@@ -83,6 +88,14 @@ export default {
         },
       },
     },
+
+    stats: {
+      back_button: "Back",
+      languages: "Languages",
+      my_seven_last_languages_more_used:
+        "My most used programming languages ​​in the last 7 days",
+    },
+
     // Accesibility
     alt_image: {
       flag_brazil: "Brazil flag",
@@ -95,6 +108,13 @@ export default {
       youtube_icon: "View my YouTube channel",
       medium_icon: "View my Medium blog",
       scroll_up: "Scroll up",
+    },
+
+    // Errors
+
+    error_api: {
+      bad_request:
+        "Oh, no, not this time! Something went wrong, but don't worry. You can use the link below to see the languages ​​anyway, okay?",
     },
   },
 };
