@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import { api } from "../services/axios";
 
 const URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 
@@ -18,14 +19,14 @@ interface WakatimeLanguages {
 }
 
 const searchMyLanguages = async () => {
-  const response = await fetch(`${URL}/wakatime/languages`);
-  if (!response.ok) {
+  const response = await api.get<WakatimeLanguages>(
+    `${URL}/wakatime/languages`
+  );
+  if (!response.data) {
     throw new Error("Erro ao pegar minhas linguagens mais usadas!");
   }
 
-  const responseData: WakatimeLanguages = await response.json();
-
-  return responseData["languages"];
+  return response.data;
 };
 
 const useWakatimeStats = () => {
@@ -34,8 +35,8 @@ const useWakatimeStats = () => {
     queryFn: searchMyLanguages,
   });
 
-  const chartData = data
-    ?.map((item) => ({
+  const chartData = data?.languages
+    .map((item) => ({
       name: item.name,
       percent: item.percent,
     }))

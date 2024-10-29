@@ -26,14 +26,14 @@ describe(`${Frontend.name} component`, () => {
   test("should render correct tools and level for tests when component rendered", () => {
     const tools: HTMLDivElement[] = screen.getAllByRole("listitem");
     const toolsFrontend = [
-      { name: "HTML", level: "4 anos de uso" },
-      { name: "CSS", level: "4 anos de uso" },
-      { name: "Sass", level: "2 anos de uso" },
-      { name: "Bootstrap", level: "2 anos de uso" },
-      { name: "Typescript", level: "2 anos de uso" },
-      { name: "Angular 9", level: "2 anos de uso" },
-      { name: "React", level: "3 anos de uso" },
-      { name: "Redux", level: "2 anos de uso" },
+      { name: "HTML", level: "5 anos de uso" },
+      { name: "CSS", level: "5 anos de uso" },
+      { name: "Sass", level: "4 anos de uso" },
+      { name: "Bootstrap", level: "4 anos de uso" },
+      { name: "Typescript", level: "4 anos de uso" },
+      { name: "Angular 9", level: "3 anos de uso" },
+      { name: "React", level: "4 anos de uso" },
+      { name: "Redux", level: "3 anos de uso" },
     ];
 
     for (let i = 0; i < tools.length; i++) {

@@ -7,7 +7,7 @@ export default {
       qualifications: "Qualificações",
       contacts: "Contatos",
       introduction_text:
-        "Olá! Meu nome é Felipe André, sou um desenvolvedor Full Stack. Sou apaixonado por tecnologia e estou sempre em busca de novos desafios.",
+        "Olá! Meu nome é Felipe André, sou um desenvolvedor Full Stack. Sou apaixonado por tecnologia e estou sempre em busca de novos desafios. Entre em contato comigo para batermos um papo 😃",
       say_hello_whatsapp_button: "Diga oi",
       scroll_down: "Role para baixo",
       about_me_title: "Sobre mim",
@@ -15,7 +15,7 @@ export default {
       description_text:
         "Meu nome é Felipe André, adoro astronomia e moro na região oeste de São Paulo, Brasil. Sou estudante de tecnologia desde os 17 anos e sou grato pelo progresso que venho aprendendo com a web e com esse mundo vasto de ser uma pessoa programadora. Atualmente estou trabalhando como Programador Pleno em uma startup de gestão de contratos e processos para advogados e hoje trabalho com as tecnologias de Django usando Python e React + Typescript.",
       download_curriculum: "Baixar currículo",
-      years_as_developer: "4 anos como desenvolvedor",
+      years_as_developer: "+ 5 anos como desenvolvedor",
       quantity_projects_completed: "+16 projetos concluídos",
       how_i_work: "Remoto e presencial",
       skills_subtitle: "Meu nível técnico em programação",
@@ -31,6 +31,7 @@ export default {
     },
     tools: {
       tools_day_by_day: "Ferramentas do dia a dia",
+      five_years_of_use: "5 anos de uso",
       four_years_of_use: "4 anos de uso",
       three_years_of_use: "3 anos de uso",
       two_years_of_use: "2 anos de uso",

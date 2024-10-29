@@ -25,10 +25,10 @@ describe(`${Tests.name} component`, () => {
   test("should render correct tools and level for tests when component rendered", () => {
     const tools: HTMLDivElement[] = screen.getAllByRole("listitem");
     const toolsData = [
-      { name: "pytest", level: "2 anos de uso" },
-      { name: "unittest", level: "2 anos de uso" },
+      { name: "pytest", level: "3 anos de uso" },
+      { name: "unittest", level: "3 anos de uso" },
       { name: "cypress", level: "1 ano de uso" },
-      { name: "jest", level: "2 anos de uso" },
+      { name: "jest", level: "3 anos de uso" },
       { name: "vitest", level: "1 ano de uso" },
     ];
 

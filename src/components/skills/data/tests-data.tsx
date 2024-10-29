@@ -9,9 +9,9 @@ export interface Tools extends SkillsProps<ToolsSkills> {
   level: ReactNode;
 }
 export const toolsTest: Tools[] = [
-  { name: "pytest", level: <Translator path="tools.two_years_of_use" /> },
-  { name: "unittest", level: <Translator path="tools.two_years_of_use" /> },
+  { name: "pytest", level: <Translator path="tools.three_years_of_use" /> },
+  { name: "unittest", level: <Translator path="tools.three_years_of_use" /> },
   { name: "cypress", level: <Translator path="tools.one_year_of_use" /> },
-  { name: "jest", level: <Translator path="tools.two_years_of_use" /> },
+  { name: "jest", level: <Translator path="tools.three_years_of_use" /> },
   { name: "vitest", level: <Translator path="tools.one_year_of_use" /> },
 ];

@@ -15,7 +15,7 @@ describe(`${InformationBox.name} component`, () => {
     render(
       <I18nextProvider i18n={i18n}>
         <InformationBox
-          text="4 anos como desenvolvedor"
+          text="+ 5 anos como desenvolvedor"
           icon={<Award size={18} color="#000" />}
           index={index}
         />
@@ -25,7 +25,7 @@ describe(`${InformationBox.name} component`, () => {
 
   test("should render component with correct text when component rendered", () => {
     const informationBox = screen.getByTestId(`information-item-card-${index}`);
-    expect(informationBox.textContent).toBe("4 anos como desenvolvedor");
+    expect(informationBox.textContent).toBe("+ 5 anos como desenvolvedor");
   });
 
   test("should render component with correct icon when component rendered", () => {
