@@ -25,7 +25,6 @@
 
 .nav__list {
   display: flex;
-  column-gap: 2rem;
   margin-right: 10px;
 }
 .nav__link {

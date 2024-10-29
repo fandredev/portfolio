@@ -5,7 +5,7 @@ export default function useNameContext() {
   const context = useContext(NameContext);
 
   if (!context) {
-    throw new Error(`Context not exist`);
+    throw new Error(`Name Context not exist`);
   }
 
   return context;

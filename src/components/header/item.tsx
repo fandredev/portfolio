@@ -14,6 +14,8 @@ interface HeaderItemProps {
   href: string;
   icon: ReactNode;
   text: ReactNode;
+
+  openNewTab?: boolean;
 }
 
 export const headerItems: HeaderItemProps[] = [
@@ -47,13 +49,28 @@ export const headerItems: HeaderItemProps[] = [
     icon: <Contact size={16} color={"#000"} />,
     text: <Translator path="home.contacts" />,
   },
+  {
+    href: "https://portfolio-backend-jko9.onrender.com/api/v1",
+    icon: <Contact size={16} color={"#000"} />,
+    text: <Translator path="home.API" />,
+    openNewTab: true,
+  },
 ];
 
-export default function HeaderItem({ href, icon, text }: HeaderItemProps) {
+export default function HeaderItem({
+  href,
+  icon,
+  text,
+  openNewTab,
+}: HeaderItemProps) {
   return (
     <>
       <li className="nav__item">
-        <a href={href} className="nav__link">
+        <a
+          href={href}
+          className="nav__link"
+          target={`${openNewTab ? "_blank" : "_self"}`}
+        >
           <div className="nav__icon">{icon}</div>
           {text}
         </a>
