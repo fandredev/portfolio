@@ -93,6 +93,8 @@ export default {
       languages: "Linguagens",
       my_seven_last_languages_more_used:
         "Minhas linguagens de programação mais usadas nos últimos 7 dias",
+      loading_stats_data:
+        "Os dados estão sendo buscados ainda, mas, provavelmente serão esses abaixo:",
     },
 
     // Accesibility
