@@ -76,3 +76,8 @@ Linkedin: https://www.linkedin.com/in/devfandre/<br>
 Pórtfolio: https://developer-felipe-andre.vercel.app/<br>
 Youtube: https://www.youtube.com/@thistate/<br>
 Blog: https://medium.com/@thistate<br>
+
+
+# References
+
+Template by: https://buymeacoffee.com/crypticacoder/e/85393
