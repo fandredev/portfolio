@@ -5,7 +5,7 @@ import HeaderItem from "../item";
 const meta = {
   component: HeaderItem,
   tags: ["autodocs"],
-  title: "Components/ResponsiveHeaderItem",
+  title: "Components/Header/ResponsiveHeaderItem",
   args: {
     href: "#",
     text: "Ínicio",
