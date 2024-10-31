@@ -1,9 +1,8 @@
 import { screen, render } from "@testing-library/react";
 
 import { I18nextProvider } from "react-i18next";
-import HeaderItem, { headerItems } from "../item";
-
 import i18n from "../../../i18n";
+import HeaderItem, { headerItems } from "../item";
 
 describe(`${HeaderItem.name} component`, () => {
   const { href, icon, text } = headerItems[0];
