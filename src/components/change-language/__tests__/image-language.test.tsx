@@ -3,10 +3,9 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import { I18nextProvider } from "react-i18next";
 import { vi, describe, expect, it } from "vitest";
 
-import ImageLanguage from "./image-language";
+import i18n from "../../../i18n";
 import FlagBrazil from "../../assets/flags/flag-brazil.webp";
-
-import i18n from "../../i18n";
+import ImageLanguage from "../image-language";
 
 const altImageDefault = "Bandeira do Brasil";
 const mockOnChangeLanguage = vi.fn();

@@ -1,11 +1,11 @@
 import { render, screen } from "@testing-library/react";
 
 import { describe, it, expect, vi, beforeEach } from "vitest";
-import I18n from ".";
+import I18n from "..";
 
-import { LanguageTypes } from "./image-language";
-import enUs from "../../i18n/locales/en-us";
-import ptBr from "../../i18n/locales/pt-br";
+import enUs from "../../../i18n/locales/en-us";
+import ptBr from "../../../i18n/locales/pt-br";
+import { LanguageTypes } from "../image-language";
 
 type Translations = typeof ptBr.translations & typeof enUs.translations;
 
