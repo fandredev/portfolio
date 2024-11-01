@@ -22,7 +22,7 @@
 - [EmailJS](https://www.emailjs.com/)
 - [asdf](https://asdf-vm.com/)
 
-## Design System
+## Documentation Components
 
 - [storybook](https://storybook.js.org/)
 
@@ -70,6 +70,12 @@ git clone git@github.com:fandredev/portfolio.git
 
 ```
  yarn run lint
+```
+
+## Run UI components
+
+```
+ yarn run storybook
 ```
 
 ## :mailbox_with_no_mail: Contacts

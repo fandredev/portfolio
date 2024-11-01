@@ -6,7 +6,7 @@ import Chip from "..";
 const meta = {
   component: Chip,
   tags: ["autodocs"],
-  title: "Components/Chip/Chip",
+  title: "Components/Chip",
   args: {
     label: "NestJS",
   },
