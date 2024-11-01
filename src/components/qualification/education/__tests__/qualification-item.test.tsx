@@ -2,8 +2,8 @@ import { screen, render } from "@testing-library/react";
 import { I18nextProvider } from "react-i18next";
 import { describe, test, expect, beforeEach } from "vitest";
 
-import QualificationEducationItem from "./qualification";
-import i18n from "../../../i18n";
+import i18n from "../../../../i18n";
+import QualificationEducationItem from "../qualification";
 
 describe(`${QualificationEducationItem.name} component`, () => {
   beforeEach(() => {

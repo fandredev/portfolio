@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import Translator from "../../../hooks/use-translator";
+import Translator from "../../../../hooks/use-translator";
 
 export interface QualificationEducationProps {
   course: ReactNode;

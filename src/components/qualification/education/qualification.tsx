@@ -1,6 +1,6 @@
 import { CalendarDays } from "lucide-react";
 
-import { QualificationEducationProps } from "./data";
+import { QualificationEducationProps } from "./data/qualification-data";
 
 export default function QualificationEducationItem({
   course,

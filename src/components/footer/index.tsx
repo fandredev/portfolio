@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import { Github, Linkedin } from "lucide-react";
 import { useTranslation } from "react-i18next";
 

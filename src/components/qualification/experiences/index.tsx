@@ -15,7 +15,7 @@ export interface QualificationExperiencesProps {
   time: string;
 }
 
-const qualificationExperiences: QualificationExperiencesProps[] = [
+export const qualificationExperiences: QualificationExperiencesProps[] = [
   {
     company: "Luby",
     charger: <Translator path="experiences.junior_developer" />,

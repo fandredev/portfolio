@@ -2,9 +2,9 @@ import { screen, render } from "@testing-library/react";
 import { I18nextProvider } from "react-i18next";
 import { describe, test, expect, beforeEach } from "vitest";
 
-import Education from ".";
-import QualificationEducationItem from "./qualification";
-import i18n from "../../../i18n";
+import Education from "..";
+import i18n from "../../../../i18n";
+import QualificationEducationItem from "../qualification";
 
 describe(`${Education.name} component`, () => {
   beforeEach(() => {

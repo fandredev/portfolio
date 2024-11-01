@@ -1,3 +1,4 @@
+/* eslint-disable import/order */
 import type { Meta, StoryObj } from "@storybook/react";
 
 import I18n from "..";

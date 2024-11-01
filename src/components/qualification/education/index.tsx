@@ -1,4 +1,4 @@
-import { qualificationEducations } from "./data";
+import { qualificationEducations } from "./data/qualification-data";
 import QualificationEducationItem from "./qualification";
 
 export default function Education() {
