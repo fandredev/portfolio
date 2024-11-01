@@ -2,6 +2,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 import { House } from "lucide-react";
 import HeaderItem from "../item";
 
+import "../header.css";
+
 const meta = {
   component: HeaderItem,
   tags: ["autodocs"],

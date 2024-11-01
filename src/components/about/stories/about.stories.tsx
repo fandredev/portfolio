@@ -21,4 +21,4 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const DefaultAbout: Story = {};
+export const AboutComponent: Story = {};
