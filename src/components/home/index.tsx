@@ -8,8 +8,8 @@ import Social from "../social";
 
 export default function Home() {
   return (
-    <section className="home section" id="home" role="banner">
-      <div className="languages-last-seven-days">
+    <section className="home section" id="home">
+      <div className="languages-last-seven-days" role="banner">
         <Translator path="banner.see_last_seven_languages" />{" "}
         <Link className="link-languages-last-seven-days" to="/stats">
           <Translator path="banner.here" />

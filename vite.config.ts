@@ -15,6 +15,7 @@ export default defineConfig({
 
     coverage: {
       include: ["src/**/*"],
+      exclude: ["**/*.stories.tsx"],
       reporter: ["text", "html", "json"],
       thresholds: {
         branches: 70,
