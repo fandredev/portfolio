@@ -61,7 +61,7 @@ const preview: Preview = {
         {
           context: NameContext,
           contextValue: {
-            name: "Felipe",
+            name: "Felipe André",
           },
         },
       ],

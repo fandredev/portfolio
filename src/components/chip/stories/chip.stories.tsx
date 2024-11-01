@@ -15,6 +15,14 @@ const meta = {
       description: "Paramêtro para adicionar uma soft skill no chip",
     },
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "Esse componente é responsável por mostrar pequenos itens de linguagens e ferramentas que uso em alguns projetos pessoais.",
+      },
+    },
+  },
 } satisfies Meta<typeof Chip>;
 
 export default meta;

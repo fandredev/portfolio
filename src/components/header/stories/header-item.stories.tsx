@@ -11,6 +11,14 @@ const meta = {
     text: "Ínicio",
     icon: <House size={16} color={"#000"} />,
   },
+  parameters: {
+    docs: {
+      description: {
+        component:
+          "Esse componente é responsável por mostrar itens no header NO RESPONSIVO para você navegar pelo site e até mesmo trocar a linguagem do site",
+      },
+    },
+  },
 } satisfies Meta<typeof HeaderItem>;
 
 export default meta;
