@@ -1,9 +1,8 @@
 import { screen, render } from "@testing-library/react";
-
 import { I18nextProvider } from "react-i18next";
+
 import Informations from ".";
 import InformationBox from "./box";
-
 import i18n from "../../i18n";
 
 describe(`${Informations.name} component`, () => {

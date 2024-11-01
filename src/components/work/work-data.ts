@@ -7,7 +7,6 @@ import UICloneBootstrapPage from "../../assets/clone/ui-clone-bootstrap-page.web
 import UICloneGithubDesktopPage from "../../assets/clone/ui-clone-github-desktop-page.webp";
 import UICloneNpmPage from "../../assets/clone/ui-clone-npm-page.webp";
 import UICloneSassPage from "../../assets/clone/ui-clone-sass-page.webp";
-
 import UICloneVSCode from "../../assets/clone/ui-clone-vscode.webp";
 import WorldWise from "../../assets/clone/world-wise.webp";
 

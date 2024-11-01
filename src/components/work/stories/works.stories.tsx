@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { projectsData } from "../work-data";
 
+import { projectsData } from "../work-data";
 import Works from "../works";
 import "../work.css";
 

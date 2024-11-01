@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import Backend from "./Backend";
 import Frontend from "./Frontend";
 import "./skills.css";

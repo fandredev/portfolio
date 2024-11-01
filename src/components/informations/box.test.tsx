@@ -1,12 +1,9 @@
 import { screen, render } from "@testing-library/react";
-
 import { Award } from "lucide-react";
 import { I18nextProvider } from "react-i18next";
-
 import { describe, test, expect, beforeEach } from "vitest";
 
 import InformationBox from "./box";
-
 import i18n from "../../i18n";
 
 describe(`${InformationBox.name} component`, () => {

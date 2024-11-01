@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import { SkillsProps } from "..";
 import Translator from "../../../hooks/use-translator";
 

@@ -1,5 +1,4 @@
 import { screen, render } from "@testing-library/react";
-
 import { describe, test, expect, beforeEach } from "vitest";
 
 import Chip from ".";

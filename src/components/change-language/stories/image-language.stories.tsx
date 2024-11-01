@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import I18n from "..";
-
 import FlagBrazil from "../../../assets/flags/flag-brazil.webp";
 import FlagEUA from "../../../assets/flags/flag-eua.webp";
 

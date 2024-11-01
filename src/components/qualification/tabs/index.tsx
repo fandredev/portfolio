@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import { BriefcaseBusiness, GraduationCap } from "lucide-react";
+
 import Translator from "../../../hooks/use-translator";
 
 export type TabsVariants = "education" | "experience";

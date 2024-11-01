@@ -7,9 +7,9 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from "recharts";
+
 import ErrorAPI from "../components/error";
 import Loader from "../components/loader";
-
 import Translator from "../hooks/use-translator";
 import { useWakatimeStats } from "../hooks/use-wakatime-stats";
 

@@ -1,5 +1,6 @@
 import { ArrowUp } from "lucide-react";
 import { useTranslation } from "react-i18next";
+
 import { useScrollVisibility } from "../../hooks/use-scroll-visibility";
 import "./scroll-up.css";
 

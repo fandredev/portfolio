@@ -1,6 +1,8 @@
 import { useState } from "react";
+
 import "./header.css";
 import { CircleChevronUp, CircleX } from "lucide-react";
+
 import I18n from "../change-language";
 import HeaderItem, { headerItems } from "./item";
 import useNameContext from "../../hooks/use-name-context";

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+
 import Translator from "../../../hooks/use-translator";
 
 export interface QualificationEducationProps {

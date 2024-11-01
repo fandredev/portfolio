@@ -1,8 +1,9 @@
 import React, { Suspense, useEffect } from "react";
-import type { Preview } from "@storybook/react";
 
+import type { Preview } from "@storybook/react";
 import { I18nextProvider } from "react-i18next";
 import { withReactContext } from "storybook-react-context";
+
 import NameContext from "../src/context/NameContext";
 import i18n from "../src/i18n";
 

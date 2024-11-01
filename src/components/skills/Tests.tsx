@@ -1,6 +1,6 @@
 import { BookOpenText } from "lucide-react";
-import { toolsTest } from "./data/tests-data";
 
+import { toolsTest } from "./data/tests-data";
 import Translator from "../../hooks/use-translator";
 
 export default function Tests() {

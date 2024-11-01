@@ -1,4 +1,5 @@
 import { ArrowDown } from 'lucide-react';
+
 import Translator from '../../hooks/use-translator';
 
 export default function ScrollDown() {

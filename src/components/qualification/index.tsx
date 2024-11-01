@@ -1,9 +1,9 @@
 import { useState } from "react";
+
 import Education from "./education";
 import QualificationExperience from "./experiences";
 import "./qualification.css";
 import Tab, { tabs, TabsVariants } from "./tabs";
-
 import Translator from "../../hooks/use-translator";
 
 function Qualification() {

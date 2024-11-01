@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import Frontend from "../Frontend";
 
 const meta = {

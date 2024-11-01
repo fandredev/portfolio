@@ -29,6 +29,7 @@ export default tseslint.config(
         'error',
         {
           groups: ['builtin', 'external', 'internal'],
+          "newlines-between": "always",
           pathGroups: [
             {
               pattern: 'react',

@@ -1,5 +1,4 @@
 import { screen, render, fireEvent } from "@testing-library/react";
-
 import { I18nextProvider } from "react-i18next";
 
 import Header from "..";
