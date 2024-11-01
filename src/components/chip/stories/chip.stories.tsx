@@ -12,7 +12,7 @@ const meta = {
   },
   argTypes: {
     label: {
-      description: "Paramêtro para adicionar uma soft skill no chip",
+      description: "Paramêtro para adicionar uma soft skill no chip.",
     },
   },
   parameters: {

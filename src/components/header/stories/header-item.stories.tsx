@@ -34,10 +34,10 @@ export const DefaultItem: Story = {
     },
 
     text: {
-      description: "Label do item do header a ser exibido",
+      description: "Label do item do header a ser exibido.",
     },
     icon: {
-      description: "Ícone do item do header a ser exibido",
+      description: "Ícone do item do header a ser exibido.",
     },
     openNewTab: {
       description:
@@ -57,11 +57,11 @@ export const OpenNewTab: Story = {
     },
 
     text: {
-      description: "Label do item do header a ser exibido",
+      description: "Label do item do header a ser exibido.",
     },
 
     icon: {
-      description: "Ícone do item do header a ser exibido",
+      description: "Ícone do item do header a ser exibido.",
     },
 
     openNewTab: {

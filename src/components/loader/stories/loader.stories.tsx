@@ -17,7 +17,8 @@ const meta = {
   },
   argTypes: {
     children: {
-      description: "Paramêtro para adicionar um texto no componente de loading",
+      description:
+        "Paramêtro para adicionar um texto no componente de loading.",
     },
   },
   parameters: {
