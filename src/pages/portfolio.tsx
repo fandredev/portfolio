@@ -5,7 +5,7 @@ import Header from "../components/header";
 import Home from "../components/home";
 import Qualification from "../components/qualification";
 import ScrollUp from "../components/scrollup";
-import Skills from "../components/skills";
+import ListSkills from "../components/skills";
 import Work from "../components/work";
 
 export default function Portfolio() {
@@ -15,7 +15,7 @@ export default function Portfolio() {
         <Header />
         <Home />
         <About />
-        <Skills />
+        <ListSkills />
         <Work />
         <Qualification />
         <Contact />
