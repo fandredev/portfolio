@@ -17,6 +17,7 @@
 - [React i18n](https://react.i18next.com/)
 - [React Icons](https://react-icons.github.io/react-icons/)
 - [React Hook Form](https://react-hook-form.com/)
+- [React Query](https://tanstack.com/query/latest/docs/framework/react/overview)
 - [zod](https://zod.dev/)
 - [EmailJS](https://www.emailjs.com/)
 - [asdf](https://asdf-vm.com/)

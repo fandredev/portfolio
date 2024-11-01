@@ -1,10 +1,12 @@
 import React, { Suspense, useEffect } from "react";
-
 import type { Preview } from "@storybook/react";
 
-import "../src/index.css";
 import { I18nextProvider } from "react-i18next";
+import { withReactContext } from "storybook-react-context";
+import NameContext from "../src/context/NameContext";
 import i18n from "../src/i18n";
+
+import "../src/index.css";
 
 // https://storybook.js.org/recipes/react-i18next
 
@@ -31,7 +33,7 @@ export const globalTypes = {
     toolbar: {
       icon: "globe",
       items: [
-        { value: "pt-BR", title: "Português do Brasil" },
+        { value: "pt-BR", title: "Brazilian Portuguese" },
         { value: "en-US", title: "English" },
       ],
       showName: true,
@@ -54,9 +56,20 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
+    reactContext: {
+      contexts: [
+        {
+          context: NameContext,
+          contextValue: {
+            name: "Felipe",
+          },
+        },
+      ],
+    },
   },
 
   decorators: [
+    withReactContext,
     useWithI18next,
     (Story) => (
       <div
