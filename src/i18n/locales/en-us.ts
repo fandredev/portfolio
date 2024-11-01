@@ -7,6 +7,7 @@ export default {
       qualifications: "Qualifications",
       contacts: "Contacts",
       API: "API",
+      ui: "UI",
       introduction_text:
         "Hello! My name is Felipe André, I am a Full Stack developer. I am passionate about technology and I am always looking for new challenges. Get in touch with me to chat 😃",
       say_hello_whatsapp_button: "Say hello",

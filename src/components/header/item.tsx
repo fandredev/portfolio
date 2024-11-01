@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 
 import {
+  BookCheck,
   BookOpenText,
   Briefcase,
   BriefcaseBusiness,
@@ -53,6 +54,12 @@ export const headerItems: HeaderItemProps[] = [
     href: "https://portfolio-backend-jko9.onrender.com/api/v1",
     icon: <Contact size={16} color={"#000"} />,
     text: <Translator path="home.API" />,
+    openNewTab: true,
+  },
+  {
+    href: "https://components-felipe-andre.vercel.app",
+    icon: <BookCheck size={16} color={"#000"} />,
+    text: <Translator path="home.ui" />,
     openNewTab: true,
   },
 ];
