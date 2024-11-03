@@ -1,8 +1,9 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import Translator from "hooks/use-translator";
 
 import "../loader.css";
+
 import Loader from "..";
-import Translator from "../../../hooks/use-translator";
 
 const API_URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 

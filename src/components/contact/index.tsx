@@ -1,10 +1,10 @@
-import { ArrowRight, Linkedin } from 'lucide-react';
-import { FaWhatsapp } from 'react-icons/fa';
+import Translator from "hooks/use-translator";
+import { ArrowRight, Linkedin } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
-import './contact.css';
-import CardContact from './card-contact';
-import FormContact from './form-contact';
-import Translator from '../../hooks/use-translator';
+import "./contact.css";
+import CardContact from "./card-contact";
+import FormContact from "./form-contact";
 
 export default function Contact() {
   return (

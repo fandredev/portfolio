@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
+import Translator from "hooks/use-translator";
 import { BriefcaseBusiness, GraduationCap } from "lucide-react";
 
 import Tab from "..";
-import Translator from "../../../../hooks/use-translator";
 
 import "../../qualification.css";
 

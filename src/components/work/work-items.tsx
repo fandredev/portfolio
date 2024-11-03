@@ -1,5 +1,6 @@
+import Translator from "hooks/use-translator";
+
 import { Projects } from "./work-data";
-import Translator from "../../hooks/use-translator";
 import Chip from "../chip";
 
 interface WorkItemsProps {

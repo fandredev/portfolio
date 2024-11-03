@@ -1,4 +1,3 @@
-// Chip.jsx
 import "./chip.css";
 
 interface ChipProps {

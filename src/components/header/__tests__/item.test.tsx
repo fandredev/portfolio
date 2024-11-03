@@ -1,7 +1,7 @@
 import { screen, render } from "@testing-library/react";
+import i18n from "i18n";
 import { I18nextProvider } from "react-i18next";
 
-import i18n from "../../../i18n";
 import HeaderItem, { headerItems } from "../item";
 
 describe(`${HeaderItem.name} component`, () => {

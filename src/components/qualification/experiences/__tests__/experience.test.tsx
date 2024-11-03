@@ -1,9 +1,9 @@
 import { screen, render } from "@testing-library/react";
+import i18n from "i18n";
 import { I18nextProvider } from "react-i18next";
 import { describe, expect, beforeEach, it } from "vitest";
 
 import QualificationExperience, { QualificationExperiencesProps } from "..";
-import i18n from "../../../../i18n";
 import QualificationExperiencesItem from "../experience-item";
 
 describe(`${QualificationExperience.name} component`, () => {

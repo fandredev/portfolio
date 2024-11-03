@@ -1,5 +1,5 @@
-import NotFound from "../../assets/not-found.webp";
-import Translator from "../../hooks/use-translator";
+import NotFound from "assets/not-found.webp";
+import Translator from "hooks/use-translator";
 
 import "./error.css";
 

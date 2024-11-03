@@ -5,10 +5,10 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import "../stats.css";
 
+import QueryProvider from "providers/QueryProvider";
 import { BrowserRouter } from "react-router-dom";
 
 import WakatimeStats from "../";
-import QueryProvider from "../../../providers/QueryProvider";
 
 const WrapperQueryClientProvider = ({ children }: { children: ReactNode }) => (
   <QueryProvider>

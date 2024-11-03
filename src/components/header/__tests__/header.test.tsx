@@ -1,9 +1,9 @@
 import { screen, render, fireEvent } from "@testing-library/react";
+import { NameProvider } from "context/NameContext";
+import i18n from "i18n";
 import { I18nextProvider } from "react-i18next";
 
 import Header from "..";
-import { NameProvider } from "../../../context/NameContext";
-import i18n from "../../../i18n";
 
 describe(`${Header.name} component`, () => {
   beforeEach(() => {

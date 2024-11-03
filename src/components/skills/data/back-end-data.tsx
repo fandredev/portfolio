@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 
+import Translator from "hooks/use-translator";
+
 import { SkillsProps } from "..";
-import Translator from "../../../hooks/use-translator";
 
 type BackendNameSkills = "Python" | "Django" | "Postgres" | "NestJS" | "NodeJS";
 

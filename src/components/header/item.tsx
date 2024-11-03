@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 
+import Translator from "hooks/use-translator";
 import {
   BookCheck,
   BookOpenText,
@@ -9,8 +10,6 @@ import {
   House,
   User,
 } from "lucide-react";
-
-import Translator from "../../hooks/use-translator";
 
 interface HeaderItemProps {
   href: string;

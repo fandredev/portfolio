@@ -1,6 +1,6 @@
 import { render } from "@testing-library/react";
+import NameContext from "context/NameContext";
 
-import NameContext from "../../context/NameContext";
 import useNameContext from "../use-name-context";
 
 const UseTestContextComponent = () => {

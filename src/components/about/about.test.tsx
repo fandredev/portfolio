@@ -1,8 +1,8 @@
 import { screen, render } from "@testing-library/react";
+import i18n from "i18n";
 import { I18nextProvider } from "react-i18next";
 
 import About from ".";
-import i18n from "../../i18n";
 
 describe(`${About.name} component`, () => {
   beforeEach(() => {

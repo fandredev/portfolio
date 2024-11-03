@@ -1,11 +1,12 @@
 import { ReactNode } from "react";
 
+import Translator from "hooks/use-translator";
+
 import Backend from "./Backend";
 import Frontend from "./Frontend";
 import "./skills.css";
 import Tests from "./Tests";
 import Tools from "./Tools";
-import Translator from "../../hooks/use-translator";
 
 export interface SkillsProps<T> {
   name: T;

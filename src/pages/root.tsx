@@ -1,7 +1,6 @@
+import { NameProvider } from "context/NameContext";
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
-
-import { NameProvider } from "../context/NameContext";
 
 export default function RootComponent() {
   return (

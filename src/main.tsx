@@ -1,14 +1,13 @@
-import "./i18n";
+import "i18n";
 import "./index.css";
 import "react-toastify/dist/ReactToastify.css";
 
 import { StrictMode } from "react";
 
+import QueryProvider from "providers/QueryProvider";
 import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
-
-import QueryProvider from "./providers/QueryProvider";
-import { routes } from "./routes";
+import { routes } from "routes";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

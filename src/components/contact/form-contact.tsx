@@ -2,12 +2,12 @@ import { useEffect, useRef, useState } from "react";
 
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
+import Translator from "hooks/use-translator";
 import { useForm } from "react-hook-form";
 import { useTranslation } from "react-i18next";
 import { toast } from "react-toastify";
 
 import { ContactSchema, formContactSchema } from "./schemas/contact-schema";
-import Translator from "../../hooks/use-translator";
 
 const serviceId = import.meta.env.VITE_SERVICE_EMAIL_ID;
 const templateId = import.meta.env.VITE_TEMPLATE_EMAIL_ID;

@@ -1,11 +1,11 @@
 import { screen, render } from "@testing-library/react";
+import i18n from "i18n";
 import { ArrowRight } from "lucide-react";
 import { I18nextProvider } from "react-i18next";
 import { FaWhatsapp } from "react-icons/fa";
 import { describe, test, expect, beforeEach } from "vitest";
 
 import CardContact from "./card-contact";
-import i18n from "../../i18n";
 
 describe(`${CardContact.name} component`, () => {
   beforeEach(() => {

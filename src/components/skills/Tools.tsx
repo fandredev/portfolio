@@ -1,4 +1,4 @@
-import Translator from "../../hooks/use-translator";
+import Translator from "hooks/use-translator";
 
 type ToolsSkillsName =
   | "npm & yarn"

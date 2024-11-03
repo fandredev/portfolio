@@ -1,7 +1,7 @@
 import "./home.css";
+import Translator from "hooks/use-translator";
 import { Link } from "react-router-dom";
 
-import Translator from "../../hooks/use-translator";
 import DescriptionWithMe from "../description-with-me";
 import ScrollDown from "../scrolldown";
 import Social from "../social";

@@ -1,6 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-
-import { api } from "../services/axios";
+import { api } from "services/axios";
 
 const URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 

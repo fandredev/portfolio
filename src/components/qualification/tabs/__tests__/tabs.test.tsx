@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/react";
+import i18n from "i18n";
 import { BriefcaseBusiness } from "lucide-react";
 import { I18nextProvider } from "react-i18next";
 
 import Tab from "..";
-import i18n from "../../../../i18n";
 
 describe(`${Tab.name} component`, () => {
   beforeEach(() => {

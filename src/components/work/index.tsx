@@ -1,6 +1,7 @@
-import './work.css';
-import Works from './works';
-import Translator from '../../hooks/use-translator';
+import "./work.css";
+import Translator from "hooks/use-translator";
+
+import Works from "./works";
 
 export default function Work() {
   return (

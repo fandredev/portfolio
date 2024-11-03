@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import "./footer.css";
 import { FaMedium, FaWhatsapp, FaYoutube } from "react-icons/fa";
 
-import useNameContext from "../../hooks/use-name-context";
+import useNameContext from "hooks/use-name-context";
 
 const date = new Date().getFullYear();
 

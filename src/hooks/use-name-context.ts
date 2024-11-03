@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import NameContext from "../context/NameContext";
+import NameContext from "context/NameContext";
 
 export default function useNameContext() {
   const context = useContext(NameContext);

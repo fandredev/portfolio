@@ -1,9 +1,9 @@
 import { fireEvent, render, screen } from "@testing-library/react";
+import FlagBrazil from "assets/flags/flag-brazil.webp";
+import i18n from "i18n";
 import { I18nextProvider } from "react-i18next";
 import { vi, describe, expect, it } from "vitest";
 
-import FlagBrazil from "../../../assets/flags/flag-brazil.webp";
-import i18n from "../../../i18n";
 import ImageLanguage from "../image-language";
 
 const altImageDefault = "Bandeira do Brasil";

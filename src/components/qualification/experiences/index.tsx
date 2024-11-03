@@ -1,7 +1,8 @@
 import { ReactNode } from "react";
 
+import Translator from "hooks/use-translator";
+
 import QualificationExperiencesItem from "./experience-item";
-import Translator from "../../../hooks/use-translator";
 
 type QualificationExperienceCompanyName =
   | "Luby"
