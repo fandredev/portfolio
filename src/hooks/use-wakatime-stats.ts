@@ -14,49 +14,41 @@ interface Languages {
   minutes: number;
 }
 
-interface WakatimeLanguages {
-  languages: Languages[];
-}
-
-const placeholderData: WakatimeLanguages = {
-  languages: [
-    {
-      name: "Typescript",
-      total_seconds: 5400,
-      percent: 30,
-      digital: "1:30",
-      decimal: "1.5",
-      text: "1 hr 30 mins",
-      hours: 1,
-      minutes: 30,
-    },
-    {
-      name: "Python",
-      total_seconds: 3600,
-      percent: 20,
-      digital: "1:00",
-      decimal: "1.0",
-      text: "1 hr",
-      hours: 1,
-      minutes: 0,
-    },
-    {
-      name: "HTML",
-      total_seconds: 1800,
-      percent: 10,
-      digital: "0:30",
-      decimal: "0.5",
-      text: "30 mins",
-      hours: 0,
-      minutes: 30,
-    },
-  ],
-};
+const placeholderData: Languages[] = [
+  {
+    name: "Typescript",
+    total_seconds: 5400,
+    percent: 30,
+    digital: "1:30",
+    decimal: "1.5",
+    text: "1 hr 30 mins",
+    hours: 1,
+    minutes: 30,
+  },
+  {
+    name: "Python",
+    total_seconds: 3600,
+    percent: 20,
+    digital: "1:00",
+    decimal: "1.0",
+    text: "1 hr",
+    hours: 1,
+    minutes: 0,
+  },
+  {
+    name: "HTML",
+    total_seconds: 1800,
+    percent: 10,
+    digital: "0:30",
+    decimal: "0.5",
+    text: "30 mins",
+    hours: 0,
+    minutes: 30,
+  },
+];
 
 const searchMyLanguages = async () => {
-  const response = await api.get<WakatimeLanguages>(
-    `${URL}/wakatime/languages`
-  );
+  const response = await api.get<Languages[]>(`${URL}/wakatime/languages`);
   if (!response.data) {
     throw new Error("Erro ao pegar minhas linguagens mais usadas!");
   }
@@ -72,7 +64,9 @@ const useWakatimeStats = () => {
     staleTime: 1000 * 60 * 5, // 5min
   });
 
-  const chartData = data?.languages.map((item) => ({
+  console.log(data, "Data");
+
+  const chartData = data?.map((item) => ({
     name: item.name,
     percent: item.percent,
   }));
