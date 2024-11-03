@@ -1,14 +1,14 @@
 import DjangoImage from "assets/backend/django.webp";
 import GolangImage from "assets/backend/golang.webp";
 import NodeJSImage from "assets/backend/nodejs.webp";
-import FastPizzaPage from "assets/clone/fast-pizza.webp";
-import ReactQuiz from "assets/clone/react-quiz.webp";
-import UICloneBootstrapPage from "assets/clone/ui-clone-bootstrap-page.webp";
-import UICloneGithubDesktopPage from "assets/clone/ui-clone-github-desktop-page.webp";
-import UICloneNpmPage from "assets/clone/ui-clone-npm-page.webp";
-import UICloneSassPage from "assets/clone/ui-clone-sass-page.webp";
-import UICloneVSCode from "assets/clone/ui-clone-vscode.webp";
-import WorldWise from "assets/clone/world-wise.webp";
+import FastPizzaPage from "assets/clones/fast-pizza.webp";
+import ReactQuiz from "assets/clones/react-quiz.webp";
+import UICloneBootstrapPage from "assets/clones/ui-clone-bootstrap-page.webp";
+import UICloneGithubDesktopPage from "assets/clones/ui-clone-github-desktop-page.webp";
+import UICloneNpmPage from "assets/clones/ui-clone-npm-page.webp";
+import UICloneSassPage from "assets/clones/ui-clone-sass-page.webp";
+import UICloneVSCode from "assets/clones/ui-clone-vscode.webp";
+import WorldWise from "assets/clones/world-wise.webp";
 
 export interface Projects {
   id: number;

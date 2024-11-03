@@ -1,5 +1,5 @@
 import CV from "assets/curriculum-vitae.pdf";
-import Me from "assets/me.webp";
+import Me from "assets/me/me-about-image.webp";
 import Translator from "hooks/use-translator";
 import { ScrollText } from "lucide-react";
 
