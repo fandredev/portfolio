@@ -4,6 +4,8 @@ import "../loader.css";
 import Loader from "..";
 import Translator from "../../../hooks/use-translator";
 
+const API_URL = import.meta.env.VITE_API_URL_PORTFOLIO;
+
 const meta = {
   component: Loader,
   tags: ["autodocs"],
@@ -24,8 +26,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component:
-          "Esse componente é responsável por mostrar um spinner de loading e um texto quando eu busco minhas linguagens mais usadas nos últimos 7 dias na minha API. (https://portfolio-backend-jko9.onrender.com/api/v1)",
+        component: `Esse componente é responsável por mostrar um spinner de loading e um texto quando eu busco minhas linguagens mais usadas nos últimos 7 dias na minha API. ${API_URL}`,
       },
     },
   },

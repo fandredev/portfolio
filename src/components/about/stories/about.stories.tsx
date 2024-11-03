@@ -11,7 +11,7 @@ const meta = {
     docs: {
       description: {
         component:
-          "Esse componente é responsável por mostrar um pouco mais de detalhes sobre mim de maneira pessoal e profissional.",
+          "Esse componente é responsável por mostrar um pouco mais de detalhes sobre o Felipe André de maneira pessoal e profissional.",
       },
     },
   },

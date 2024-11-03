@@ -26,7 +26,7 @@ const meta = {
     docs: {
       description: {
         component:
-          "Esse componente é responsável por mostrar uma pequena e breve introdução sobre mim.",
+          "Esse componente é responsável por mostrar uma pequena e breve introdução sobre o Felipe André.",
       },
     },
   },
