@@ -41,6 +41,31 @@ export default tseslint.config(
           },
         },
       ],
+      "import/no-restricted-paths": [
+        "warn",
+        {
+          zones: [
+            {
+              target: "./src",
+              from: "./src",
+              except: [
+                "src/*",
+                "assets/*",
+                "components/*",
+                "context/*",
+                "hooks/*",
+                "i18n/*",
+                "pages/*",
+                "providers/*",
+                "routes/*",
+                "services/*"
+              ],
+              message:
+                "Evite usar caminhos relativos longos. Use os aliases definidos no tsconfig.json e vite.config.ts.",
+            },
+          ],
+        },
+      ],
     },
     settings: {
       'import/resolver': {

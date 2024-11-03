@@ -7,6 +7,19 @@ import removeConsole from "vite-plugin-remove-console";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), removeConsole()],
+  resolve: {
+    alias: {
+      src: "/src",
+      assets: "/src/assets",
+      components: "/src/components",
+      context: "/src/context",
+      hooks: "/src/hooks",
+      i18n: "/src/i18n",
+      pages: "/src/pages",
+      routes: "/src/routes",
+      providers: "/src/providers",
+    },
+  },
   test: {
     globals: true,
     environment: "jsdom",
