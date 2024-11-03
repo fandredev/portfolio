@@ -72,12 +72,10 @@ const useWakatimeStats = () => {
     staleTime: 1000 * 60 * 5, // 5min
   });
 
-  const chartData = data?.languages
-    .map((item) => ({
-      name: item.name,
-      percent: item.percent,
-    }))
-    .slice(0, 7);
+  const chartData = data?.languages.map((item) => ({
+    name: item.name,
+    percent: item.percent,
+  }));
 
   return {
     data,
