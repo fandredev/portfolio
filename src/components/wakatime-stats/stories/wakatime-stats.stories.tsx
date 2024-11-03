@@ -27,7 +27,7 @@ const meta = {
   parameters: {
     docs: {
       description: {
-        component: `Esse componente é responsável por as linguagens mais usadas pelo Felipe André nos últimos 7 dias. A API que construí é pública e gratuita e por essa questão, os dados podem demandar um pouco. ${API_URL}`,
+        component: `Esse componente é responsável por as linguagens mais usadas pelo Felipe André nos últimos 7 dias. A API que construí é pública e gratuita e por essa questão, os dados podem demorar um pouco. ${API_URL}`,
       },
     },
   },
