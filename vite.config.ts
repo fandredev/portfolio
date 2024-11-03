@@ -17,6 +17,7 @@ export default defineConfig({
       i18n: "/src/i18n",
       pages: "/src/pages",
       routes: "/src/routes",
+      services: "/src/services",
       providers: "/src/providers",
     },
   },

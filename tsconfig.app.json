@@ -28,8 +28,8 @@
       "i18n/*": ["./i18n/*"],
       "pages/*": ["./pages/*"],
       "providers/*": ["./providers/*"],
-      "routes/*": ["./routes/*"],
-      "services/*": ["./services/*"]
+      "services/*": ["./services/*"],
+      "routes/*": ["./routes/*"]
     },
     "baseUrl": "./src"
   },
