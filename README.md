@@ -21,6 +21,7 @@
 - [zod](https://zod.dev/)
 - [EmailJS](https://www.emailjs.com/)
 - [asdf](https://asdf-vm.com/)
+- [New Relic](https://newrelic.com/pt)
 
 ## Documentation Components
 
@@ -87,6 +88,6 @@ Youtube: https://www.youtube.com/@thistate/<br>
 Blog: https://medium.com/@thistate<br>
 
 # References
+
 - [Portfólio Template by](https://buymeacoffee.com/crypticacoder/e/85393)
 - [404 template by](https://www.figma.com/community/file/1381562385964018425/08-daily-ui-challenge-404-page)
-
