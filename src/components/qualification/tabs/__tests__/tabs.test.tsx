@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
-import i18n from "services/i18n";
 import { BriefcaseBusiness } from "lucide-react";
 import { I18nextProvider } from "react-i18next";
+import i18n from "services/i18n";
 
 import Tab from "..";
 
