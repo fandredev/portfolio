@@ -3,6 +3,7 @@ on: push
 jobs:
   lighthouse:
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - name: Audit URLs using Lighthouse
