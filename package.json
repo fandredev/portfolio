@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "audit:dev": "concurrently \"yarn run dev\" \"sleep 5 && lighthouse http://localhost:5173/ --view --preset=desktop\"",
     "dev": "vite",
     "test": "vitest",
     "coverage": "vitest run --coverage --reporter=verbose",
@@ -62,6 +63,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "@vitest/coverage-v8": "^2.1.1",
+    "concurrently": "^9.1.0",
     "eslint": "^9.9.0",
     "eslint-import-resolver-typescript": "^3.6.3",
     "eslint-plugin-import": "^2.30.0",

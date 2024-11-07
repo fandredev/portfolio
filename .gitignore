@@ -27,3 +27,5 @@ coverage
 .env
 *storybook.log
 storybook-static
+localhost_*.html
+localhost_*.json
