@@ -104,6 +104,8 @@ export default {
     alt_image: {
       flag_brazil: "Bandeira do Brasil",
       flag_united_states: "Bandeira dos Estados Unidos",
+      ghost:
+        "Um fantasma assombrando você por ter entrado em uma página não encontrada.",
     },
 
     aria_labels: {
@@ -119,6 +121,15 @@ export default {
     error_api: {
       bad_request:
         "Poxa, não foi dessa vez! Algo deu errado, mas não se preocupe. Você pode usar o link abaixo para ver as linguagens mesmo assim, tá?",
+    },
+
+    // Not Found
+
+    not_found: {
+      title: "Página não encontrada",
+      description:
+        "Whoops! Esta página deve ser um fantasma - ela não existe e você precisa correr daqui!",
+      find_shelter: "Encontrar abrigo",
     },
   },
 };

@@ -64,8 +64,6 @@ const useWakatimeStats = () => {
     staleTime: 1000 * 60 * 5, // 5min
   });
 
-  console.log(data, "Data");
-
   const chartData = data?.map((item) => ({
     name: item.name,
     percent: item.percent,

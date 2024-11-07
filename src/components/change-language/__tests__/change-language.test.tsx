@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import enUs from "i18n/locales/en-us";
 import ptBr from "i18n/locales/pt-br";
-import { describe, it, expect, vi, beforeEach } from "vitest";
+import { describe, test, expect, vi, beforeEach } from "vitest";
 
 import I18n from "..";
 import { LanguageTypes } from "../image-language";
@@ -40,13 +40,13 @@ describe(`${I18n.name}: `, () => {
     render(<I18n />);
   });
 
-  it("should render two buttons of languages when component loads", () => {
+  test("should render two buttons of languages when component loads", () => {
     const buttonElement = screen.getAllByRole("button");
 
     expect(buttonElement).toHaveLength(2);
   });
 
-  it("should select flag Brazil when components loads", () => {
+  test("should select flag Brazil when components loads", () => {
     const [buttonBrazil, buttonEnglish]: HTMLButtonElement[] =
       screen.getAllByRole("button");
 

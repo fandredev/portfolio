@@ -1,5 +1,6 @@
 import { render } from "@testing-library/react";
 import NameContext from "context/NameContext";
+import { describe, expect, test } from "vitest";
 
 import useNameContext from "../use-name-context";
 
@@ -9,7 +10,7 @@ const UseTestContextComponent = () => {
 };
 
 describe(`${useNameContext.name}:`, () => {
-  it("should return correct context when Provider is present", () => {
+  test("should return correct context when Provider is present", () => {
     const mockContext = { name: "Felipe", setName: () => {} };
 
     const { getByText } = render(
@@ -21,7 +22,7 @@ describe(`${useNameContext.name}:`, () => {
     expect(getByText("Felipe")).toBeDefined();
   });
 
-  it("should return an error when context not exist", () => {
+  test("should return an error when context not exist", () => {
     // Verifica se o erro é lançado ao renderizar sem Provider
     expect(() => render(<UseTestContextComponent />)).toThrow(
       "Name Context not exist"

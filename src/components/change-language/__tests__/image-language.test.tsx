@@ -2,7 +2,7 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import FlagBrazil from "assets/flags/flag-brazil.webp";
 import i18n from "i18n";
 import { I18nextProvider } from "react-i18next";
-import { vi, describe, expect, it } from "vitest";
+import { vi, describe, expect, test } from "vitest";
 
 import ImageLanguage from "../image-language";
 
@@ -11,7 +11,7 @@ const altImageDefault = "Bandeira do Brasil";
 const mockOnChangeLanguage = vi.fn();
 
 describe(`${ImageLanguage.name}: `, () => {
-  it("should render correct className in button to change language when button is selected", () => {
+  test("should render correct className in button to change language when button is selected", () => {
     render(
       <I18nextProvider i18n={i18n}>
         <ImageLanguage
@@ -28,7 +28,7 @@ describe(`${ImageLanguage.name}: `, () => {
     expect(classList).toContain("selected");
   });
 
-  it("should render correct className in button to change language when button is NOT selected", () => {
+  test("should render correct className in button to change language when button is NOT selected", () => {
     render(
       <I18nextProvider i18n={i18n}>
         <ImageLanguage
@@ -46,7 +46,7 @@ describe(`${ImageLanguage.name}: `, () => {
     expect(classList).not.toContain("selected");
   });
 
-  it("should render flag Brazil by default when component loads", () => {
+  test("should render flag Brazil by default when component loads", () => {
     render(
       <I18nextProvider i18n={i18n}>
         <ImageLanguage
@@ -62,7 +62,7 @@ describe(`${ImageLanguage.name}: `, () => {
     expect(getAttribute).toBe(FlagBrazil);
   });
 
-  it("should render alt text when component loads", () => {
+  test("should render alt text when component loads", () => {
     render(
       <I18nextProvider i18n={i18n}>
         <ImageLanguage

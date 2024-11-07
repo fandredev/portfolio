@@ -105,6 +105,7 @@ export default {
     alt_image: {
       flag_brazil: "Brazil flag",
       flag_united_states: "United States flag",
+      ghost: "A ghost haunting you for entering a page not found.",
     },
     aria_labels: {
       github_icon: "View my GitHub profile to see my projects",
@@ -120,6 +121,15 @@ export default {
     error_api: {
       bad_request:
         "Oh, no, not this time! Something went wrong, but don't worry. You can use the link below to see the languages ​​anyway, okay?",
+    },
+
+    // Not Found
+
+    not_found: {
+      title: "Boo! Page missing",
+      description:
+        "Whoops! This page must be a ghost - it's not here! Click the button below to find shelter.",
+      find_shelter: "Find shelter",
     },
   },
 };

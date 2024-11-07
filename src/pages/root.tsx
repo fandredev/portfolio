@@ -1,3 +1,4 @@
+import Footer from "components/footer";
 import { NameProvider } from "context/NameContext";
 import { Outlet } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -14,6 +15,7 @@ export default function RootComponent() {
       />
       <NameProvider>
         <Outlet />
+        <Footer />
       </NameProvider>
     </>
   );
