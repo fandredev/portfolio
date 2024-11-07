@@ -5,7 +5,7 @@ import { I18nextProvider } from "react-i18next";
 import { withReactContext } from "storybook-react-context";
 
 import NameContext from "../src/context/NameContext";
-import i18n from "../src/i18n";
+import i18n from "../src/services/i18n";
 
 import "../src/index.css";
 

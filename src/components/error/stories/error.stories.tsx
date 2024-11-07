@@ -1,21 +1,21 @@
 import type { Meta, StoryObj } from "@storybook/react";
 
 import "../error.css";
-import ErrorAPI from "..";
+import Error from "..";
 
 const meta = {
-  component: ErrorAPI,
+  component: Error,
   tags: ["autodocs"],
-  title: "Components/ErrorAPI",
+  title: "Components/Error",
   parameters: {
     docs: {
       description: {
         component:
-          "Esse componente é responsável por mostrar um error com uma mensagem quando a API não responde os dados do servidor.",
+          "Esse componente é responsável por mostrar um error com uma mensagem quando algum erro 404 no sistema acontece.",
       },
     },
   },
-} satisfies Meta<typeof ErrorAPI>;
+} satisfies Meta<typeof Error>;
 
 export default meta;
 

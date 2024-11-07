@@ -173,6 +173,10 @@ abbr {
   align-items: center;
 }
 
+.mt-1 {
+  margin-top: 1rem;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {

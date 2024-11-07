@@ -4,7 +4,7 @@ import { I18nextProvider } from "react-i18next";
 import { describe, test, expect, beforeEach } from "vitest";
 
 import InformationBox from "./box";
-import i18n from "../../i18n";
+import i18n from "../../services/i18n";
 
 describe(`${InformationBox.name} component`, () => {
   const index = 1;

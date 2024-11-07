@@ -5,8 +5,8 @@ import type { Meta, StoryObj } from "@storybook/react";
 
 import "../stats.css";
 
-import QueryProvider from "providers/QueryProvider";
 import { BrowserRouter } from "react-router-dom";
+import QueryProvider from "services/providers/QueryProvider";
 
 import WakatimeStats from "../";
 
@@ -16,9 +16,7 @@ const WrapperQueryClientProvider = ({ children }: { children: ReactNode }) => (
   </QueryProvider>
 );
 
-const API_URL =
-  import.meta.env.VITE_API_URL_PORTFOLIO ||
-  "https://portfolio-backend-jko9.onrender.com/api/v1";
+const API_URL = import.meta.env.STORYBOOK_API_URL_PORTFOLIO;
 
 const meta = {
   component: WakatimeStats,

@@ -1,4 +1,4 @@
-import ErrorAPI from "components/error";
+import Error from "components/error";
 import Loader from "components/loader";
 import Translator from "hooks/use-translator";
 import { useWakatimeStats } from "hooks/use-wakatime-stats";
@@ -16,7 +16,7 @@ export default function Stats() {
   const { chartData, isLoading, isError, isFetched } = useWakatimeStats();
 
   if (isError) {
-    return <ErrorAPI />;
+    return <Error />;
   }
 
   return (

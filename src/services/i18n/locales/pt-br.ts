@@ -123,6 +123,11 @@ export default {
         "Poxa, não foi dessa vez! Algo deu errado, mas não se preocupe. Você pode usar o link abaixo para ver as linguagens mesmo assim, tá?",
     },
 
+    error_page: {
+      description:
+        "Parece que algo deu errado! Você pode me enviar uma mensagem se quiser que veja para você o que houve.",
+    },
+
     // Not Found
 
     not_found: {

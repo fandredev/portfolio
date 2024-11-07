@@ -5,9 +5,7 @@ import "../loader.css";
 
 import Loader from "..";
 
-const API_URL =
-  import.meta.env.VITE_API_URL_PORTFOLIO ||
-  "https://portfolio-backend-jko9.onrender.com/api/v1";
+const API_URL = import.meta.env.STORYBOOK_API_URL_PORTFOLIO;
 
 const meta = {
   component: Loader,

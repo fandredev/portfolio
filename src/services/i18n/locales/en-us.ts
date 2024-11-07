@@ -122,6 +122,10 @@ export default {
       bad_request:
         "Oh, no, not this time! Something went wrong, but don't worry. You can use the link below to see the languages ​​anyway, okay?",
     },
+    error_page: {
+      description:
+        "It looks like something went wrong! Y can send me a message if you want me to see what happened!",
+    },
 
     // Not Found
 

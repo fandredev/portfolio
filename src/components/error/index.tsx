@@ -1,14 +1,13 @@
 import NotFound from "assets/not-found.webp";
 import Translator from "hooks/use-translator";
-
 import "./error.css";
 
 const API_URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 
-export default function ErrorAPI() {
+export default function Error() {
   return (
-    <div className="container-error-api">
-      <div className="error-api">
+    <div className="container-error">
+      <div className="error">
         <div>
           <img src={NotFound} alt="Not Found page" />
         </div>

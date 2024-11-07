@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
-import enUs from "i18n/locales/en-us";
-import ptBr from "i18n/locales/pt-br";
+import enUs from "services/i18n/locales/en-us";
+import ptBr from "services/i18n/locales/pt-br";
 import { describe, test, expect, vi, beforeEach } from "vitest";
 
 import I18n from "..";
