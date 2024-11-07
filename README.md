@@ -87,5 +87,6 @@ Youtube: https://www.youtube.com/@thistate/<br>
 Blog: https://medium.com/@thistate<br>
 
 # References
+- [Portfólio Template by](https://buymeacoffee.com/crypticacoder/e/85393)
+- [404 template by](https://www.figma.com/community/file/1381562385964018425/08-daily-ui-challenge-404-page)
 
-Template by: https://buymeacoffee.com/crypticacoder/e/85393
