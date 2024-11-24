@@ -24,6 +24,7 @@ export default function About() {
           className="about__img"
           width={800}
           height={800}
+          loading="lazy"
         />
         <div className="about__data">
           <Informations />
