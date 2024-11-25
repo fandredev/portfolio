@@ -1,5 +1,6 @@
 import FastPizzaPage from "assets/clones/fast-pizza.webp";
 import ReactQuiz from "assets/clones/react-quiz.webp";
+import TheWildOasis from "assets/clones/the-wild-oasis.webp";
 import UICloneBootstrapPage from "assets/clones/ui-clone-bootstrap-page.webp";
 import UICloneGithubDesktopPage from "assets/clones/ui-clone-github-desktop-page.webp";
 import UICloneNpmPage from "assets/clones/ui-clone-npm-page.webp";
@@ -8,6 +9,15 @@ import UICloneVSCode from "assets/clones/ui-clone-vscode.webp";
 import WorldWise from "assets/clones/world-wise.webp";
 
 export const frontendProjects = [
+  {
+    image: TheWildOasis,
+    title: "The Wild Oasis",
+    category: "frontend",
+    hrefProject: "https://the-wild-oasis-fandre.vercel.app",
+    hrefGithub: "https://github.com/fandredev/the-wild-oasis",
+    techs: ["react", "typescript", "supabase"],
+    hasDeployed: true,
+  },
   {
     image: FastPizzaPage,
     title: "Fast Pizza",
