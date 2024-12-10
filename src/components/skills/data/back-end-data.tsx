@@ -15,6 +15,6 @@ export const toolsBackend: BackendSkills[] = [
   { name: "Python", level: <Translator path="tools.three_years_of_use" /> },
   { name: "Django", level: <Translator path="tools.three_years_of_use" /> },
   { name: "Postgres", level: <Translator path="tools.two_years_of_use" /> },
-  { name: "NestJS", level: <Translator path="tools.three_months_of_use" /> },
+  { name: "NestJS", level: <Translator path="tools.six_months_of_use" /> },
   { name: "NodeJS", level: <Translator path="tools.two_years_of_use" /> },
 ];

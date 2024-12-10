@@ -15,7 +15,7 @@ export default {
       about_me_title: "Sobre mim",
       an_basic_introduction: "Uma breve introdução",
       description_text:
-        "Meu nome é Felipe André, adoro astronomia e moro na região oeste de São Paulo, Brasil. Sou estudante de tecnologia desde os 17 anos e sou grato pelo progresso que venho aprendendo com a web e com esse mundo vasto de ser uma pessoa programadora. Atualmente estou trabalhando como Programador Pleno em uma startup de gestão de contratos e processos para advogados e hoje trabalho com as tecnologias de Django usando Python e React + Typescript.",
+        "Meu nome é Felipe André, adoro astronomia e moro na região oeste de São Paulo, Brasil. Sou estudante de tecnologia desde os 17 anos e sou grato pelo progresso que venho aprendendo com a web e com esse mundo vasto de ser uma pessoa programadora. Atualmente estou trabalhando como Programador Pleno em uma empresa de tecnologia com o foco em consultoria para outras empresas/clientes e hoje trabalho com as tecnologias de Typescript usando stacks como NestJS, NodeJS e React.",
       download_curriculum: "Baixar currículo",
       years_as_developer: "+ 5 anos como desenvolvedor",
       quantity_projects_completed: "+16 projetos concluídos",
@@ -38,7 +38,7 @@ export default {
       three_years_of_use: "3 anos de uso",
       two_years_of_use: "2 anos de uso",
       one_year_of_use: "1 ano de uso",
-      three_months_of_use: "3 meses",
+      six_months_of_use: "6 meses",
     },
     portfolio: {
       my_projects_personally:
