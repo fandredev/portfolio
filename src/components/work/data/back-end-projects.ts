@@ -6,6 +6,14 @@ import NodeJSImage from "assets/backend/nodejs.webp";
 export const backendProjects = [
   {
     image: NestJSImage,
+    title: "OpenWeather API",
+    category: "backend",
+    hrefGithub: "https://github.com/fandredev/weather-nestjs-api",
+    techs: ["nestjs", "nodejs", "jest"],
+    hasDeployed: false,
+  },
+  {
+    image: NestJSImage,
     title: "NestJS Youtube Videos",
     category: "backend",
     hrefGithub:
