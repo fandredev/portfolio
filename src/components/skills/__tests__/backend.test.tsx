@@ -28,7 +28,7 @@ describe(`${Backend.name} component`, () => {
       { name: "Python", level: "3 anos de uso" },
       { name: "Django", level: "3 anos de uso" },
       { name: "Postgres", level: "2 anos de uso" },
-      { name: "NestJS", level: "6 meses" },
+      { name: "NestJS", level: "9 meses" },
       { name: "NodeJS", level: "2 anos de uso" },
     ];
 

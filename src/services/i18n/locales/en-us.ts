@@ -14,7 +14,7 @@ export default {
       scroll_down: "Scroll down",
       about_me_title: "About me",
       an_basic_introduction: "A brief introduction",
-      description_text: `My name is Felipe André, I love astronomy and I live in the western region of São Paulo, Brazil. I've been a technology student since I was 17 and I'm grateful for the progress I've been learning with the web and this vast world of being a programmer. I'm currently working as a Full Programmer at a startup that manages contracts and processes for lawyers, and today I'm working with Django technologies using Python and React + Typescript."`,
+      description_text: `"My name is Felipe André, I love astronomy and I live in the western region of São Paulo, Brazil. I've been a technology student since I was 17 and I'm grateful for the progress I've been learning with the web and with this vast world of being a programmer. I'm currently working as a Full-Time Programmer in a technology company focusing on consulting for other companies/clients and today I work with Typescript technologies using stacks like NestJS, NodeJS and React. In my free time, I'll probably be studying and working with AI with a strong focus on Machine Learning and Deep Learning."`,
       download_curriculum: "Download curriculum",
       years_as_developer: "+ 5 years as a developer",
       quantity_projects_completed: "+16 projects completed",
@@ -37,7 +37,7 @@ export default {
       three_years_of_use: "3 years of use",
       two_years_of_use: "2 years of use",
       one_year_of_use: "1 year of use",
-      six_months_of_use: "3 months",
+      nine_months_of_use: "9 months",
     },
     portfolio: {
       my_projects_personally:
