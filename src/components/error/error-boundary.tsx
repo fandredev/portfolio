@@ -15,7 +15,7 @@ export default function ErrorBoundaryComponent() {
         <div>
           <Translator path="error_page.description" />
           <a
-            href="https://api.whatsapp.com/send?phone=11973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você..."
+            href="https://api.whatsapp.com/send?phone=5511973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você..."
             className="button mt-1"
             target="_blank"
           >

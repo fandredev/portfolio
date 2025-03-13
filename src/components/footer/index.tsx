@@ -29,7 +29,7 @@ export default function Footer() {
           </li>
           <li>
             <a
-              href="https://api.whatsapp.com/send?phone=11973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
+              href="https://api.whatsapp.com/send?phone=5511973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
               className="home__social-icon"
               target="_blank"
               aria-label={t("aria_labels.whatsapp_icon")}

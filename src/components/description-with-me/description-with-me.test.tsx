@@ -35,7 +35,7 @@ describe(`${DescriptionWithMe.name} component`, () => {
   test(`should render correct href to whatsapp link when component rendered`, () => {
     const button = screen.getByRole("button");
     const anchorHref =
-      "https://api.whatsapp.com/send?phone=11973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você.";
+      "https://api.whatsapp.com/send?phone=5511973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você.";
 
     const getAttribute = button.getAttribute("href");
 

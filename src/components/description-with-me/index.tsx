@@ -21,7 +21,7 @@ export default function DescriptionWithMe() {
 
       <a
         role="button"
-        href="https://api.whatsapp.com/send?phone=11973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
+        href="https://api.whatsapp.com/send?phone=5511973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
         target="_blank"
         className="button button--flex say-hello"
       >

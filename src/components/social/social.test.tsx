@@ -25,7 +25,7 @@ describe(`${Social.name} component`, () => {
       socialLink.getAttribute("href")
     );
     const githubLink = "https://github.com/fandredev/";
-    const whatsappLink = "https://api.whatsapp.com/send?phone=11973813705";
+    const whatsappLink = "https://api.whatsapp.com/send?phone=5511973813705";
     const linkedinLink = "https://www.linkedin.com/in/devfandre/";
     const youtubeLink = "https://www.youtube.com/@thistate";
 

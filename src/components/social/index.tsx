@@ -16,7 +16,7 @@ export default function Social() {
         <Github size={20} />
       </a>
       <a
-        href="https://api.whatsapp.com/send?phone=11973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
+        href="https://api.whatsapp.com/send?phone=5511973813705&text=Olá%20Felipe%20André,%20gostaria%20de%20falar%20com%20você."
         className="home__social-icon"
         aria-label={t("aria_labels.whatsapp_icon")}
         target="_blank"
