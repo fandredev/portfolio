@@ -1,9 +1,11 @@
 import "./stats.css";
 
-import Translator from "hooks/use-translator";
 import { CircleArrowLeft } from "lucide-react";
-import Stats from "pages/stats";
 import { Link } from "react-router-dom";
+
+import Translator from "hooks/use-translator";
+import Stats from "pages/stats";
+
 
 export default function WakatimeStats() {
   return (

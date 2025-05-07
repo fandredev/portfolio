@@ -1,7 +1,8 @@
-import useNameContext from "hooks/use-name-context";
-import Translator from "hooks/use-translator";
 import { useTranslation } from "react-i18next";
 import { FaWhatsapp } from "react-icons/fa";
+
+import useNameContext from "hooks/use-name-context";
+import Translator from "hooks/use-translator";
 
 import "./description-with-me.css";
 

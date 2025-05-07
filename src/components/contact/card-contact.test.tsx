@@ -2,8 +2,9 @@ import { screen, render } from "@testing-library/react";
 import { ArrowRight } from "lucide-react";
 import { I18nextProvider } from "react-i18next";
 import { FaWhatsapp } from "react-icons/fa";
-import i18n from "services/i18n";
 import { describe, test, expect, beforeEach } from "vitest";
+
+import i18n from "services/i18n";
 
 import CardContact from "./card-contact";
 

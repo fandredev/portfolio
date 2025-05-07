@@ -1,5 +1,6 @@
-import Translator from "hooks/use-translator";
 import { Award, BriefcaseBusiness, Headset } from "lucide-react";
+
+import Translator from "hooks/use-translator";
 
 import InformationBox, { InformationBoxProps } from "./box";
 

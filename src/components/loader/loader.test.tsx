@@ -1,6 +1,7 @@
 import { screen, render } from "@testing-library/react";
-import { NameProvider } from "context/NameContext";
 import { I18nextProvider } from "react-i18next";
+
+import { NameProvider } from "context/NameContext";
 import i18n from "services/i18n";
 
 import Loader from ".";

@@ -1,11 +1,12 @@
 import "./styles/not-found.css";
 
+import { useTranslation } from "react-i18next";
+import { useNavigate } from "react-router-dom";
+
 import ghostImage from "assets/not-found/ghost.svg";
 import Footer from "components/footer";
 import { NameProvider } from "context/NameContext";
 import Translator from "hooks/use-translator";
-import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
 
 export default function NotFound() {
   const navigate = useNavigate();

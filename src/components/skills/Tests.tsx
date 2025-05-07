@@ -1,5 +1,6 @@
-import Translator from "hooks/use-translator";
 import { BookOpenText } from "lucide-react";
+
+import Translator from "hooks/use-translator";
 
 import { toolsTest } from "./data/tests-data";
 

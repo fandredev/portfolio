@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
+
 import Translator from "hooks/use-translator";
 
 import "../loader.css";

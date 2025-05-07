@@ -1,6 +1,7 @@
-import Translator from "hooks/use-translator";
 import { ArrowRight, Linkedin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+
+import Translator from "hooks/use-translator";
 
 import "./contact.css";
 import CardContact from "./card-contact";

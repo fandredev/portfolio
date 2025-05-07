@@ -1,7 +1,8 @@
 import { screen, render } from "@testing-library/react";
 import { I18nextProvider } from "react-i18next";
-import i18n from "services/i18n";
 import { describe, test, expect, beforeEach, it } from "vitest";
+
+import i18n from "services/i18n";
 
 import { projectsData } from "../work-data";
 import WorkItems from "../work-items";

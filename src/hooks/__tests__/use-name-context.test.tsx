@@ -1,6 +1,7 @@
 import { render } from "@testing-library/react";
-import NameContext from "context/NameContext";
 import { describe, expect, test } from "vitest";
+
+import NameContext from "context/NameContext";
 
 import useNameContext from "../use-name-context";
 

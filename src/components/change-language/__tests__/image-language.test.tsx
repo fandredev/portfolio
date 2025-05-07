@@ -1,8 +1,10 @@
 import { fireEvent, render, screen } from "@testing-library/react";
-import FlagBrazil from "assets/flags/flag-brazil.webp";
 import { I18nextProvider } from "react-i18next";
-import i18n from "services/i18n";
 import { vi, describe, expect, test } from "vitest";
+
+import FlagBrazil from "assets/flags/flag-brazil.webp";
+import i18n from "services/i18n";
+
 
 import ImageLanguage from "../image-language";
 

@@ -1,7 +1,8 @@
 import { render, screen } from "@testing-library/react";
+import { describe, test, expect, vi, beforeEach } from "vitest";
+
 import enUs from "services/i18n/locales/en-us";
 import ptBr from "services/i18n/locales/pt-br";
-import { describe, test, expect, vi, beforeEach } from "vitest";
 
 import I18n from "..";
 import { LanguageTypes } from "../image-language";

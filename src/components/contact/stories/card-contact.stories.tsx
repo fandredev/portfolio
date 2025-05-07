@@ -1,7 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Translator from "hooks/use-translator";
 import { ArrowRight, Linkedin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+
+import Translator from "hooks/use-translator";
 
 import CardContact from "../card-contact";
 

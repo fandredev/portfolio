@@ -1,7 +1,8 @@
+import { ScrollText } from "lucide-react";
+
 import CV from "assets/curriculum-vitae.pdf";
 import Me from "assets/me/me-about-image.webp";
 import Translator from "hooks/use-translator";
-import { ScrollText } from "lucide-react";
 
 import Informations from "../informations";
 

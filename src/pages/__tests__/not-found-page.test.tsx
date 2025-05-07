@@ -1,9 +1,10 @@
 import { act } from "react";
 
 import { render, screen } from "@testing-library/react";
-import NotFound from "pages/not-found";
 import { MemoryRouter } from "react-router-dom";
 import { describe, test, beforeEach } from "vitest";
+
+import NotFound from "pages/not-found";
 
 describe(`${NotFound.name}`, () => {
   beforeEach(() => {

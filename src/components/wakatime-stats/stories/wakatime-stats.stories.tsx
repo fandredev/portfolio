@@ -6,6 +6,7 @@ import type { Meta, StoryObj } from "@storybook/react";
 import "../stats.css";
 
 import { BrowserRouter } from "react-router-dom";
+
 import QueryProvider from "services/providers/QueryProvider";
 
 import WakatimeStats from "../";

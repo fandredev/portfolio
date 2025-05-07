@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Translator from "hooks/use-translator";
 import { Award, BriefcaseBusiness, Headset } from "lucide-react";
+
+import Translator from "hooks/use-translator";
 
 import InformationBox from "../box";
 
