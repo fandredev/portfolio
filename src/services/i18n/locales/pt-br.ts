@@ -93,6 +93,7 @@ export default {
     stats: {
       back_button: "Voltar",
       languages: "Linguagens",
+      percentage: "Porcentagem",
       my_seven_last_languages_more_used:
         "Minhas linguagens de programação mais usadas nos últimos 7 dias",
       loading_stats_data:

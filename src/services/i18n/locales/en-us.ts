@@ -95,6 +95,7 @@ export default {
     stats: {
       back_button: "Back",
       languages: "Languages",
+      percentage: "Percentage",
       my_seven_last_languages_more_used:
         "My most used programming languages ​​in the last 7 days",
       loading_stats_data:
