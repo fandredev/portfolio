@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   BarChart,
   Bar,
@@ -15,6 +16,7 @@ import { useWakatimeStats } from "hooks/use-wakatime-stats";
 
 export default function Stats() {
   const { chartData, isLoading, isError, isFetched } = useWakatimeStats();
+  const { t } = useTranslation();
 
   if (isError) {
     return <Error />;
@@ -40,7 +42,12 @@ export default function Stats() {
               <CartesianGrid strokeDasharray="3 3" />
               <XAxis dataKey="name" />
               <YAxis />
-              <Tooltip formatter={(value: number) => `${Math.round(value)}%`} />
+              <Tooltip
+                formatter={(value: number) => [
+                  `${Math.round(value)}%`,
+                  t("stats.percentage"),
+                ]}
+              />
               <Bar dataKey="percent" fill="#82ca9d" />
             </BarChart>
           </ResponsiveContainer>
