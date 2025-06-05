@@ -3,13 +3,13 @@ import Translator from "hooks/use-translator";
 type ToolsSkillsName =
   | "npm & yarn"
   | "postman"
-  | "pgAdmin4"
+  | "dbeaver"
   | "docker"
-  | "vscode"
-  | "pipx"
+  | "vscode & jupyter"
+  | "sklearn"
   | "git"
-  | "eslint"
-  | "black"
+  | "pandas"
+  | "numpy"
   | "vite";
 
 interface ToolsSkills {
@@ -24,16 +24,16 @@ const tools: ToolsSkills[] = [
     name: "postman",
   },
   {
-    name: "pgAdmin4",
+    name: "dbeaver",
   },
   {
     name: "docker",
   },
   {
-    name: "vscode",
+    name: "vscode & jupyter",
   },
   {
-    name: "pipx",
+    name: "sklearn",
   },
   {
     name: "vite",
@@ -42,10 +42,10 @@ const tools: ToolsSkills[] = [
     name: "git",
   },
   {
-    name: "eslint",
+    name: "numpy",
   },
   {
-    name: "black",
+    name: "pandas",
   },
 ];
 

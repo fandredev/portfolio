@@ -26,11 +26,11 @@ describe(`${Backend.name} component`, () => {
   test("should render correct tools and level for tests when component rendered", () => {
     const tools: HTMLDivElement[] = screen.getAllByRole("listitem");
     const toolsBackend = [
-      { name: "Python", level: "3 anos de uso" },
+      { name: "Python", level: "4 anos de uso" },
       { name: "Django", level: "3 anos de uso" },
       { name: "Postgres", level: "2 anos de uso" },
-      { name: "NestJS", level: "9 meses" },
-      { name: "NodeJS", level: "2 anos de uso" },
+      { name: "NestJS", level: "1 ano de uso" },
+      { name: "NodeJS", level: "3 anos de uso" },
     ];
 
     for (let i = 0; i < tools.length; i++) {

@@ -202,7 +202,8 @@ abbr {
   }
 
   .section {
-    padding: 0
+    padding: 0;
+    margin-top: 1rem;
   }
 
   .section__subtitle {
