@@ -21,7 +21,6 @@
 - [zod](https://zod.dev/)
 - [EmailJS](https://www.emailjs.com/)
 - [asdf](https://asdf-vm.com/)
-- [New Relic](https://newrelic.com/pt)
 
 ## Documentation Components
 
