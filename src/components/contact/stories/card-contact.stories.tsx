@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { ArrowRight, Linkedin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 

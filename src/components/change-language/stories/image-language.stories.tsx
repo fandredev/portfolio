@@ -1,5 +1,5 @@
 /* eslint-disable import/order */
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import I18n from "..";
 import FlagBrazil from "../../../assets/flags/flag-brazil.webp";

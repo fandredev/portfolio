@@ -1,6 +1,6 @@
 import React, { Suspense, useEffect } from "react";
 
-import type { Preview } from "@storybook/react";
+import type { Preview } from "@storybook/react-vite";
 import { I18nextProvider } from "react-i18next";
 import { withReactContext } from "storybook-react-context";
 

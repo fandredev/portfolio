@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 // eslint-disable-next-line import/order
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import "../stats.css";
 

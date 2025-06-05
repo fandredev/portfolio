@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { Award, BriefcaseBusiness, Headset } from "lucide-react";
 
 import Translator from "hooks/use-translator";

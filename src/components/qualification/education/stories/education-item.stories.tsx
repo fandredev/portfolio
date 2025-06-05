@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import "../../qualification.css";
 import { qualificationEducations } from "../data/qualification-data";

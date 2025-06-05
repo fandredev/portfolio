@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 import { BriefcaseBusiness, GraduationCap } from "lucide-react";
 
 import Translator from "hooks/use-translator";

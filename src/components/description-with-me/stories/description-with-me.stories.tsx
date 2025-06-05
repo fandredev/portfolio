@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 
-import type { Meta, StoryObj } from "@storybook/react";
+import type { Meta, StoryObj } from "@storybook/react-vite";
 
 import "../description-with-me.css";
 import DescriptionWithMe from "..";
