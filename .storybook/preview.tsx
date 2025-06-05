@@ -2,7 +2,6 @@ import React, { Suspense, useEffect } from "react";
 
 import type { Preview } from "@storybook/react-vite";
 import { I18nextProvider } from "react-i18next";
-import { withReactContext } from "storybook-react-context";
 
 import NameContext from "../src/context/NameContext";
 import i18n from "../src/services/i18n";
@@ -70,7 +69,6 @@ const preview: Preview = {
   },
 
   decorators: [
-    withReactContext,
     useWithI18next,
     (Story) => (
       <div
@@ -85,7 +83,7 @@ const preview: Preview = {
     ),
   ],
 
-  tags: ["autodocs"]
+  tags: ["autodocs"],
 };
 
 export default preview;
