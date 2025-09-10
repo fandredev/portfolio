@@ -4505,10 +4505,10 @@ vite-plugin-remove-console@^2.2.0:
   resolved "https://registry.yarnpkg.com/vite-plugin-remove-console/-/vite-plugin-remove-console-2.2.0.tgz#a73c6ba1b217b56accc5135c508b58c4df45431e"
   integrity sha512-qgjh5pz75MdE9Kzs8J0kBwaCfifHV0ezRbB9rpGsIOxam+ilcGV7WOk91vFJXquzRmiKrFh3Hxlh0JJWAmXTbQ==
 
-"vite@^5.0.0 || ^6.0.0 || ^7.0.0-0", vite@^6.3.5:
-  version "6.3.5"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.5.tgz#fec73879013c9c0128c8d284504c6d19410d12a3"
-  integrity sha512-cZn6NDFE7wdTpINgs++ZJ4N49W2vRp8LCKrn3Ob1kYNtOo21vfDoaV5GzBfLU4MovSAB8uNRm4jgzVQZ+mBzPQ==
+"vite@^5.0.0 || ^6.0.0 || ^7.0.0-0", vite@^6.3.6:
+  version "6.3.6"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-6.3.6.tgz#69a976b64930750d40219fbc68c5200874d315c1"
+  integrity sha512-0msEVHJEScQbhkbVTb/4iHZdJ6SXp/AvxL2sjwYQFfBqleHtnCqv1J3sa9zbWz/6kW1m9Tfzn92vW+kZ1WV6QA==
   dependencies:
     esbuild "^0.25.0"
     fdir "^6.4.4"
