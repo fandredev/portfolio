@@ -6,7 +6,7 @@ const API_URL = import.meta.env.VITE_API_URL_PORTFOLIO;
 
 export default function Error() {
   return (
-    <div className="container-error">
+    <div className="container-error" data-testid="error-component">
       <div className="error">
         <div>
           <img src={NotFound} alt="Not Found page" />
