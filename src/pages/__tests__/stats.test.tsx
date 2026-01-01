@@ -2,8 +2,8 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { describe, test, vi, beforeEach } from "vitest";
 
-import Stats from "pages/stats";
 import { useWakatimeStats } from "hooks/use-wakatime-stats";
+import Stats from "pages/stats";
 
 vi.mock("hooks/use-wakatime-stats");
 vi.mock("react-i18next", () => ({
@@ -13,8 +13,10 @@ vi.mock("react-i18next", () => ({
 }));
 
 vi.mock("recharts", () => ({
-  ResponsiveContainer: ({ children }: any) => <div>{children}</div>,
-  BarChart: ({ children }: any) => (
+  ResponsiveContainer: ({ children }: { children: React.ReactNode }) => (
+    <div>{children}</div>
+  ),
+  BarChart: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="bar-chart">{children}</div>
   ),
   Bar: () => <div>Bar</div>,
@@ -22,10 +24,12 @@ vi.mock("recharts", () => ({
   YAxis: () => <div>YAxis</div>,
   CartesianGrid: () => <div>CartesianGrid</div>,
   Tooltip: () => <div>Tooltip</div>,
-  PieChart: ({ children }: any) => (
+  PieChart: ({ children }: { children: React.ReactNode }) => (
     <div data-testid="pie-chart">{children}</div>
   ),
-  Pie: ({ children }: any) => <div data-testid="pie">{children}</div>,
+  Pie: ({ children }: { children: React.ReactNode }) => (
+    <div data-testid="pie">{children}</div>
+  ),
   Cell: () => <div>Cell</div>,
   Legend: () => <div>Legend</div>,
 }));
@@ -36,11 +40,12 @@ describe("Stats Page", () => {
   });
 
   test("should render skeleton when loading", () => {
-    (useWakatimeStats as any).mockReturnValue({
+    vi.mocked(useWakatimeStats).mockReturnValue({
       chartData: [],
       isLoading: true,
       isError: false,
       isFetched: false,
+      data: [],
     });
 
     const { container } = render(
@@ -54,11 +59,12 @@ describe("Stats Page", () => {
   });
 
   test("should render error component when there is an error", () => {
-    (useWakatimeStats as any).mockReturnValue({
+    vi.mocked(useWakatimeStats).mockReturnValue({
       chartData: [],
       isLoading: false,
       isError: true,
       isFetched: true,
+      data: [],
     });
 
     render(
@@ -71,11 +77,23 @@ describe("Stats Page", () => {
   });
 
   test("should render charts when data is loaded", () => {
-    (useWakatimeStats as any).mockReturnValue({
+    vi.mocked(useWakatimeStats).mockReturnValue({
       chartData: [{ name: "TypeScript", percent: 100 }],
       isLoading: false,
       isError: false,
       isFetched: true,
+      data: [
+        {
+          name: "TypeScript",
+          percent: 100,
+          total_seconds: 3600,
+          digital: "1:00",
+          decimal: "1.0",
+          text: "1h",
+          hours: 1,
+          minutes: 0,
+        },
+      ],
     });
 
     render(
