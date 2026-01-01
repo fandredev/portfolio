@@ -1,4 +1,5 @@
 import { render } from "@testing-library/react";
+
 import Skeleton from "./skeleton";
 
 describe("Skeleton component", () => {
@@ -11,13 +12,27 @@ describe("Skeleton component", () => {
 
   test("should render with different variants", () => {
     const { container: titleContainer } = render(<Skeleton variant="title" />);
-    expect((titleContainer.firstChild as HTMLElement).classList.contains("skeleton-title")).toBe(true);
+    expect(
+      (titleContainer.firstChild as HTMLElement).classList.contains(
+        "skeleton-title"
+      )
+    ).toBe(true);
 
-    const { container: circleContainer } = render(<Skeleton variant="circle" />);
-    expect((circleContainer.firstChild as HTMLElement).classList.contains("skeleton-circle")).toBe(true);
+    const { container: circleContainer } = render(
+      <Skeleton variant="circle" />
+    );
+    expect(
+      (circleContainer.firstChild as HTMLElement).classList.contains(
+        "skeleton-circle"
+      )
+    ).toBe(true);
 
     const { container: rectContainer } = render(<Skeleton variant="rect" />);
-    expect((rectContainer.firstChild as HTMLElement).classList.contains("skeleton-rect")).toBe(true);
+    expect(
+      (rectContainer.firstChild as HTMLElement).classList.contains(
+        "skeleton-rect"
+      )
+    ).toBe(true);
   });
 
   test("should apply custom width and height", () => {

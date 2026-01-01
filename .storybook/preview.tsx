@@ -1,16 +1,16 @@
 import React, { Suspense, useEffect } from "react";
 
-import type { Preview } from "@storybook/react-vite";
+import type { Preview, StoryContext } from "@storybook/react";
 import { I18nextProvider } from "react-i18next";
 
-import NameContext from "../src/context/NameContext";
+import { NameProvider } from "../src/context/NameContext";
 import i18n from "../src/services/i18n";
 
 import "../src/index.css";
 
 // https://storybook.js.org/recipes/react-i18next
 
-const useWithI18next = (Story, context) => {
+const useWithI18next = (Story: React.ComponentType, context: StoryContext) => {
   const { locale } = context.globals;
 
   useEffect(() => {
@@ -56,30 +56,22 @@ const preview: Preview = {
         date: /Date$/i,
       },
     },
-    reactContext: {
-      contexts: [
-        {
-          context: NameContext,
-          contextValue: {
-            name: "Felipe André",
-          },
-        },
-      ],
-    },
   },
 
   decorators: [
     useWithI18next,
     (Story) => (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Story />
-      </div>
+      <NameProvider>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <Story />
+        </div>
+      </NameProvider>
     ),
   ],
 

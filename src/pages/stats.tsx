@@ -13,9 +13,8 @@ import {
   Legend,
 } from "recharts";
 
-import Skeleton from "components/loader/skeleton";
-
 import Error from "components/error";
+import Skeleton from "components/loader/skeleton";
 import { useWakatimeStats } from "hooks/use-wakatime-stats";
 
 const COLORS = [
