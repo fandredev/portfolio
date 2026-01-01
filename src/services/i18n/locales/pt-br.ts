@@ -95,7 +95,9 @@ export default {
       languages: "Linguagens",
       percentage: "Porcentagem",
       my_seven_last_languages_more_used:
-        "Minhas linguagens de programação mais usadas nos últimos 7 dias",
+        "Minhas linguagens ou ferramentas mais usadas nos últimos 7 dias:",
+      bar_chart_title: "Distribuição por Barras",
+      pie_chart_title: "Distribuição por Setores (Pizza)",
       loading_stats_data:
         "Os dados estão sendo buscados ainda, mas, provavelmente serão esses abaixo:",
     },

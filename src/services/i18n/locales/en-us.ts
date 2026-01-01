@@ -95,9 +95,10 @@ export default {
     stats: {
       back_button: "Back",
       languages: "Languages",
+      my_seven_last_languages_more_used: "My last 7 most used languages or tools:",
+      bar_chart_title: "Bar Distribution",
+      pie_chart_title: "Pie Distribution",
       percentage: "Percentage",
-      my_seven_last_languages_more_used:
-        "My most used programming languages ​​in the last 7 days",
       loading_stats_data:
         "The data is still being searched for, but it will probably be the following:",
     },

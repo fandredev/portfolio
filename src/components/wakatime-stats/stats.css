@@ -1,7 +1,44 @@
 .container-stats {
-  padding: 0 10px;
-  margin-top: 1.3rem;
+  padding: 2rem 1rem;
+  max-width: 1400px;
+  margin: 0 auto;
 }
+
+.stats-content, .skeleton-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+}
+
+.chart-wrapper {
+  background: var(--container-color);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.chart-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.mb-2 {
+  margin-bottom: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1.5rem;
+}
+
+
+.skeleton-charts-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .container-back-porfolio-page {
   display: flex;
   gap: 10px
