@@ -1,9 +1,13 @@
+import { lazy, Suspense } from "react";
+
 import { createBrowserRouter } from "react-router-dom";
 
-import WakatimeStats from "components/wakatime-stats";
-import NotFound from "pages/not-found";
-import Portfolio from "pages/portfolio";
+import Loader from "components/loader";
 import RootComponent from "pages/root";
+
+const Portfolio = lazy(() => import("pages/portfolio"));
+const WakatimeStats = lazy(() => import("components/wakatime-stats"));
+const NotFound = lazy(() => import("pages/not-found"));
 
 export const routes = createBrowserRouter([
   {
@@ -12,16 +16,28 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Portfolio />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <Portfolio />
+          </Suspense>
+        ),
       },
       {
         path: "/stats",
-        element: <WakatimeStats />,
+        element: (
+          <Suspense fallback={<Loader />}>
+            <WakatimeStats />
+          </Suspense>
+        ),
       },
     ],
   },
   {
     path: "*",
-    element: <NotFound />,
+    element: (
+      <Suspense fallback={<Loader />}>
+        <NotFound />
+      </Suspense>
+    ),
   },
 ]);
