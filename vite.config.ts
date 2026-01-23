@@ -1,8 +1,11 @@
-/// <reference types="vitest/config" />
-
 import react from "@vitejs/plugin-react";
-import { defineConfig } from "vite";
+import { defineConfig, type UserConfig } from "vite";
 import removeConsole from "vite-plugin-remove-console";
+import type { InlineConfig } from "vitest/node";
+
+interface VitestConfigExport extends UserConfig {
+  test: InlineConfig;
+}
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -39,4 +42,4 @@ export default defineConfig({
       },
     },
   },
-});
+} as VitestConfigExport);

@@ -63,8 +63,8 @@ export default function Stats() {
                 <XAxis dataKey="name" />
                 <YAxis />
                 <Tooltip
-                  formatter={(value: number) => [
-                    `${Math.round(value)}%`,
+                  formatter={(value?: number) => [
+                    `${Math.round(value ?? 0)}%`,
                     t("stats.percentage"),
                   ]}
                 />
@@ -83,7 +83,7 @@ export default function Stats() {
                   cy="50%"
                   labelLine={false}
                   label={({ name, percent }) =>
-                    `${name} ${(percent * 1).toFixed(0)}%`
+                    `${name} ${(Number(percent) || 0).toFixed(0)}%`
                   }
                   outerRadius={120}
                   fill="#8884d8"
