@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -18,10 +18,10 @@ const today = new Date().toLocaleDateString();
 
 export default function FormContact() {
   const { t } = useTranslation();
-  const formRef = useRef<HTMLFormElement | null>(null);
   const [loadingForm, setLoadingForm] = useState(false);
-  const [blockUserResendEmailToday, setBlockUserResendEmailToday] =
-    useState(false);
+  const [blockUserResendEmailToday, setBlockUserResendEmailToday] = useState(
+    () => localStorage.getItem("lastSentDate") === today,
+  );
 
   const {
     register,
@@ -38,12 +38,11 @@ export default function FormContact() {
     resolver: zodResolver(formContactSchema),
   });
 
-  function onSubmit() {
-    const formContact = formRef.current as HTMLFormElement;
+  function onSubmit(data: ContactSchema) {
     setLoadingForm(true);
 
     emailjs
-      .sendForm(serviceId, templateId, formContact, {
+      .send(serviceId, templateId, data as unknown as Record<string, unknown>, {
         publicKey: apiPublicKeyEmail,
       })
       .then(() => {
@@ -61,11 +60,6 @@ export default function FormContact() {
       });
   }
 
-  useEffect(() => {
-    const lastSentDate = localStorage.getItem("lastSentDate");
-    if (lastSentDate === today) setBlockUserResendEmailToday(true);
-  }, []);
-
   return (
     <>
       <h3 className="contact__title">
@@ -82,11 +76,7 @@ export default function FormContact() {
           </p>
         </div>
       ) : (
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className="contact__form"
-          ref={formRef}
-        >
+        <form onSubmit={handleSubmit(onSubmit)} className="contact__form">
           <div className="container__form-div">
             <input
               aria-invalid={errors.name ? "true" : "false"}
