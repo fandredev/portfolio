@@ -26,10 +26,7 @@ export default function Header() {
         <a href="#" className="nav__logo">
           {name}
         </a>
-        <div
-          role="menu"
-          className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}
-        >
+        <div className={toggleMenu ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             {headerItems.map((item, index) => (
               <HeaderItem key={index} {...item} />

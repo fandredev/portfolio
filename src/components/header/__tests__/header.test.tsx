@@ -13,7 +13,7 @@ describe(`${Header.name} component`, () => {
         <NameProvider>
           <Header />
         </NameProvider>
-      </I18nextProvider>
+      </I18nextProvider>,
     );
   });
 
@@ -27,28 +27,28 @@ describe(`${Header.name} component`, () => {
 
   test("should open menu when user click in circle chevron to open menu", () => {
     const openMenu = screen.getByTestId("show-menu");
-    const menu = screen.getByRole("menu");
+    const menu = document.querySelector(".nav__menu");
 
-    expect(menu.className).toBe("nav__menu");
+    expect(menu?.className).toBe("nav__menu");
 
     fireEvent.click(openMenu);
 
-    expect(menu.className).toBe("nav__menu show-menu");
+    expect(menu?.className).toBe("nav__menu show-menu");
   });
 
   test("should close menu when user click in icon x to close", () => {
     const openMenu = screen.getByTestId("show-menu");
     const closeMenu = screen.getByTestId("close-menu");
-    const menu = screen.getByRole("menu");
+    const menu = document.querySelector(".nav__menu");
 
-    expect(menu.className).toBe("nav__menu");
+    expect(menu?.className).toBe("nav__menu");
 
     fireEvent.click(openMenu);
 
-    expect(menu.className).toBe("nav__menu show-menu");
+    expect(menu?.className).toBe("nav__menu show-menu");
 
     fireEvent.click(closeMenu);
 
-    expect(menu.className).toBe("nav__menu");
+    expect(menu?.className).toBe("nav__menu");
   });
 });
