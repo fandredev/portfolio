@@ -32,3 +32,4 @@ localhost_*.json
 
 # Antigravity
 .agentlighthouse-report*.json
+.agent
