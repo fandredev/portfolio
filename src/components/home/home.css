@@ -69,10 +69,6 @@
 }
 
 .home__img {
-  background: url('../../assets/me/me-home-image.webp');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   box-shadow: inset 0 0 0 3px rgb(255 255 255 / 30%);
   order: 1;
   justify-self: center;
@@ -80,6 +76,16 @@
   height: 300px;
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: profile__animate 8s ease-in-out infinite 1s;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @keyframes profile__animate {
