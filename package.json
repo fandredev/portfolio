@@ -74,7 +74,7 @@
     "storybook": "^10.2.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.53.1",
-    "vite": "^6.4.1",
+    "vite": "^6.4.2",
     "vite-plugin-remove-console": "^2.2.0",
     "vitest": "^3.2.1"
   },
