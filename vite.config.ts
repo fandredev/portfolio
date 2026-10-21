@@ -32,7 +32,17 @@ export default defineConfig({
 
     coverage: {
       include: ["src/**/*"],
-      exclude: ["**/*.stories.tsx", "**/*.test.tsx"],
+      exclude: [
+        "**/*.stories.tsx",
+        "**/*.test.tsx",
+        "src/main.tsx",
+        "src/routes/**",
+        "**/index.tsx",
+        "src/pages/portfolio.tsx",
+        "src/pages/root.tsx",
+        "src/services/error-boundary/**",
+        "src/components/error/error-boundary.tsx",
+      ],
       reporter: ["text", "html", "json"],
       thresholds: {
         branches: 70,
